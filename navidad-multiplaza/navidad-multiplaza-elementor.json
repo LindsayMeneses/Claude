@@ -1,0 +1,2753 @@
+{
+ "version": "0.4",
+ "title": "Navidad Multiplaza 2026",
+ "type": "page",
+ "page_settings": {
+  "hide_title": "yes",
+  "template": "elementor_canvas"
+ },
+ "content": [
+  {
+   "id": "50e1b22",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 180,
+     "right": 24,
+     "bottom": 180,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 108,
+     "right": 16,
+     "bottom": 108,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "gradient",
+    "__globals__": {},
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "flex_justify_content": "center",
+    "flex_align_items": "center",
+    "background_color": "#0A241C",
+    "background_color_b": "#0F3B2E",
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top center",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 10
+    },
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 95
+    }
+   },
+   "elements": [
+    {
+     "id": "4ec8dc6",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Multiplaza · Navidad 2026",
+      "header_size": "p",
+      "align": "center",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.25
+      },
+      "__globals__": {
+       "title_color": "globals/colors?id=accent",
+       "typography_typography": "globals/typography?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "fefd80c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "La Navidad que <em>se vive</em> en Multiplaza",
+      "header_size": "h1",
+      "align": "center",
+      "__globals__": {
+       "title_color": "globals/colors?id=blanco",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 84
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 63
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 46
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "825b5cd",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "isInner": false,
+     "settings": {
+      "editor": "<p>[PPT] Una temporada diseñada para reunir, sorprender y emocionar: experiencias, decoración y momentos que convierten cada visita en un recuerdo.</p>",
+      "align": "center",
+      "__globals__": {
+       "text_color": "globals/colors?id=oroclaro",
+       "typography_typography": "globals/typography?id=text"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "1590d9e",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "e1ecce5",
+       "elType": "widget",
+       "widgetType": "button",
+       "isInner": false,
+       "settings": {
+        "text": "Ver la propuesta",
+        "link": {
+         "url": "#concepto"
+        },
+        "size": "md",
+        "border_radius": {
+         "unit": "px",
+         "top": 999,
+         "right": 999,
+         "bottom": 999,
+         "left": 999,
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": 16,
+         "right": 34,
+         "bottom": 16,
+         "left": 34,
+         "isLinked": false
+        },
+        "hover_animation": "grow",
+        "__globals__": {
+         "typography_typography": "globals/typography?id=accent",
+         "background_color": "globals/colors?id=accent",
+         "button_text_color": "globals/colors?id=noche",
+         "button_background_hover_color": "globals/colors?id=oroclaro"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3aea607",
+       "elType": "widget",
+       "widgetType": "button",
+       "isInner": false,
+       "settings": {
+        "text": "Calendario",
+        "link": {
+         "url": "#calendario"
+        },
+        "size": "md",
+        "border_radius": {
+         "unit": "px",
+         "top": 999,
+         "right": 999,
+         "bottom": 999,
+         "left": 999,
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": 16,
+         "right": 34,
+         "bottom": 16,
+         "left": 34,
+         "isLinked": false
+        },
+        "hover_animation": "grow",
+        "__globals__": {
+         "typography_typography": "globals/typography?id=accent",
+         "button_text_color": "globals/colors?id=blanco",
+         "border_color": "globals/colors?id=blanco",
+         "button_background_hover_color": "globals/colors?id=blanco",
+         "hover_color": "globals/colors?id=noche"
+        },
+        "background_color": "transparent",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": 1,
+         "right": 1,
+         "bottom": 1,
+         "left": 1,
+         "isLinked": true
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6845e79",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 24,
+     "bottom": 120,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 72,
+     "right": 16,
+     "bottom": 72,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=marfil"
+    },
+    "_element_id": "concepto"
+   },
+   "elements": [
+    {
+     "id": "b94aa35",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "nowrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 48,
+       "column": "48",
+       "row": "48"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "1174ea4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 50
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_justify_content": "center",
+        "_animation": "fadeInLeft"
+       },
+       "elements": [
+        {
+         "id": "28d4694",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "El concepto",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cecb6da",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "[PPT] Nombre de la campaña",
+          "header_size": "h2",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 56
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 42
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 31
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "ed7e58e",
+         "elType": "widget",
+         "widgetType": "divider",
+         "isInner": false,
+         "settings": {
+          "width": {
+           "unit": "px",
+           "size": 64
+          },
+          "weight": {
+           "unit": "px",
+           "size": 2
+          },
+          "__globals__": {
+           "color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "eb6173a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] La gran idea en dos o tres frases: qué sentimos, qué vivimos y por qué Multiplaza es el lugar donde la Navidad sucede.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "4922008",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 46
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "_animation": "fadeInRight"
+       },
+       "elements": [
+        {
+         "id": "368a4f3",
+         "elType": "widget",
+         "widgetType": "image",
+         "isInner": false,
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "_title": "Key visual de la campaña",
+          "image_border_radius": {
+           "unit": "px",
+           "top": 18,
+           "right": 18,
+           "bottom": 18,
+           "left": 18,
+           "isLinked": true
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8c1bf58",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 24,
+     "bottom": 120,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 72,
+     "right": 16,
+     "bottom": 72,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=blanco"
+    }
+   },
+   "elements": [
+    {
+     "id": "ef46a2c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Objetivos",
+      "header_size": "p",
+      "align": "center",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.25
+      },
+      "__globals__": {
+       "title_color": "globals/colors?id=secondary",
+       "typography_typography": "globals/typography?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "d657499",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Lo que vamos a lograr",
+      "header_size": "h2",
+      "align": "center",
+      "__globals__": {
+       "title_color": "globals/colors?id=primary",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 48
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "bd35a64",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 32,
+       "column": "32",
+       "row": "32"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2c82ac1",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 30
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=blanco"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 0
+       },
+       "elements": [
+        {
+         "id": "8c29051",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "isInner": false,
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-users",
+           "library": "fa-solid"
+          },
+          "title_text": "Afluencia",
+          "description_text": "[PPT] Atraer más visitas durante noviembre y diciembre.",
+          "position": "top",
+          "title_size": "h3",
+          "__globals__": {
+           "primary_color": "globals/colors?id=secondary",
+           "title_color": "globals/colors?id=primary",
+           "description_color": "globals/colors?id=text",
+           "title_typography_typography": "globals/typography?id=secondary",
+           "description_typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "f466024",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 30
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=blanco"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 150
+       },
+       "elements": [
+        {
+         "id": "2115797",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "isInner": false,
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-shopping-bag",
+           "library": "fa-solid"
+          },
+          "title_text": "Ventas",
+          "description_text": "[PPT] Impulsar el ticket promedio de los locatarios.",
+          "position": "top",
+          "title_size": "h3",
+          "__globals__": {
+           "primary_color": "globals/colors?id=secondary",
+           "title_color": "globals/colors?id=primary",
+           "description_color": "globals/colors?id=text",
+           "title_typography_typography": "globals/typography?id=secondary",
+           "description_typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "3fa65f9",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 30
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=blanco"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 300
+       },
+       "elements": [
+        {
+         "id": "e4895b8",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "isInner": false,
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-heart",
+           "library": "fa-solid"
+          },
+          "title_text": "Emoción",
+          "description_text": "[PPT] Crear momentos memorables que se compartan.",
+          "position": "top",
+          "title_size": "h3",
+          "__globals__": {
+           "primary_color": "globals/colors?id=secondary",
+           "title_color": "globals/colors?id=primary",
+           "description_color": "globals/colors?id=text",
+           "title_typography_typography": "globals/typography?id=secondary",
+           "description_typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7bb2add",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 24,
+     "bottom": 120,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 72,
+     "right": 16,
+     "bottom": 72,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "e54662e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Experiencias",
+      "header_size": "p",
+      "align": "center",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.25
+      },
+      "__globals__": {
+       "title_color": "globals/colors?id=accent",
+       "typography_typography": "globals/typography?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "22bbbab",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Momentos que <em>brillan</em>",
+      "header_size": "h2",
+      "align": "center",
+      "__globals__": {
+       "title_color": "globals/colors?id=blanco",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 48
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "142d435",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "ee4fc50",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 0
+       },
+       "elements": [
+        {
+         "id": "f6467ec",
+         "elType": "widget",
+         "widgetType": "image",
+         "isInner": false,
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "_title": "Encendido del árbol",
+          "image_border_radius": {
+           "unit": "px",
+           "top": 18,
+           "right": 18,
+           "bottom": 18,
+           "left": 18,
+           "isLinked": true
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b700e70",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Encendido del árbol",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e9644a1",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] El evento de apertura de la temporada.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "5d57d9f",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 120
+       },
+       "elements": [
+        {
+         "id": "13482f2",
+         "elType": "widget",
+         "widgetType": "image",
+         "isInner": false,
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "_title": "Villa navideña",
+          "image_border_radius": {
+           "unit": "px",
+           "top": 18,
+           "right": 18,
+           "bottom": 18,
+           "left": 18,
+           "isLinked": true
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0ce4513",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Villa navideña",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "03d75d8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Un recorrido inmersivo para toda la familia.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "8128dcb",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 240
+       },
+       "elements": [
+        {
+         "id": "d23164c",
+         "elType": "widget",
+         "widgetType": "image",
+         "isInner": false,
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "_title": "Show y música",
+          "image_border_radius": {
+           "unit": "px",
+           "top": 18,
+           "right": 18,
+           "bottom": 18,
+           "left": 18,
+           "isLinked": true
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f532e9d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Show y música",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5f8c41f",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Coros, conciertos y personajes.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "13dbdf6",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 360
+       },
+       "elements": [
+        {
+         "id": "4504ebc",
+         "elType": "widget",
+         "widgetType": "image",
+         "isInner": false,
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "_title": "Santa en Multiplaza",
+          "image_border_radius": {
+           "unit": "px",
+           "top": 18,
+           "right": 18,
+           "bottom": 18,
+           "left": 18,
+           "isLinked": true
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "650b62e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Santa en Multiplaza",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f014d02",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Fotos, cartas y sorpresas.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d0bcd54",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 24,
+     "bottom": 120,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 72,
+     "right": 16,
+     "bottom": 72,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=salvia"
+    }
+   },
+   "elements": [
+    {
+     "id": "dd0e96e",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "nowrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 48,
+       "column": "48",
+       "row": "48"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "b7ebe2c",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 38
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "fdc6a8b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Decoración",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1bbd88e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "[PPT] Un universo visual",
+          "header_size": "h2",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 48
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 36
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 26
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "75e3f04",
+         "elType": "widget",
+         "widgetType": "divider",
+         "isInner": false,
+         "settings": {
+          "width": {
+           "unit": "px",
+           "size": 64
+          },
+          "weight": {
+           "unit": "px",
+           "size": 2
+          },
+          "__globals__": {
+           "color": "globals/colors?id=secondary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "eb28f8c",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Paleta, materiales, iluminación y piezas protagonistas de la ambientación.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "1d25874",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 58
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16"
+        },
+        "_animation": "zoomIn"
+       },
+       "elements": [
+        {
+         "id": "c2e2cdc",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "boxed_width": {
+           "unit": "px",
+           "size": 1200
+          },
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "gap": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "16"
+          },
+          "padding": {
+           "unit": "px",
+           "top": 0,
+           "right": 0,
+           "bottom": 0,
+           "left": 0,
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "8cb0d88",
+           "elType": "widget",
+           "widgetType": "image",
+           "isInner": false,
+           "settings": {
+            "image": {
+             "url": "",
+             "id": ""
+            },
+            "image_size": "large",
+            "_title": "Mood 1",
+            "image_border_radius": {
+             "unit": "px",
+             "top": 18,
+             "right": 18,
+             "bottom": 18,
+             "left": 18,
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "02ae063",
+           "elType": "widget",
+           "widgetType": "image",
+           "isInner": false,
+           "settings": {
+            "image": {
+             "url": "",
+             "id": ""
+            },
+            "image_size": "large",
+            "_title": "Mood 2",
+            "image_border_radius": {
+             "unit": "px",
+             "top": 18,
+             "right": 18,
+             "bottom": 18,
+             "left": 18,
+             "isLinked": true
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "9746b9a",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "boxed_width": {
+           "unit": "px",
+           "size": 1200
+          },
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "gap": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "16"
+          },
+          "padding": {
+           "unit": "px",
+           "top": 0,
+           "right": 0,
+           "bottom": 0,
+           "left": 0,
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "3c0329f",
+           "elType": "widget",
+           "widgetType": "image",
+           "isInner": false,
+           "settings": {
+            "image": {
+             "url": "",
+             "id": ""
+            },
+            "image_size": "large",
+            "_title": "Mood 3",
+            "image_border_radius": {
+             "unit": "px",
+             "top": 18,
+             "right": 18,
+             "bottom": 18,
+             "left": 18,
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "05ca5d0",
+           "elType": "widget",
+           "widgetType": "image",
+           "isInner": false,
+           "settings": {
+            "image": {
+             "url": "",
+             "id": ""
+            },
+            "image_size": "large",
+            "_title": "Mood 4",
+            "image_border_radius": {
+             "unit": "px",
+             "top": 18,
+             "right": 18,
+             "bottom": 18,
+             "left": 18,
+             "isLinked": true
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c846ed9",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 24,
+     "bottom": 120,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 72,
+     "right": 16,
+     "bottom": 72,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=blanco"
+    },
+    "_element_id": "calendario"
+   },
+   "elements": [
+    {
+     "id": "76ca989",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Calendario",
+      "header_size": "p",
+      "align": "center",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.25
+      },
+      "__globals__": {
+       "title_color": "globals/colors?id=secondary",
+       "typography_typography": "globals/typography?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "0369171",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "La temporada, paso a paso",
+      "header_size": "h2",
+      "align": "center",
+      "__globals__": {
+       "title_color": "globals/colors?id=primary",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 48
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "91f282c",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "8ef1fb6",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 0
+       },
+       "elements": [
+        {
+         "id": "2eb8386",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Nov",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "7a41ee6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Lanzamiento",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "ab34dec",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Encendido y apertura de la temporada.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "ae71514",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 120
+       },
+       "elements": [
+        {
+         "id": "c390bd5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Dic · 1ª quincena",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b8dd574",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Temporada alta",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "d2d91e5",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Activaciones y shows de fin de semana.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "e60f489",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 240
+       },
+       "elements": [
+        {
+         "id": "b026d16",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Dic · 2ª quincena",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a50ff79",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Cierre mágico",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "555161e",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Nochebuena y último impulso de compras.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "3da00eb",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "padding": {
+         "unit": "px",
+         "top": 36,
+         "right": 32,
+         "bottom": 36,
+         "left": 32,
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": 20,
+         "right": 20,
+         "bottom": 20,
+         "left": 20,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+         "background_color": "globals/colors?id=marfil"
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 18,
+         "blur": 40,
+         "spread": -18,
+         "color": "rgba(10,36,28,0.25)"
+        },
+        "_animation": "fadeInUp",
+        "animation_delay": 360
+       },
+       "elements": [
+        {
+         "id": "66e8897",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Ene",
+          "header_size": "p",
+          "align": "left",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.25
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3cbbef2",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Balance",
+          "header_size": "h3",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 20
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "bcd8f03",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>[PPT] Resultados y aprendizajes.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13950ad",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 90,
+     "right": 24,
+     "bottom": 90,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 54,
+     "right": 16,
+     "bottom": 54,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=noche"
+    }
+   },
+   "elements": [
+    {
+     "id": "669dd72",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1200
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "5d3b90d",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "8543da9",
+         "elType": "widget",
+         "widgetType": "counter",
+         "isInner": false,
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 45,
+          "suffix": "",
+          "title": "[PPT] Días de temporada",
+          "__globals__": {
+           "number_color": "globals/colors?id=accent",
+           "title_color": "globals/colors?id=oroclaro",
+           "typography_number_typography": "globals/typography?id=primary",
+           "typography_title_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "ef2758d",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "900ed97",
+         "elType": "widget",
+         "widgetType": "counter",
+         "isInner": false,
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 30,
+          "suffix": "+",
+          "title": "[PPT] Activaciones",
+          "__globals__": {
+           "number_color": "globals/colors?id=accent",
+           "title_color": "globals/colors?id=oroclaro",
+           "typography_number_typography": "globals/typography?id=primary",
+           "typography_title_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "879cb24",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "e0c97d2",
+         "elType": "widget",
+         "widgetType": "counter",
+         "isInner": false,
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 1,
+          "suffix": "M+",
+          "title": "[PPT] Visitas esperadas",
+          "__globals__": {
+           "number_color": "globals/colors?id=accent",
+           "title_color": "globals/colors?id=oroclaro",
+           "typography_number_typography": "globals/typography?id=primary",
+           "typography_title_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "fbbd687",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1200
+        },
+        "width": {
+         "unit": "%",
+         "size": 22
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "899227c",
+         "elType": "widget",
+         "widgetType": "counter",
+         "isInner": false,
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 100,
+          "suffix": "%",
+          "title": "Magia navideña",
+          "__globals__": {
+           "number_color": "globals/colors?id=accent",
+           "title_color": "globals/colors?id=oroclaro",
+           "typography_number_typography": "globals/typography?id=primary",
+           "typography_title_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12b628c",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "padding": {
+     "unit": "px",
+     "top": 140,
+     "right": 24,
+     "bottom": 140,
+     "left": 24,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 16,
+     "bottom": 84,
+     "left": 16,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=vino"
+    },
+    "flex_align_items": "center"
+   },
+   "elements": [
+    {
+     "id": "af36ef2",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "Hagamos brillar esta Navidad",
+      "header_size": "h2",
+      "align": "center",
+      "__globals__": {
+       "title_color": "globals/colors?id=blanco",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 64
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 48
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 35
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "180f942",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "isInner": false,
+     "settings": {
+      "editor": "<p>[PPT] Frase de cierre de la propuesta y siguiente paso.</p>",
+      "align": "center",
+      "__globals__": {
+       "text_color": "globals/colors?id=oroclaro",
+       "typography_typography": "globals/typography?id=text"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "4e86d3e",
+     "elType": "widget",
+     "widgetType": "button",
+     "isInner": false,
+     "settings": {
+      "text": "Conversemos",
+      "link": {
+       "url": "#contacto"
+      },
+      "size": "md",
+      "border_radius": {
+       "unit": "px",
+       "top": 999,
+       "right": 999,
+       "bottom": 999,
+       "left": 999,
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": 16,
+       "right": 34,
+       "bottom": 16,
+       "left": 34,
+       "isLinked": false
+      },
+      "hover_animation": "grow",
+      "__globals__": {
+       "typography_typography": "globals/typography?id=accent",
+       "background_color": "globals/colors?id=accent",
+       "button_text_color": "globals/colors?id=noche",
+       "button_background_hover_color": "globals/colors?id=oroclaro"
+      }
+     },
+     "elements": []
+    }
+   ]
+  }
+ ]
+}
