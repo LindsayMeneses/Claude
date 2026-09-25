@@ -47,9 +47,18 @@ def size_rules(sel, s, prop, key):
     return out
 
 
+def cls(s, eid):
+    c = [f"el-{eid}", s.get("css_classes", ""), s.get("_css_classes", "")]
+    if s.get("_animation"):
+        c.append(f"anim anim-{s['_animation']}")
+    return " ".join(x for x in c if x)
+
+
 def render(el, parent_row=False):
     s, eid = el["settings"], el["id"]
     sel = f".el-{eid}"
+    if s.get("animation_delay"):
+        css.append(f"{sel}.anim{{animation-delay:{s['animation_delay']}ms}}")
     if el["elType"] == "container":
         rules = ["display:flex", f"flex-direction:{s.get('flex_direction', 'column')}",
                  f"padding:{box(s['padding']) if 'padding' in s else '10px'}",
@@ -97,7 +106,7 @@ def render(el, parent_row=False):
                        f"flex-direction:inherit;flex-wrap:inherit;gap:inherit;justify-content:inherit;align-items:inherit}}")
             inner = f'<div class="inner">{inner}</div>'
         idattr = f' id="{s["_element_id"]}"' if s.get("_element_id") else ""
-        return f'<div class="el-{eid}"{idattr}>{inner}</div>'
+        return f'<div class="{cls(s, eid)}"{idattr}>{inner}</div>'
 
     w = el["widgetType"]
     align = s.get("align", "left")
@@ -108,7 +117,7 @@ def render(el, parent_row=False):
         css.append(f"{sel}{{{';'.join(rules)}}}")
         css.extend(size_rules(sel, s, "font-size", "typography_font_size"))
         tag = s["header_size"]
-        return f'<{tag} class="el-{eid}">{s["title"]}</{tag}>'
+        return f'<{tag} class="{cls(s, eid)}">{s["title"]}</{tag}>'
     if w == "text-editor":
         css.append(f"{sel}{{{g(s, 'typography_typography')};color:{g(s, 'text_color')};text-align:{align}}}"
                    f"{sel} p{{margin:0}}")
@@ -125,7 +134,7 @@ def render(el, parent_row=False):
         return f'<div><a class="el-{eid}" href="{html.escape(s["link"]["url"])}">{s["text"]}</a></div>'
     if w == "divider":
         css.append(f"{sel}{{width:{s['width']['size']}px;border-top:{s['weight']['size']}px solid {g(s, 'color')};margin:6px 0}}")
-        return f'<div class="el-{eid}"></div>'
+        return f'<div class="{cls(s, eid)}"></div>'
     if w == "icon":
         name = s["selected_icon"]["value"].split("fa-", 1)[1]
         css.append(f"{sel} svg{{width:{s['size']['size']}px;height:{s['size']['size']}px;fill:{g(s, 'primary_color')}}}")
@@ -143,6 +152,8 @@ def render(el, parent_row=False):
                    f"color:{g(s, 'title_color')};margin-top:8px}}")
         return (f'<div class="el-{eid}"><div class="num">{s["ending_number"]}{s.get("suffix", "")}</div>'
                 f'<div class="t">{s["title"]}</div></div>')
+    if w == "html":
+        return f'<div class="{cls(s, eid)}">{s["html"]}</div>'
     if w == "image":
         url = s["image"]["url"]
         css.append(f"{sel} img{{width:100%;display:block;border-radius:{s['image_border_radius']['top']}px}}")
@@ -160,7 +171,16 @@ if __name__ == "__main__":
     page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Vista previa · Navidad Multiplaza 2026</title>
 <link href="fonts/fonts.css" rel="stylesheet">
-<style>body{{margin:0}}em{{font-style:italic}}{''.join(css)}</style></head><body>{body}</body></html>"""
+<style>body{{margin:0}}
+.anim{{opacity:0}}.anim.go{{animation:1.1s cubic-bezier(.2,.7,.2,1) both}}
+.anim-fadeInUp.go{{animation-name:fu}}.anim-fadeInLeft.go{{animation-name:fl}}.anim-fadeInRight.go{{animation-name:fr}}.anim-zoomIn.go{{animation-name:zi}}
+@keyframes fu{{from{{opacity:0;transform:translateY(40px)}}to{{opacity:1;transform:none}}}}
+@keyframes fl{{from{{opacity:0;transform:translateX(-60px)}}to{{opacity:1;transform:none}}}}
+@keyframes fr{{from{{opacity:0;transform:translateX(60px)}}to{{opacity:1;transform:none}}}}
+@keyframes zi{{from{{opacity:0;transform:scale(.85)}}to{{opacity:1;transform:none}}}}em{{font-style:italic}}{''.join(css)}</style></head><body>{body}
+<script>new IntersectionObserver(function(es,o){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('go');o.unobserve(e.target);}}}})}},{{threshold:.15}});
+document.querySelectorAll('.anim').forEach(function(el){{window.__io=window.__io||new IntersectionObserver(function(es,o){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('go');o.unobserve(e.target);}}}})}},{{threshold:.15}});__io.observe(el);}});</script>
+</body></html>"""
     Path("preview").mkdir(exist_ok=True)
     Path("preview/index.html").write_text(page)
     print("ok preview/index.html", len(page), "bytes;", len(ICONS), "iconos")

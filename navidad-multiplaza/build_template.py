@@ -34,6 +34,61 @@ def widget(kind, settings):
     return {"id": uid(), "elType": "widget", "widgetType": kind, "isInner": False, "settings": settings, "elements": []}
 
 
+FX = """<canvas class="nm-snow" aria-hidden="true"></canvas>
+<style>
+.nm-hero{position:relative;overflow:hidden}
+.nm-hero>*>*:not(.nm-fx){position:relative;z-index:1}
+.nm-fx{position:absolute!important;inset:0;margin:0!important;pointer-events:none;z-index:0;width:100%!important}
+.nm-fx .elementor-widget-container{height:100%}
+.nm-snow{width:100%;height:100%;display:block}
+.nm-hero h1 em{background:linear-gradient(100deg,#C9A45C 20%,#FFF3D1 40%,#EBD9AE 50%,#C9A45C 70%);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:nm-shine 5s ease-in-out infinite}
+@keyframes nm-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+.nm-card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.nm-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -24px rgba(10,36,28,.45)!important}
+.nm-panel svg{animation:nm-twinkle 3.2s ease-in-out infinite;transform-origin:center}
+.nm-panel:nth-child(2n) svg{animation-delay:1.1s}
+@keyframes nm-twinkle{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.12);opacity:1;
+  filter:drop-shadow(0 0 10px rgba(235,217,174,.6))}}
+.nm-line .elementor-divider-separator,.nm-line{transform-origin:left}
+.nm-line.nm-in{animation:nm-grow 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes nm-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.nm-hero h1 em,.nm-panel svg,.nm-line.nm-in{animation:none}
+  .nm-card,.nm-card:hover{transition:none;transform:none}.nm-snow{display:none}}
+</style>
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.nm-line').forEach(function(el){
+    if(!('IntersectionObserver' in window)){el.classList.add('nm-in');return;}
+    new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('nm-in');o.unobserve(e.target);}});},{threshold:.6}).observe(el);
+  });
+  if(reduce)return;
+  var c=document.querySelector('.nm-snow');if(!c)return;
+  var x=c.getContext('2d'),w,h,d=Math.min(window.devicePixelRatio||1,2),f=[];
+  function size(){w=c.clientWidth;h=c.clientHeight;c.width=w*d;c.height=h*d;x.setTransform(d,0,0,d,0,0);}
+  size();addEventListener('resize',size);
+  var n=Math.round(Math.min(110,w/12));
+  for(var i=0;i<n;i++)f.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2.2+.6,
+    s:Math.random()*.5+.25,o:Math.random()*Math.PI*2,g:Math.random()<.22});
+  function tick(t){
+    x.clearRect(0,0,w,h);
+    for(var i=0;i<f.length;i++){var p=f[i];
+      p.y+=p.s;p.x+=Math.sin(t/1800+p.o)*.35;if(p.y>h+5){p.y=-5;p.x=Math.random()*w;}
+      var a=p.g?.55+.45*Math.sin(t/400+p.o):.75;
+      x.beginPath();x.arc(p.x,p.y,p.g?p.r*.9:p.r,0,6.283);
+      x.fillStyle=p.g?'rgba(235,217,174,'+a+')':'rgba(255,255,255,'+a*.8+')';
+      if(p.g){x.shadowBlur=8;x.shadowColor='rgba(235,217,174,.9)';}else x.shadowBlur=0;
+      x.fill();}
+    if(!document.hidden)requestAnimationFrame(tick);
+  }
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)requestAnimationFrame(tick);});
+  requestAnimationFrame(tick);
+})();
+</script>"""
+
+
 def eyebrow(text, color="accent", align="left"):
     return widget("heading", {
         "title": text, "header_size": "p", "align": align,
@@ -44,7 +99,7 @@ def eyebrow(text, color="accent", align="left"):
 
 
 def heading(text, size="h2", color="primary", align="left", px=None):
-    s = {"title": text, "header_size": size, "align": align,
+    s = {"title": text, "header_size": size, "align": align, "_animation": "fadeInUp",
          "__globals__": {"title_color": C + color, "typography_typography": T + "primary"}}
     if px:
         s["typography_font_size"] = {"unit": "px", "size": px}
@@ -77,6 +132,7 @@ def button(label, url, bg="accent", fg="noche", outline=False):
 
 def divider(color="accent", width=64):
     return widget("divider", {"width": {"unit": "px", "size": width}, "weight": {"unit": "px", "size": 2},
+                              "_css_classes": "nm-line",
                               "__globals__": {"color": C + color}})
 
 
@@ -94,11 +150,11 @@ def panel(label):
                                        "__globals__": {"primary_color": C + "accent"}})], {
         "content_width": "full", "flex_justify_content": "center", "flex_align_items": "center", "flex_grow": 1,
         "min_height": {"unit": "px", "size": 420 if tall else 170},
-        "min_height_mobile": {"unit": "px", "size": 260 if tall else 150},
+        "min_height_mobile": {"unit": "px", "size": 260 if tall else 120},
         "border_radius": {"unit": "px", "top": 18, "right": 18, "bottom": 18, "left": 18, "isLinked": True},
         "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#0F3B2E",
         "background_gradient_type": "radial", "background_gradient_position": "center center",
-        "_title": label,
+        "_title": label, "css_classes": "nm-panel",
     }, inner=True)
 
 
@@ -121,9 +177,9 @@ def section(children, bg, pad=120, extra=None):
     return container(children, s)
 
 
-def row(children, gap=32, wrap=True):
+def row(children, gap=32, wrap=True, mobile_row=False):
     return container(children, {"flex_direction": "row", "flex_wrap": "wrap" if wrap else "nowrap",
-                                "flex_direction_mobile": "column",
+                                "flex_direction_mobile": "row" if mobile_row else "column",
                                 "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)},
                                 "content_width": "full", "padding": {"unit": "px", "top": 0, "right": 0, "bottom": 0, "left": 0, "isLinked": True}},
                      inner=True)
@@ -138,12 +194,13 @@ def card(children, bg="blanco", basis=30, anim="fadeInUp", delay=0):
         "background_background": "classic", "__globals__": {"background_color": C + bg},
         "box_shadow_box_shadow_type": "yes",
         "box_shadow_box_shadow": {"horizontal": 0, "vertical": 18, "blur": 40, "spread": -18, "color": "rgba(10,36,28,0.25)"},
-        "_animation": anim, "animation_delay": delay,
+        "_animation": anim, "animation_delay": delay, "css_classes": "nm-card",
     }, inner=True)
 
 
 # 1 · Portada
 hero = section([
+    widget("html", {"html": FX, "_css_classes": "nm-fx"}),
     eyebrow("Multiplaza · Navidad 2026", "accent", "center"),
     heading("La Navidad que <em>se vive</em> en Multiplaza", "h1", "blanco", "center", px=84),
     text("<p>[PPT] Una temporada diseñada para reunir, sorprender y emocionar: experiencias, "
@@ -154,7 +211,7 @@ hero = section([
     "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#0F3B2E",
     "background_gradient_type": "radial", "background_gradient_position": "top center",
     "background_color_stop": {"unit": "%", "size": 10}, "background_color_b_stop": {"unit": "%", "size": 95},
-    "__globals__": {},
+    "__globals__": {}, "css_classes": "nm-hero",
 })
 
 # 2 · Concepto
@@ -222,7 +279,8 @@ decoracion = section([
                  "arriba y tomar la foto de la temporada.</p>"),
         ], {"content_width": "full", "width": {"unit": "%", "size": 38}, "width_mobile": {"unit": "%", "size": 100},
             "flex_justify_content": "center"}, inner=True),
-        container([row([image("Mood 1"), image("Mood 2")], gap=16), row([image("Mood 3"), image("Mood 4")], gap=16)],
+        container([row([image("Mood 1"), image("Mood 2")], gap=16, mobile_row=True),
+                   row([image("Mood 3"), image("Mood 4")], gap=16, mobile_row=True)],
                   {"content_width": "full", "width": {"unit": "%", "size": 58}, "width_mobile": {"unit": "%", "size": 100},
                    "gap": {"unit": "px", "size": 16, "column": "16", "row": "16"}, "_animation": "zoomIn"}, inner=True),
     ], gap=48, wrap=False),
