@@ -141,7 +141,7 @@ No hay notas del orador en el archivo (el .md dice incluirlas y no aparece ningu
 
 ## Cambios sugeridos a la página
 
-> Todavía no se aplica ninguno. La página publicada (ID 7) mantiene los textos de `copy.json`.
+> **Aplicado el 2026-09-25 (v3):** la página se reorganizó como recorrido por zonas con los textos y datos del deck (puntos 1 y 2). Los colores globales no se cambiaron (punto 3, falta el valor de Red Silk). Las imágenes son fotos CC0 de referencia hasta tener los renders del PPT (punto 4).
 
 1. **El contenido publicado no sale del PPT.** «Luces de Encuentro», los tres pilares, las cuatro
    experiencias (encendido, aldea, escenario, Santa), el calendario de noviembre a enero y los

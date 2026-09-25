@@ -1,68 +1,91 @@
 {
- "nombre_campana": "Luces de Encuentro",
- "alternativas_nombre": ["Luminanza", "Brillo compartido"],
+ "_fuente": "Textos basados en el deck «100 Navidad Multiplaza 2026 VF» (ver ANALISIS-PPT.md). Solo se usan datos que aparecen en el deck.",
  "portada": {
   "eyebrow": "Multiplaza · Navidad 2026",
-  "titulo_html": "Luces de <em>Encuentro</em>",
-  "bajada": "Una Navidad donde la luz nos reúne: experiencias, decoración y momentos que convierten cada visita en tradición.",
+  "titulo_html": "La Navidad se <em>enciende</em> plaza a plaza",
+  "bajada": "Propuesta de decoración para Multiplaza Escazú y Multiplaza Curridabat: fachadas, túneles de luz, plazas temáticas y piezas protagonistas, zona por zona.",
+  "datos": [["2", "centros comerciales"], ["15", "zonas decoradas"], ["7 m", "árbol protagonista"]],
   "cta_primario": "Iniciar recorrido",
-  "cta_secundario": "Calendario"
+  "cta_secundario": "Ver Curridabat"
  },
- "concepto": {
-  "eyebrow": "La idea",
-  "titulo": "Una Navidad que ilumina encuentros",
-  "texto": "Luces de Encuentro convierte a Multiplaza en el lugar donde la temporada sucede. Cada pasillo se vuelve un recorrido de luz; cada activación, una excusa para reunirse. Una identidad cálida y sofisticada que invita a quedarse, compartir y volver.",
-  "cita": "Donde la luz nos reúne."
+ "recorrido": {
+  "eyebrow": "El recorrido",
+  "titulo": "Quince zonas, un mismo recorrido de luz",
+  "texto": "La propuesta recorre cada centro comercial de principio a fin. En Escazú se diseñan diez zonas; en Curridabat, cinco plazas que retoman los mejores diseños de Escazú.",
+  "escazu": ["Fachadas", "Plaza Starbucks", "Pasillo Starbucks → Tukis", "Casa de Santa", "Plaza Tukis", "Plaza Brunos", "Pasillo Quinta Etapa", "Plaza Siman", "Pasillo BCR – Vértigo", "Plaza Honor"],
+  "curridabat": ["Plaza Santo Katrin", "Plaza Reebok", "Plaza Cinemark", "Plaza Kolbi", "Plaza Old Navy"]
  },
- "objetivos": {
-  "eyebrow": "Por qué",
-  "titulo": "Tres pilares para la temporada",
+ "fachadas": {
+  "eyebrow": "Fachadas e identidad",
+  "titulo": "Una misma imagen, de la fachada a cada plaza",
+  "texto": "Este año continuó el proyecto de fachadas: ya están terminadas todas las fachadas del centro comercial. La decoración se alinea con el tema y la campaña; los key visuals y los cascabeles acompañan el recorrido.",
+  "paleta": [["#B3122E", "Rojo", "Referencia Red Silk 351516"], ["#FFFFFF", "Blanco", "Árbol, trineo y adornos"], ["#C9CDD2", "Plateado", "Esferas, trineo y bancas"], ["#C9A45C", "Dorado", "Adornos y esferas"], ["#0F3B2E", "Verde oscuro", "Tarima y follaje"], ["#FFE3A3", "Blanco cálido", "Iluminación"]],
+  "nota": "Muestras de color aproximadas. El rojo de referencia del deck es Red Silk 351516."
+ },
+ "starbucks": {
+  "eyebrow": "Plaza Starbucks",
+  "titulo_html": "Un túnel de luz <em>hacia el árbol</em>",
+  "texto": "Aprovechando los arcos de la plaza, un túnel de luz guía a los visitantes, por ambos lados, hasta el túnel del árbol. El pasillo que une Plaza Starbucks con Plaza Tukis continúa el recorrido.",
+  "claves": ["Túnel de luz en los arcos", "Túnel del árbol", "Acceso por ambos lados", "Pasillo Starbucks → Tukis"]
+ },
+ "familia": {
+  "eyebrow": "Zona familiar",
+  "titulo": "Casa de Santa y Plaza Tukis",
+  "santa": "La Casa de Santa tiene su propia ambientación interior y es una parada clave del recorrido en Escazú.",
+  "tukis": "Plaza Tukis se convierte en el espacio de juego de la temporada, con un ball pit semicircular y una guirnalda iluminada en todo su perímetro.",
+  "datos": [["158 m²", "Ball pit en forma semicircular"], ["360°", "Guirnalda en todo el perímetro de la plaza"], ["7 cm", "Esferas plateadas y rojas en la guirnalda"], ["Cálida", "Iluminación en blanco cálido"]]
+ },
+ "brunos": {
+  "eyebrow": "Plaza Brunos",
+  "titulo_html": "La escena <em>protagonista</em>",
+  "texto": "Un árbol de 7 metros en blanco y rojo, un trineo blanco con plateado y un desfile de soldados, regalos y escaleras espejadas. La tarima verde oscuro y el trineo llevan el logo de Kolbi.",
+  "datos": [["7 m", "Árbol con decoración blanca y roja"], ["30", "Regalos de 40, 50 y 60 cm"], ["16", "Árboles de ambientación de 2 a 3 m"], ["80", "Extensiones de micro luces LED"]],
+  "piezas": [
+   ["Trineo", "2,90 × 1,55 × 1,35 m, blanco con plateado, logo Kolbi"],
+   ["Tarima", "Estructura verde oscuro con logo Kolbi"],
+   ["Soldados de 1,70 m", "6 de pie y 1 con carretilla de regalos"],
+   ["Soldados de 1,30 m", "4 con regalo en la mano"],
+   ["Pareja de soldados", "Con esfera, uno sobre los hombros del otro"],
+   ["Escalera espejada", "5 m, con 2 soldados de 1,30 m"],
+   ["Escaleras", "2 de 2 m, con soldado de 1,30 m"],
+   ["Stand", "4,50 × 4,00 m"],
+   ["Bancas", "8 modernas de fibra de vidrio plateada"]
+  ]
+ },
+ "escazu": {
+  "eyebrow": "Pasillos y plazas",
+  "titulo": "Cada tramo de Escazú tiene su propia escena",
   "items": [
-   {"titulo": "Destino navideño", "texto": "Consolidar a Multiplaza como la referencia de la Navidad en la región."},
-   {"titulo": "Momentos compartidos", "texto": "Crear experiencias que reúnan a las familias y se cuenten después."},
-   {"titulo": "Visitas y permanencia", "texto": "Atraer más visitas y alargar cada estadía, con beneficio directo para los locatarios."}
+   ["Pasillo Quinta Etapa", "Ambientación de pasillo; el deck presenta la opción 1.", "guirnalda"],
+   ["Plaza Siman", "Plaza decorada según la propuesta visual del deck.", "estrella"],
+   ["Pasillo BCR – Vértigo", "18 adornos blanco con dorado y 18 esferas plateadas y doradas.", "esferas"],
+   ["Plaza Honor", "Un diseño que se repite en Plaza Old Navy de Curridabat.", "copo"]
   ]
  },
- "experiencias": {
-  "eyebrow": "Las experiencias",
-  "titulo_html": "Momentos que <em>brillan</em>",
-  "items": [
-   {"titulo": "El gran encendido", "texto": "La ceremonia que abre la temporada con una instalación de luz monumental."},
-   {"titulo": "La aldea", "texto": "Un recorrido inmersivo, lleno de detalles, para vivir en familia."},
-   {"titulo": "Escenario de luz", "texto": "Coros, música en vivo y presentaciones que llenan de celebración los fines de semana."},
-   {"titulo": "Encuentro con Santa", "texto": "Cartas, fotos y sorpresas en un espacio pensado para los más pequeños."}
-  ]
+ "curridabat": {
+  "eyebrow": "Curridabat",
+  "titulo_html": "Un cielo de <em>cables de luz</em>",
+  "texto": "Curridabat retoma lo mejor de Escazú: Plaza Cinemark y Plaza Kolbi son espejo de Escazú, y Plaza Old Navy es espejo de Plaza Honor. La pieza nueva es Plaza Santo Katrin, cubierta por un cielo de cables.",
+  "espejos": [["Plaza Cinemark", "Espejo de Escazú"], ["Plaza Kolbi", "Espejo de Escazú"], ["Plaza Old Navy", "Espejo de Plaza Honor"]],
+  "katrin": [["4 × 22 m", "Área de Plaza Santo Katrin"], ["19", "Cables de lado a lado"], ["1", "Cable central de tres fachadas"], ["Cuadrícula", "De cables frente a Koaj"]]
  },
- "decoracion": {
-  "eyebrow": "Identidad visual",
-  "titulo": "Un bosque de luz y oro",
-  "texto": "Verdes profundos, dorados champán y destellos rojo vino. Materiales nobles, miles de luces cálidas y piezas protagonistas que invitan a detenerse, mirar hacia arriba y tomar la foto de la temporada.",
-  "claves": ["Dorados cálidos", "Luz que envuelve", "Materiales nobles", "Piezas protagonistas"]
+ "reebok": {
+  "eyebrow": "Plaza Reebok",
+  "titulo": "Árboles de espejo",
+  "texto": "Una instalación de árboles de espejo sobre una estructura de borde cuadrado, con la base llena de esferas y bancas para detenerse y tomar la foto.",
+  "claves": ["Árboles de espejo", "Estructura de borde cuadrado", "4 bancas modernas", "Esferas de 20 cm en la base"],
+  "nota": "El montaje requiere montacargas."
  },
- "calendario": {
-  "eyebrow": "La temporada",
-  "titulo": "Cuatro momentos, una misma luz",
-  "fases": [
-   {"etiqueta": "Noviembre", "titulo": "El encendido", "texto": "Lanzamiento y ceremonia de apertura; la expectativa empieza en redes."},
-   {"etiqueta": "Diciembre · 1ª quincena", "titulo": "Descubrimiento", "texto": "Todas las experiencias abiertas y agenda de fin de semana."},
-   {"etiqueta": "Diciembre · 2ª quincena", "titulo": "La gran celebración", "texto": "Programación especial hasta Nochebuena, el punto más alto."},
-   {"etiqueta": "Enero", "titulo": "Cierre y balance", "texto": "Medición de resultados y aprendizajes para la próxima temporada."}
-  ]
- },
- "medicion": {
-  "eyebrow": "Resultados",
-  "titulo": "Cómo mediremos el impacto",
-  "items": [
-   {"titulo": "Afluencia", "texto": "Visitas, circulación y permanencia frente a la temporada anterior."},
-   {"titulo": "Ventas", "texto": "Desempeño de locatarios y ticket promedio durante la campaña."},
-   {"titulo": "Conversación", "texto": "Alcance, menciones y contenido que comparten los visitantes."},
-   {"titulo": "Participación", "texto": "Asistencia e interacción en cada experiencia y activación."}
-  ]
+ "cifras": {
+  "eyebrow": "En cifras",
+  "titulo": "La propuesta, en números",
+  "items": [["158 m²", "de ball pit en Plaza Tukis"], ["7 m", "de altura del árbol de Plaza Brunos"], ["80", "extensiones de micro luces LED"], ["30", "regalos gigantes"], ["19", "cables de luz en Santo Katrin"], ["36", "adornos y esferas en el pasillo BCR – Vértigo"]]
  },
  "cierre": {
-  "titulo": "Encendamos juntos esta Navidad",
-  "texto": "Una temporada para volver, compartir y recordar. Todo está listo para que Multiplaza brille como nunca.",
+  "eyebrow": "Siguiente paso",
+  "titulo": "Encendamos juntos la Navidad 2026",
+  "texto": "Las zonas, las piezas y las medidas están definidas. Conversemos los siguientes pasos: opciones por pasillo, patrocinios y montaje.",
   "cta": "Conversemos"
  },
- "pie": {"frase": "Donde la luz nos reúne."}
+ "pie": {"frase": "Navidad 2026 · Escazú y Curridabat", "credito": "Propuesta de decoración navideña 2026 para Multiplaza · Grupo Roble"}
 }

@@ -76,6 +76,15 @@ def render(el):
         mob = []
         if s.get("flex_direction_mobile"):
             mob.append(f"flex-direction:{s['flex_direction_mobile']}")
+        tab = []
+        if s.get("flex_direction_tablet"):
+            tab.append(f"flex-direction:{s['flex_direction_tablet']}")
+        if "width_tablet" in s:
+            tab.append(f"width:{s['width_tablet']['size']}%")
+        if "padding_tablet" in s:
+            tab.append(f"padding:{box(s['padding_tablet'])}")
+        if tab:
+            css.append(f"@media(max-width:1024px){{{sel}{{{';'.join(tab)}}}}}")
         if "width_mobile" in s:
             mob.append(f"width:{s['width_mobile']['size']}%")
         if "padding_mobile" in s:
@@ -123,11 +132,29 @@ def render(el):
 
 
 if __name__ == "__main__":
-    data = json.loads((HERE / "page-elementor-data.json").read_text())
+    raw = (HERE / "page-elementor-data.json").read_text()
+    # sin acceso al sitio desde aquí: las fotos se sustituyen por marcadores locales del mismo tamaño
+    import hashlib
+    from PIL import Image, ImageDraw, ImageFilter
+    (HERE / "preview/img").mkdir(parents=True, exist_ok=True)
+    for name in set(re.findall(r"2026/09/(nm-[\w.-]+?\.jpg)", raw)):
+        out = HERE / "preview/img" / name
+        if not out.exists():
+            m = re.search(r"-(\d+)x(\d+)\.jpg$", name)
+            w, h = (int(m.group(1)), int(m.group(2))) if m else (1920, 1280)
+            hsh = hashlib.md5(name.split("-")[1].encode()).digest()
+            im = Image.new("RGB", (w // 4, h // 4), (20 + hsh[0] % 40, 50 + hsh[1] % 50, 40 + hsh[2] % 30))
+            d = ImageDraw.Draw(im)
+            for i in range(40):
+                x, y, r = hsh[i % 16] * 7 % (w // 4), hsh[(i + 5) % 16] * 11 % (h // 4), 6 + i % 20
+                d.ellipse([x - r, y - r, x + r, y + r], fill=(230, 190 - i % 3 * 40, 120 + i % 2 * 60))
+            im.filter(ImageFilter.GaussianBlur(3)).resize((w, h)).save(out, quality=70)
+    raw = raw.replace("https://lindsaymeneses.com/wp-content/uploads/2026/09/", "img/")
+    data = json.loads(raw)
     body = "".join(render(el) for el in data)
     page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Vista previa · Navidad Multiplaza 2026</title>
-<link href="fonts/fonts.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <style>body{{margin:0}}*{{box-sizing:border-box}}em{{font-style:italic}}{''.join(css)}</style></head>
 <body><div class="elementor">{body}</div></body></html>"""
     (HERE / "preview").mkdir(exist_ok=True)

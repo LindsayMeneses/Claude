@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "n000009",
+   "id": "n00000a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -16,27 +16,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -45,23 +53,12 @@
      "column": "26",
      "row": "26"
     },
-    "background_background": "gradient",
-    "__globals__": {},
-    "css_classes": "nm-slide nm-hero",
-    "flex_align_items": "center",
-    "_element_id": "inicio",
-    "background_color": "#0A241C",
-    "background_color_b": "#15523F",
-    "background_gradient_type": "radial",
-    "background_gradient_position": "center center",
-    "background_color_stop": {
-     "unit": "%",
-     "size": 30
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=noche"
     },
-    "background_color_b_stop": {
-     "unit": "%",
-     "size": 130
-    }
+    "css_classes": "nm-slide nm-hero nm-has-bg nm-dark",
+    "_element_id": "inicio"
    },
    "elements": [
     {
@@ -70,7 +67,7 @@
      "widgetType": "html",
      "isInner": false,
      "settings": {
-      "html": "<canvas class=\"nm-snow\" aria-hidden=\"true\"></canvas><style>html{scroll-behavior:smooth}body{background:#0A241C}.nm-slide{min-height:100vh;min-height:100svh;position:relative}.nm-hero{overflow:hidden}.nm-hero>*>*:not(.nm-fx){position:relative;z-index:1}.nm-fx{position:absolute!important;inset:0;margin:0!important;pointer-events:none;z-index:0;width:100%!important;max-width:none!important}.nm-fx .elementor-widget-container{height:100%}.nm-snow{width:100%;height:100%;display:block}.nm-hero::after{content:\"\";position:absolute;inset:22px;border:1px solid rgba(201,164,92,.28);border-radius:4px;pointer-events:none;z-index:1}.nm-hero h1 em,.nm-shine em{background:linear-gradient(100deg,#C9A45C 20%,#FFF3D1 40%,#EBD9AE 50%,#C9A45C 70%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:nm-shine 6s ease-in-out infinite;padding-right:.06em}@keyframes nm-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}.nm-eyebrow .elementor-heading-title::before{content:\"\";display:inline-block;width:32px;height:1px;background:currentColor;vertical-align:middle;margin:0 14px 3px 0;opacity:.8}.nm-eyebrow.nm-c .elementor-heading-title::after{content:\"\";display:inline-block;width:32px;height:1px;background:currentColor;vertical-align:middle;margin:0 0 3px 14px;opacity:.8}.nm-quote .elementor-heading-title{border-left:1px solid #C9A45C;padding-left:22px}.nm-card{border:1px solid rgba(201,164,92,.28);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .5s}.nm-card:hover{transform:translateY(-6px);border-color:rgba(201,164,92,.7);box-shadow:0 28px 60px -30px rgba(10,36,28,.55)}.nm-glass{background:rgba(255,255,255,.035)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}.nm-phase{border:0!important;border-top:1px solid rgba(201,164,92,.55)!important;border-radius:0!important;background:transparent!important;position:relative}.nm-phase::before{content:\"\";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:#C9A45C;box-shadow:0 0 0 5px rgba(201,164,92,.18)}.nm-phase:hover{transform:none;box-shadow:none}.nm-art{position:relative;border-radius:16px;overflow:hidden;background:#0F3B2E;height:var(--h,220px)}.nm-art svg{position:absolute;inset:0;width:100%;height:100%;display:block}.nm-art.tall{--h:520px}.nm-art.tile{--h:210px}.nm-art.card{--h:180px}@media(max-width:767px){.nm-art.tall{--h:300px}.nm-art.tile{--h:130px}.nm-art.card{--h:170px}}.nm-tw{animation:nm-tw 3s ease-in-out infinite}@keyframes nm-tw{0%,100%{opacity:.35}50%{opacity:1}}.nm-spin{animation:nm-spin 5s ease-in-out infinite}@keyframes nm-spin{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.08)}}.nm-spin-slow{animation:nm-rot 60s linear infinite}@keyframes nm-rot{to{transform:rotate(360deg)}}.nm-sway{animation:nm-sway 5s ease-in-out infinite}@keyframes nm-sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}.nm-flow{animation:nm-flow 4s ease-in-out infinite alternate}@keyframes nm-flow{to{transform:translateY(6px)}}.nm-line{transform-origin:left}.nm-c .elementor-divider,.nm-line.nm-c{transform-origin:center}html.nm-js .nm-rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}html.nm-js .nm-slide.is-on .nm-rv{opacity:1;transform:none}html.nm-js .nm-line.nm-rv{transform:scaleX(0)}html.nm-js .nm-slide.is-on .nm-line.nm-rv{transform:scaleX(1)}.elementor-editor-active .nm-rv{opacity:1!important;transform:none!important}.nm-tour{position:fixed;inset:0;pointer-events:none;z-index:9990;font-family:'Manrope',sans-serif}.nm-bar{position:absolute;top:0;left:0;right:0;height:2px;background:rgba(201,164,92,.15)}.nm-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#C9A45C,#EBD9AE);transition:width .8s cubic-bezier(.2,.7,.2,1)}.nm-brand{position:absolute;top:22px;left:40px;font:600 11px/1 'Manrope',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#EBD9AE;opacity:.85;mix-blend-mode:difference}.nm-brand b{font-family:'Fraunces',serif;font-weight:600;letter-spacing:.02em;text-transform:none;font-size:15px;margin-right:10px;color:#fff}.nm-dots{position:absolute;right:28px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:14px;pointer-events:auto}.nm-dots button{all:unset;cursor:pointer;width:8px;height:8px;border-radius:50%;border:1px solid #C9A45C;transition:all .4s;position:relative}.nm-dots button.on{background:#C9A45C;transform:scale(1.35);box-shadow:0 0 0 4px rgba(201,164,92,.18)}.nm-dots button span{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 10px 'Manrope',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#C9A45C;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(10,36,28,.85);padding:6px 10px;border-radius:3px}.nm-dots button:hover span,.nm-dots button:focus-visible span{opacity:1}.nm-foot{position:absolute;left:40px;right:40px;bottom:26px;display:flex;align-items:center;justify-content:space-between}.nm-count{font:600 11px 'Manrope',sans-serif;letter-spacing:.25em;color:#C9A45C;mix-blend-mode:difference}.nm-count b{font-family:'Fraunces',serif;font-size:22px;letter-spacing:0;color:#EBD9AE;margin-right:6px}.nm-next{all:unset;pointer-events:auto;cursor:pointer;display:flex;align-items:center;gap:14px;font:600 11px 'Manrope',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#0A241C;background:#C9A45C;border-radius:999px;padding:13px 14px 13px 22px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5);transition:background .3s,transform .3s}.nm-next:hover{background:#EBD9AE;transform:translateY(-2px)}.nm-next:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}.nm-next i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#0A241C;color:#EBD9AE;font-style:normal;font-size:14px;transition:transform .4s}.nm-next.back i{transform:rotate(-90deg)}.nm-hint{position:absolute;bottom:88px;left:50%;transform:translateX(-50%);font:600 10px 'Manrope',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#EBD9AE;opacity:.8;transition:opacity .6s;animation:nm-hint 2.4s ease-in-out infinite}.nm-hint.off{opacity:0}@keyframes nm-hint{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-6px)}}@media(max-width:767px){.nm-dots,.nm-brand{display:none}.nm-foot{left:16px;right:16px;bottom:16px}.nm-hint{bottom:78px;white-space:nowrap}.nm-hero::after{inset:10px}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nm-hero h1 em,.nm-tw,.nm-spin,.nm-spin-slow,.nm-sway,.nm-flow,.nm-hint{animation:none}html.nm-js .nm-rv{transition:none;opacity:1;transform:none}.nm-card,.nm-card:hover{transition:none;transform:none}.nm-snow{display:none}}.nm-keys{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}.nm-keys li{font:600 12px/1.4 'Manrope',sans-serif;letter-spacing:.18em;text-transform:uppercase;padding-left:18px;position:relative}.nm-keys li::before{content:\"\";position:absolute;left:0;top:.45em;width:7px;height:7px;background:#C9A45C;transform:rotate(45deg)}.nm-footer a{text-decoration:none;border-bottom:1px solid rgba(201,164,92,.5)}.nm-art-w{flex:1 1 0;min-width:0;width:100%}.nm-shine em{background-image:linear-gradient(100deg,#8A6A2F 15%,#C9A45C 40%,#E4C57E 50%,#8A6A2F 75%)}@media(max-width:767px){.nm-foot{left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(10,36,28,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid rgba(201,164,92,.25)}.nm-next{padding:9px 10px 9px 16px;font-size:10px}.nm-next i{width:24px;height:24px}.nm-count{mix-blend-mode:normal}.nm-slide{padding-bottom:84px!important}.nm-hint{bottom:70px}}</style><script>(function () {\nvar GOLD = '#C9A45C', GOLD_L = '#EBD9AE', NS = 'http://www.w3.org/2000/svg';\nfunction rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed);\nt = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }\nfunction u(r, a, b) { return a + r() * (b - a); }\nfunction f(n) { return Math.round(n * 10) / 10; }\nvar DEFS = '<defs>' +\n'<radialGradient id=\"nmBg\" cx=\"50%\" cy=\"38%\" r=\"75%\"><stop offset=\"0\" stop-color=\"#15523F\"/><stop offset=\".55\" stop-color=\"#0F3B2E\"/><stop offset=\"1\" stop-color=\"#071A14\"/></radialGradient>' +\n'<linearGradient id=\"nmGold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F6E7BE\"/><stop offset=\".45\" stop-color=\"#C9A45C\"/><stop offset=\"1\" stop-color=\"#8A6A2F\"/></linearGradient>' +\n'<radialGradient id=\"nmOrb\" cx=\"35%\" cy=\"30%\" r=\"70%\"><stop offset=\"0\" stop-color=\"#FFF6DC\"/><stop offset=\".25\" stop-color=\"#E4C57E\"/><stop offset=\".7\" stop-color=\"#B08A43\"/><stop offset=\"1\" stop-color=\"#6E5220\"/></radialGradient>' +\n'<radialGradient id=\"nmOrbR\" cx=\"35%\" cy=\"30%\" r=\"70%\"><stop offset=\"0\" stop-color=\"#FF8A9B\"/><stop offset=\".3\" stop-color=\"#C21D3C\"/><stop offset=\".75\" stop-color=\"#7A0C21\"/><stop offset=\"1\" stop-color=\"#3E0511\"/></radialGradient>' +\n'<radialGradient id=\"nmOrbG\" cx=\"35%\" cy=\"30%\" r=\"70%\"><stop offset=\"0\" stop-color=\"#7FC4A4\"/><stop offset=\".3\" stop-color=\"#1F6B51\"/><stop offset=\".75\" stop-color=\"#0F3B2E\"/><stop offset=\"1\" stop-color=\"#051510\"/></radialGradient>' +\n'<radialGradient id=\"nmWarm\" cx=\"50%\" cy=\"50%\" r=\"50%\"><stop offset=\"0\" stop-color=\"#FFE9B0\" stop-opacity=\".95\"/><stop offset=\"1\" stop-color=\"#FFB950\" stop-opacity=\"0\"/></radialGradient>' +\n'<filter id=\"nmGlow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"2.2\" result=\"b\"/><feMerge><feMergeNode in=\"b\"/><feMergeNode in=\"SourceGraphic\"/></feMerge></filter>' +\n'<filter id=\"nmBlur\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"6\"/></filter></defs>';\nfunction bokeh(r, n, cols) { var s = ''; cols = cols || [GOLD_L, GOLD, '#fff'];\nfor (var i = 0; i < n; i++) s += '<circle cx=\"' + f(u(r, 0, 400)) + '\" cy=\"' + f(u(r, 0, 300)) + '\" r=\"' + f(u(r, 6, 22)) +\n'\" fill=\"' + cols[Math.floor(r() * cols.length)] + '\" opacity=\"' + f(u(r, .06, .2) * 100) / 100 + '\" filter=\"url(#nmBlur)\"/>';\nreturn s; }\nfunction stars(r, n, ymax) { var s = ''; ymax = ymax || 300;\nfor (var i = 0; i < n; i++) s += '<circle class=\"nm-tw\" cx=\"' + f(u(r, 0, 400)) + '\" cy=\"' + f(u(r, 0, ymax)) + '\" r=\"' + f(u(r, .5, 1.4)) +\n'\" fill=\"#fff\" opacity=\"' + f(u(r, .3, .9)) + '\" style=\"animation-delay:' + f(u(r, 0, 3)) + 's\"/>';\nreturn s; }\nfunction star(cx, cy, R, p, inner) { var pts = []; p = p || 8; inner = inner || .42;\nfor (var i = 0; i < p * 2; i++) { var a = Math.PI * i / p - Math.PI / 2, rr = i % 2 ? R * inner : R;\npts.push(f(cx + rr * Math.cos(a)) + ',' + f(cy + rr * Math.sin(a))); }\nreturn pts.join(' '); }\nvar ART = {\narbol: function (r) {\nvar s = bokeh(r, 14) + stars(r, 30), d = '', top = 58, bottom = 262, cx = 200, half = 92, n = 170;\nfor (var i = 0; i < n; i++) { var t = i / n, y = top + t * (bottom - top), a = t * 14 * Math.PI, x = cx + t * half * Math.cos(a),\ndp = (Math.sin(a) + 1) / 2;\nd += '<circle class=\"nm-tw\" cx=\"' + f(x) + '\" cy=\"' + f(y) + '\" r=\"' + f(.9 + dp * 1.8) + '\" fill=\"' + (dp > .5 ? GOLD_L : GOLD) +\n'\" opacity=\"' + f(.35 + dp * .65) + '\" style=\"animation-delay:' + f((i % 17) * .18) + 's\"/>'; }\nreturn s + '<g filter=\"url(#nmGlow)\">' + d + '</g><ellipse cx=\"200\" cy=\"268\" rx=\"110\" ry=\"9\" fill=\"url(#nmWarm)\" opacity=\".35\"/>' +\n'<circle cx=\"200\" cy=\"50\" r=\"30\" fill=\"url(#nmWarm)\" opacity=\".5\"/><g class=\"nm-spin\" style=\"transform-origin:200px 50px\" filter=\"url(#nmGlow)\">' +\n'<polygon points=\"' + star(200, 50, 15) + '\" fill=\"url(#nmGold)\"/></g>';\n},\nvilla: function (r) {\nvar s = stars(r, 40, 170) + bokeh(r, 8) + '<path d=\"M0 238 Q100 222 200 232 T400 226 V300 H0Z\" fill=\"#F6F1E6\" opacity=\".92\"/>';\n[[40, 70, 88, '#0B2C22'], [112, 62, 104, '#123F31'], [178, 84, 120, '#0B2C22'], [262, 64, 98, '#123F31'], [326, 58, 84, '#0B2C22']].forEach(function (h) {\nvar x = h[0], w = h[1], base = 236, top = base - h[2], roof = top - w * .45;\ns += '<path d=\"M' + x + ' ' + base + ' V' + top + ' L' + f(x + w / 2) + ' ' + f(roof) + ' L' + (x + w) + ' ' + top + ' V' + base + 'Z\" fill=\"' + h[3] + '\"/>' +\n'<path d=\"M' + (x - 4) + ' ' + (top + 2) + ' L' + f(x + w / 2) + ' ' + f(roof - 3) + ' L' + (x + w + 4) + ' ' + (top + 2) +\n'\" fill=\"none\" stroke=\"#F6F1E6\" stroke-width=\"5\" stroke-linecap=\"round\" opacity=\".9\"/>';\nfor (var wy = top + 14; wy < base - 20; wy += 28) [x + w * .22, x + w * .6].forEach(function (wx) {\ns += '<circle cx=\"' + f(wx + w * .09) + '\" cy=\"' + (wy + 7) + '\" r=\"14\" fill=\"url(#nmWarm)\" opacity=\".45\"/>' +\n'<rect class=\"nm-tw\" x=\"' + f(wx) + '\" y=\"' + wy + '\" width=\"' + f(w * .18) + '\" height=\"14\" rx=\"2\" fill=\"#FFD98A\" style=\"animation-delay:' + f(u(r, 0, 3)) + 's\"/>'; });\n});\nvar line = '', lights = '';\nfor (var i = 0; i < 16; i++) { var lx = 20 + i * 24, ly = f(150 + 8 * Math.sin(i * .9)); line += (i ? ' L' : 'M') + lx + ' ' + ly;\nlights += '<circle class=\"nm-tw\" cx=\"' + lx + '\" cy=\"' + ly + '\" r=\"2.2\" fill=\"' + (i % 2 ? GOLD_L : '#FF9AA8') + '\" style=\"animation-delay:' + f(i * .2) + 's\"/>'; }\nreturn s + '<path d=\"' + line + '\" fill=\"none\" stroke=\"#0B2C22\" stroke-width=\".8\" opacity=\".6\"/><g filter=\"url(#nmGlow)\">' + lights + '</g>';\n},\nmusica: function (r) {\nvar s = bokeh(r, 16) + stars(r, 20);\nfor (var i = 0; i < 7; i++) { var y = 110 + i * 14, a = 40 - i * 3;\ns += '<path class=\"nm-flow\" d=\"M-10 ' + y + ' C 90 ' + (y - a) + ' 150 ' + (y + a) + ' 210 ' + y + ' S 330 ' + (y - a) + ' 410 ' + (y + 6) +\n'\" fill=\"none\" stroke=\"url(#nmGold)\" stroke-width=\"' + f(2.2 - i * .22) + '\" opacity=\"' + f(.95 - i * .1) + '\" style=\"animation-delay:' + f(i * .25) + 's\"/>'; }\n[[120, 92, 1], [238, 150, .8], [300, 96, .9]].forEach(function (n) {\ns += '<g transform=\"translate(' + n[0] + ' ' + n[1] + ') scale(' + n[2] + ')\" fill=\"url(#nmGold)\" filter=\"url(#nmGlow)\">' +\n'<ellipse cx=\"0\" cy=\"22\" rx=\"7\" ry=\"5\" transform=\"rotate(-20 0 22)\"/><rect x=\"5\" y=\"-12\" width=\"2\" height=\"34\"/><path d=\"M7 -12 Q20 -6 16 6 Q14 -2 7 -2Z\"/></g>'; });\nreturn s;\n},\nregalo: function (r) {\nvar s = bokeh(r, 14) + stars(r, 24) + '<ellipse cx=\"200\" cy=\"262\" rx=\"120\" ry=\"10\" fill=\"#000\" opacity=\".25\"/>' +\n'<rect x=\"130\" y=\"140\" width=\"140\" height=\"118\" rx=\"6\" fill=\"url(#nmOrbR)\"/><rect x=\"118\" y=\"118\" width=\"164\" height=\"32\" rx=\"6\" fill=\"#9B1530\"/>' +\n'<rect x=\"190\" y=\"118\" width=\"20\" height=\"140\" fill=\"url(#nmGold)\"/><rect x=\"118\" y=\"126\" width=\"164\" height=\"12\" fill=\"url(#nmGold)\" opacity=\".95\"/>' +\n'<path d=\"M200 120 C170 80 140 92 150 108 C158 122 184 122 200 120Z\" fill=\"url(#nmGold)\"/><path d=\"M200 120 C230 80 260 92 250 108 C242 122 216 122 200 120Z\" fill=\"url(#nmGold)\"/>' +\n'<circle cx=\"200\" cy=\"119\" r=\"8\" fill=\"#F6E7BE\"/>';\n[[110, 80, 7], [292, 70, 9], [320, 150, 5], [84, 170, 6]].forEach(function (p) {\ns += '<g class=\"nm-spin\" style=\"transform-origin:' + p[0] + 'px ' + p[1] + 'px\" filter=\"url(#nmGlow)\"><polygon points=\"' + star(p[0], p[1], p[2], 4, .3) + '\" fill=\"' + GOLD_L + '\"/></g>'; });\nreturn s;\n},\nesferas: function (r) {\nvar s = bokeh(r, 18);\n[[120, 170, 46, 'nmOrb', 0], [212, 128, 38, 'nmOrbR', .6], [292, 186, 42, 'nmOrbG', 1.2]].forEach(function (o) {\nvar x = o[0], y = o[1], R = o[2], hx = f(x - R * .35), hy = f(y - R * .4);\ns += '<g class=\"nm-sway\" style=\"transform-origin:' + x + 'px 0px;animation-delay:' + o[4] + 's\"><line x1=\"' + x + '\" y1=\"0\" x2=\"' + x + '\" y2=\"' + (y - R - 8) + '\" stroke=\"' + GOLD + '\" stroke-width=\"1\"/>' +\n'<rect x=\"' + (x - 8) + '\" y=\"' + (y - R - 10) + '\" width=\"16\" height=\"10\" rx=\"2\" fill=\"url(#nmGold)\"/><circle cx=\"' + x + '\" cy=\"' + y + '\" r=\"' + R + '\" fill=\"url(#' + o[3] + ')\"/>' +\n'<path d=\"M' + f(x - R * .8) + ' ' + (y - 4) + ' Q' + x + ' ' + (y + 10) + ' ' + f(x + R * .8) + ' ' + (y - 4) + '\" fill=\"none\" stroke=\"' + GOLD_L + '\" stroke-width=\"1.2\" opacity=\".7\"/>' +\n'<ellipse cx=\"' + hx + '\" cy=\"' + hy + '\" rx=\"' + f(R * .22) + '\" ry=\"' + f(R * .12) + '\" fill=\"#fff\" opacity=\".55\" transform=\"rotate(-30 ' + hx + ' ' + hy + ')\"/></g>'; });\nreturn s;\n},\ncopo: function (r) {\nvar s = bokeh(r, 12) + stars(r, 30), arms = '';\nfor (var k = 0; k < 6; k++) arms += '<g transform=\"rotate(' + k * 60 + ' 200 150)\"><line x1=\"200\" y1=\"150\" x2=\"200\" y2=\"62\"/>' +\n'<polyline points=\"184,96 200,80 216,96\" fill=\"none\"/><polyline points=\"188,118 200,106 212,118\" fill=\"none\"/><circle cx=\"200\" cy=\"58\" r=\"4\"/></g>';\nreturn s + '<g class=\"nm-spin-slow\" style=\"transform-origin:200px 150px\" stroke=\"#D9B970\" stroke-width=\"2.2\" stroke-linecap=\"round\" fill=\"' + GOLD_L + '\" filter=\"url(#nmGlow)\">' +\narms + '<polygon points=\"' + star(200, 150, 14, 6, .55) + '\" fill=\"url(#nmGold)\" stroke=\"none\"/></g>';\n},\nguirnalda: function (r) {\nvar s = bokeh(r, 20, [GOLD_L, '#FFB950', '#fff']) + stars(r, 18);\n[[70, 60], [150, 50], [225, 40]].forEach(function (row, ri) {\nvar d = '', i = 0;\nfor (var x = -10; x <= 410; x += 10, i++) { var y = f(row[0] + row[1] * Math.sin(Math.PI * x / 400)); d += (i ? ' L' : 'M') + x + ' ' + y;\nif (i % 3 === 1) s += '<circle cx=\"' + x + '\" cy=\"' + f(+y + 6) + '\" r=\"10\" fill=\"url(#nmWarm)\" opacity=\".7\"/><circle class=\"nm-tw\" cx=\"' + x + '\" cy=\"' + f(+y + 6) +\n'\" r=\"3.2\" fill=\"#FFE3A3\" style=\"animation-delay:' + f(((i + ri) * .23) % 3) + 's\"/>'; }\ns = '<path d=\"' + d + '\" fill=\"none\" stroke=\"#1F6B51\" stroke-width=\"1.2\" opacity=\".8\"/>' + s; });\nreturn s;\n},\nestrella: function (r) {\nvar s = bokeh(r, 16) + stars(r, 40), rays = '';\nfor (var a = 0; a < 360; a += 15) rays += '<line x1=\"200\" y1=\"150\" x2=\"' + f(200 + 150 * Math.cos(a * Math.PI / 180)) + '\" y2=\"' + f(150 + 150 * Math.sin(a * Math.PI / 180)) + '\"/>';\nreturn s + '<g stroke=\"' + GOLD_L + '\" stroke-width=\".6\" opacity=\".35\">' + rays + '</g><circle cx=\"200\" cy=\"150\" r=\"70\" fill=\"url(#nmWarm)\" opacity=\".45\"/>' +\n'<g class=\"nm-spin-slow\" style=\"transform-origin:200px 150px\" filter=\"url(#nmGlow)\"><polygon points=\"' + star(200, 150, 58, 8, .4) + '\" fill=\"url(#nmGold)\"/>' +\n'<polygon points=\"' + star(200, 150, 30, 8, .4) + '\" fill=\"#F6E7BE\" opacity=\".7\"/></g>';\n}\n};\nvar SEEDS = { arbol: 7, villa: 11, musica: 5, regalo: 3, esferas: 21, copo: 9, guirnalda: 4, estrella: 13 };\nfunction paint() {\nif (!document.getElementById('nmArtDefs')) {\nvar holder = document.createElementNS(NS, 'svg');\nholder.setAttribute('id', 'nmArtDefs'); holder.setAttribute('width', '0'); holder.setAttribute('height', '0');\nholder.setAttribute('aria-hidden', 'true'); holder.style.position = 'absolute';\nholder.innerHTML = DEFS; document.body.appendChild(holder);\n}\ndocument.querySelectorAll('.nm-art[data-art]:not([data-done])').forEach(function (el) {\nvar k = el.getAttribute('data-art'); if (!ART[k]) return;\nel.innerHTML = '<svg viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" role=\"img\" aria-label=\"' +\n(el.getAttribute('data-label') || '') + '\"><rect width=\"400\" height=\"300\" fill=\"url(#nmBg)\"/>' + ART[k](rng(SEEDS[k])) + '</svg>';\nel.setAttribute('data-done', '1');\n});\n}\nif (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', paint); else paint();\nwindow.nmPaintArt = paint;\n})();\n(function () {\nvar root = document.documentElement;\nif (document.body && document.body.classList.contains('elementor-editor-active')) return;\nroot.classList.add('nm-js');\nvar reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;\nfunction init() {\nvar slides = [].slice.call(document.querySelectorAll('.nm-slide'));\nif (!slides.length) return;\nslides.forEach(function (s) {\nvar items = [].slice.call(s.querySelectorAll('.elementor-widget, .nm-card')).filter(function (el) {\nif (el.classList.contains('nm-fx')) return false;\nvar p = el.parentElement.closest('.nm-card');\nreturn !p || !s.contains(p);\n});\nitems.forEach(function (el, i) { el.classList.add('nm-rv'); el.style.transitionDelay = Math.min(i * 90, 900) + 'ms'; });\n});\nvar ui = document.createElement('div');\nui.className = 'nm-tour';\nui.innerHTML = '<div class=\"nm-bar\"><i></i></div><div class=\"nm-brand\"><b>Multiplaza</b>Navidad 2026</div><nav class=\"nm-dots\" aria-label=\"Diapositivas\"></nav>' +\n'<div class=\"nm-hint\">Haz clic para comenzar el recorrido</div>' +\n'<div class=\"nm-foot\"><div class=\"nm-count\" aria-live=\"polite\"></div><button class=\"nm-next\" type=\"button\"><span>Siguiente</span><i aria-hidden=\"true\">→</i></button></div>';\ndocument.body.appendChild(ui);\nvar bar = ui.querySelector('.nm-bar i'), dots = ui.querySelector('.nm-dots'), count = ui.querySelector('.nm-count'),\nnext = ui.querySelector('.nm-next'), label = next.querySelector('span'), hint = ui.querySelector('.nm-hint');\nslides.forEach(function (s, i) {\nvar b = document.createElement('button'), t = titleOf(i);\nb.type = 'button'; b.setAttribute('aria-label', t); b.innerHTML = '<span>' + t + '</span>';\nb.addEventListener('click', function (e) { e.stopPropagation(); go(i); });\ndots.appendChild(b);\n});\nvar cur = 0, started = false;\nfunction titleOf(i) {\nvar s = slides[i]; if (!s) return '';\nvar e = s.querySelector('.nm-eyebrow .elementor-heading-title') || s.querySelector('.elementor-heading-title');\nreturn s.getAttribute('data-nm-title') || (e ? e.textContent.replace(/^[\\d\\s\\u00a0]+/, '').trim() : 'Diapositiva ' + (i + 1));\n}\nfunction pad(n) { return (n < 10 ? '0' : '') + n; }\nfunction paint(i) {\ncur = i;\n[].forEach.call(dots.children, function (d, k) { d.classList.toggle('on', k === i); });\nbar.style.width = ((i + 1) / slides.length * 100) + '%';\ncount.innerHTML = '<b>' + pad(i + 1) + '</b>/ ' + pad(slides.length);\nvar last = i >= slides.length - 1;\nlabel.textContent = last ? 'Volver al inicio' : (i === 0 ? 'Iniciar recorrido' : titleOf(i + 1));\nnext.classList.toggle('back', last);\nnext.style.visibility = i === 0 ? 'hidden' : '';\n}\nfunction go(i) {\ni = Math.max(0, Math.min(slides.length - 1, i));\nif (i > 0 && !started) { started = true; hint.classList.add('off'); }\nvar top = slides[i].getBoundingClientRect().top + window.pageYOffset;\nwindow.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });\npaint(i);\n}\nfunction forward() { go(cur >= slides.length - 1 ? 0 : cur + 1); }\nvar io = new IntersectionObserver(function (es) {\nes.forEach(function (e) {\nif (e.isIntersecting) e.target.classList.add('is-on');\nif (e.isIntersecting && e.intersectionRatio >= .5) paint(slides.indexOf(e.target));\n});\n}, { threshold: [.15, .5] });\nslides.forEach(function (s) { io.observe(s); });\nslides[0].classList.add('is-on');\naddEventListener('scroll', function () { if (window.pageYOffset > 80 && !started) { started = true; hint.classList.add('off'); } }, { passive: true });\nnext.addEventListener('click', function (e) { e.stopPropagation(); forward(); });\ndocument.addEventListener('click', function (e) {\nif (e.defaultPrevented || e.button !== 0) return;\nif (e.target.closest('a,button,input,textarea,select,label,video,[contenteditable],.nm-tour')) return;\nif (String(window.getSelection && window.getSelection()).length) return;\nforward();\n});\ndocument.addEventListener('keydown', function (e) {\nif (e.target.closest && e.target.closest('input,textarea,select,[contenteditable]')) return;\nvar k = e.key;\nif (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || k === ' ' || k === 'Enter') { if (k === 'Enter' && e.target.closest('a,button')) return; e.preventDefault(); forward(); }\nelse if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); go(cur - 1); }\nelse if (k === 'Home') { e.preventDefault(); go(0); }\nelse if (k === 'End') { e.preventDefault(); go(slides.length - 1); }\n});\npaint(0);\n}\nfunction snow() {\nif (reduce) return;\nvar c = document.querySelector('.nm-snow'); if (!c) return;\nvar x = c.getContext('2d'), w, h, d = Math.min(window.devicePixelRatio || 1, 2), f = [];\nfunction size() { w = c.clientWidth; h = c.clientHeight; c.width = w * d; c.height = h * d; x.setTransform(d, 0, 0, d, 0, 0); }\nsize(); addEventListener('resize', size);\nvar n = Math.round(Math.min(120, w / 11));\nfor (var i = 0; i < n; i++) f.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 2.2 + .6, s: Math.random() * .5 + .25,\no: Math.random() * 6.28, g: Math.random() < .25 });\nvar on = true;\nnew IntersectionObserver(function (es) { on = es[0].isIntersecting; if (on) requestAnimationFrame(tick); }).observe(c);\nfunction tick(t) {\nif (!on || document.hidden) return;\nx.clearRect(0, 0, w, h);\nfor (var i = 0; i < f.length; i++) { var p = f[i];\np.y += p.s; p.x += Math.sin(t / 1800 + p.o) * .35; if (p.y > h + 5) { p.y = -5; p.x = Math.random() * w; }\nvar a = p.g ? .55 + .45 * Math.sin(t / 400 + p.o) : .75;\nx.beginPath(); x.arc(p.x, p.y, p.g ? p.r * .9 : p.r, 0, 6.283);\nx.fillStyle = p.g ? 'rgba(235,217,174,' + a + ')' : 'rgba(255,255,255,' + a * .8 + ')';\nx.shadowBlur = p.g ? 8 : 0; x.shadowColor = 'rgba(235,217,174,.9)'; x.fill(); }\nrequestAnimationFrame(tick);\n}\ndocument.addEventListener('visibilitychange', function () { if (!document.hidden) requestAnimationFrame(tick); });\n}\nfunction start() { init(); snow(); }\nif (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();\n})();</script>",
+      "html": "<div class=\"nm-bokeh\" aria-hidden=\"true\"></div><canvas class=\"nm-snow\" aria-hidden=\"true\"></canvas><style>html{scroll-behavior:smooth}body{background:#0A241C;-webkit-font-smoothing:antialiased}.nm-slide{min-height:100vh;min-height:100svh;position:relative}.nm-t .elementor-heading-title{font-weight:400!important;letter-spacing:-.02em!important;line-height:1.06!important}.nm-t em{font-style:italic;font-weight:300}.nm-dark .nm-t em,.nm-shine em{background:linear-gradient(100deg,#C9A45C 10%,#F1DFB0 50%,#C9A45C 90%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.05em}.nm-eyebrow .elementor-heading-title{letter-spacing:.28em!important}.nm-eyebrow .elementor-heading-title::before{content:\"\";display:inline-block;width:36px;height:1px;background:currentColor;vertical-align:middle;margin:0 14px 3px 0;opacity:.7}.nm-eyebrow.nm-c .elementor-heading-title::after{content:\"\";display:inline-block;width:36px;height:1px;background:currentColor;vertical-align:middle;margin:0 0 3px 14px;opacity:.7}.nm-prose p{margin:0 0 14px}.nm-prose strong{font-weight:600;color:#0F3B2E}.nm-note,.nm-note p{font-size:13px!important;line-height:1.5;opacity:.72;margin:0}.nm-has-bg{overflow:hidden}.nm-has-bg>.e-con-inner>*:not(.nm-fx):not(.nm-bgw),.nm-has-bg>*:not(.e-con-inner):not(.nm-fx):not(.nm-bgw){position:relative;z-index:2}.nm-bgw,.nm-fx{position:absolute!important;inset:0;margin:0!important;width:100%!important;max-width:none!important;pointer-events:none}.nm-bgw{z-index:0}.nm-fx{z-index:1}.nm-bgw .elementor-widget-container,.nm-fx .elementor-widget-container{height:100%;position:relative}.nm-ov{position:absolute;inset:0}.nm-ov.left{background:linear-gradient(90deg,rgba(7,24,18,.94) 0%,rgba(7,24,18,.82) 38%,rgba(7,24,18,.35) 72%,rgba(7,24,18,.15) 100%)}.nm-ov.full{background:linear-gradient(180deg,rgba(7,24,18,.55),rgba(7,24,18,.8))}.nm-ov.center{background:radial-gradient(ellipse at 50% 55%,rgba(7,24,18,.45),rgba(7,24,18,.88) 75%)}.nm-ov.blur{background:rgba(7,24,18,.62)}.nm-snow{position:absolute;inset:0;width:100%;height:100%;display:block}.nm-bokeh{position:absolute;inset:0;overflow:hidden;mix-blend-mode:screen}.nm-bokeh span{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,232,180,.55) 0,rgba(255,232,180,.18) 45%,rgba(255,232,180,0) 70%);opacity:var(--o);animation:nm-float var(--d) ease-in-out var(--dl) infinite alternate}@keyframes nm-float{from{transform:translate3d(-16px,12px,0) scale(.94)}to{transform:translate3d(16px,-18px,0) scale(1.06)}}.nm-ph{position:relative;width:100%;height:100%;overflow:hidden;background:#0F3B2E}.nm-kb{width:100%;height:100%;animation:nm-kb 30s ease-in-out infinite alternate;will-change:transform}.nm-ph img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;display:block;border-radius:0!important}@keyframes nm-kb{from{transform:scale(1) translate3d(0,0,0)}to{transform:scale(1.07) translate3d(-1.2%,-1%,0)}}html.nm-js .nm-ph img{opacity:0;filter:blur(18px);transform:scale(1.08);transition:opacity 1.4s ease,filter 2.2s ease,transform 3s cubic-bezier(.2,.7,.2,1)}html.nm-js .is-in .nm-ph img{opacity:1;filter:blur(0);transform:scale(1)}.nm-ph.blur img,html.nm-js .is-in .nm-ph.blur img{filter:blur(22px) saturate(1.1);transform:scale(1.12)}.nm-frame-w{width:100%}.nm-frame{position:relative;margin:0;height:var(--h,540px);isolation:isolate}.nm-frame::after{content:\"\";position:absolute;inset:0;transform:translate(18px,18px);border:1px solid rgba(201,164,92,.65);z-index:-1;pointer-events:none}.nm-frame.tall{--h:560px}.nm-frame.card{--h:250px}.nm-frame.card::after{display:none}.nm-frame.card .nm-kb{animation:none;transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}.nm-card:hover .nm-frame.card .nm-kb{transform:scale(1.05)}.nm-btns{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:8px}.nm-btns.center{justify-content:center}.nm-btn{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:54px;padding:0 32px;border:1px solid #C9A45C;background:#C9A45C;color:#0A241C!important;font:600 12px/1 'Manrope',sans-serif;letter-spacing:.22em;text-transform:uppercase;text-decoration:none!important;transition:background .4s ease,color .4s ease,border-color .4s ease}.nm-btn:hover{background:#EBD9AE;border-color:#EBD9AE}.nm-btn.ghost{background:transparent;color:#fff!important;border-color:rgba(255,255,255,.5)}.nm-btn.ghost:hover{border-color:#C9A45C;color:#EBD9AE!important;background:rgba(201,164,92,.08)}.nm-btn:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}.nm-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px 30px}.nm-stats li{border-top:1px solid rgba(15,59,46,.25);padding-top:14px;line-height:1.45;font-size:15px}.nm-stats b{display:block;font:400 clamp(30px,3.2vw,44px)/1.05 'Fraunces',serif;color:#B3122E;margin-bottom:6px;letter-spacing:-.02em}.nm-stats.on-dark li{border-top-color:rgba(201,164,92,.4)}.nm-stats.on-dark b{color:#C9A45C}.nm-stats.sm b{font-size:clamp(26px,2.4vw,34px)}.nm-stats.c{text-align:center}.nm-stats.big{grid-template-columns:repeat(3,1fr);gap:40px 48px;max-width:1000px;margin:0 auto}.nm-stats.big b{font-size:clamp(44px,5vw,72px);font-weight:300}.nm-specs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}.nm-specs li{display:flex;flex-direction:column;gap:3px;padding:12px 0;border-bottom:1px solid rgba(201,164,92,.22);line-height:1.45;font-size:15px}.nm-specs b{font:600 11px/1.4 'Manrope',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#C9A45C}.nm-keys{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px}.nm-keys li{font:600 11px/1.5 'Manrope',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding-left:20px;position:relative}.nm-keys li::before{content:\"\";position:absolute;left:0;top:.45em;width:7px;height:7px;border:1px solid #C9A45C;transform:rotate(45deg)}.nm-zones{list-style:none;margin:0;padding:0;counter-reset:z}.nm-zones li{counter-increment:z;display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid rgba(15,59,46,.14);font:400 19px/1.3 'Fraunces',serif;color:#0F3B2E}.nm-zones li::before{content:counter(z,decimal-leading-zero);font:600 10px 'Manrope',sans-serif;letter-spacing:.22em;color:#C9A45C;min-width:22px}.nm-mirror{list-style:none;margin:6px 0 4px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.nm-mirror li{padding:18px 20px;border:1px solid rgba(201,164,92,.4);background:rgba(7,24,18,.35);font-size:14px;line-height:1.4;color:#EBD9AE}.nm-mirror b{display:block;font:400 20px/1.2 'Fraunces',serif;color:#fff;margin-bottom:4px}.nm-pal{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 20px}.nm-pal li{display:flex;align-items:center;gap:12px;line-height:1.35;font-size:13px}.nm-pal i{flex:none;width:42px;height:42px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.14),0 8px 18px -10px rgba(0,0,0,.45)}.nm-pal b{display:block;font:600 11px 'Manrope',sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:2px}.nm-card{gap:14px}.nm-footer a{text-decoration:none;border-bottom:1px solid rgba(201,164,92,.5)}.nm-line{transform-origin:left}.nm-c .elementor-divider,.nm-line.nm-c{transform-origin:center}html.nm-js .nm-rv{opacity:0;transform:translateY(14px);filter:blur(6px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1),filter 1s ease}html.nm-js .nm-rv.is-in{opacity:1;transform:none;filter:none}html.nm-js .nm-bgw.nm-rv,html.nm-js .nm-frame-w.nm-rv{transform:none;filter:none}html.nm-js .nm-line.nm-rv{transform:scaleX(0);filter:none}html.nm-js .nm-line.nm-rv.is-in{transform:scaleX(1)}.elementor-editor-active .nm-rv,.elementor-editor-active .nm-ph img{opacity:1!important;transform:none!important;filter:none!important}.nm-tour{position:fixed;inset:0;pointer-events:none;z-index:9990;font-family:'Manrope',sans-serif}.nm-bar{position:absolute;top:0;left:0;right:0;height:2px;background:rgba(201,164,92,.15)}.nm-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#C9A45C,#EBD9AE);transition:width .8s ease}.nm-brand{position:absolute;top:24px;left:40px;display:flex;align-items:center;gap:12px;font:600 10px/1 'Manrope',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#EBD9AE;mix-blend-mode:difference}.nm-brand b{font:400 17px/1 'Fraunces',serif;letter-spacing:.01em;text-transform:none;color:#fff}.nm-brand i{width:1px;height:16px;background:currentColor;opacity:.6}.nm-dots{position:absolute;right:26px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;pointer-events:auto}.nm-dots button{all:unset;cursor:pointer;width:7px;height:7px;border-radius:50%;border:1px solid #C9A45C;transition:background .4s,box-shadow .4s;position:relative}.nm-dots button.on{background:#C9A45C;box-shadow:0 0 0 4px rgba(201,164,92,.18)}.nm-dots button:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}.nm-dots button span{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 10px 'Manrope',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#EBD9AE;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(7,24,18,.92);padding:7px 11px}.nm-dots button:hover span,.nm-dots button:focus-visible span{opacity:1}.nm-foot{position:absolute;left:40px;right:40px;bottom:24px;display:flex;align-items:center;justify-content:space-between}.nm-count{font:600 10px 'Manrope',sans-serif;letter-spacing:.28em;color:#C9A45C;mix-blend-mode:difference}.nm-count b{font:400 22px 'Fraunces',serif;letter-spacing:0;color:#EBD9AE;margin-right:6px}.nm-next{all:unset;box-sizing:border-box;pointer-events:auto;cursor:pointer;display:flex;align-items:center;gap:14px;height:46px;font:600 10px 'Manrope',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#0A241C;background:#C9A45C;padding:0 8px 0 22px;box-shadow:0 14px 30px -14px rgba(0,0,0,.55);transition:background .35s;max-width:62vw}.nm-next span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nm-next:hover{background:#EBD9AE}.nm-next:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}.nm-next i{flex:none;display:grid;place-items:center;width:30px;height:30px;background:#0A241C;color:#EBD9AE;font-style:normal;font-size:13px;transition:transform .4s}.nm-next.back i{transform:rotate(-90deg)}@media(max-width:1100px){.nm-dots{display:none}}@media(max-width:1024px){.nm-frame.tall{--h:460px}.nm-pal{grid-template-columns:repeat(2,1fr)}.nm-stats.big{grid-template-columns:repeat(2,1fr)}.nm-ov.left{background:linear-gradient(90deg,rgba(7,24,18,.92),rgba(7,24,18,.7) 60%,rgba(7,24,18,.45))}}@media(max-width:767px){.nm-dots,.nm-brand{display:none}.nm-foot{left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(7,24,18,.95);border-top:1px solid rgba(201,164,92,.25)}.nm-next{height:40px;padding:0 6px 0 16px;letter-spacing:.14em}.nm-next i{width:28px;height:28px}.nm-count{mix-blend-mode:normal}.nm-slide{min-height:0;padding-bottom:104px!important}.nm-hero{min-height:100svh}.nm-ov.left,.nm-ov.full{background:linear-gradient(180deg,rgba(7,24,18,.6),rgba(7,24,18,.9) 55%)}.nm-frame.tall{--h:340px}.nm-frame.card{--h:220px}.nm-frame::after{transform:translate(10px,10px)}.nm-specs,.nm-keys,.nm-mirror{grid-template-columns:1fr}.nm-stats{grid-template-columns:1fr 1fr;gap:18px 20px}.nm-stats.big{grid-template-columns:1fr 1fr;gap:28px 20px}.nm-stats.three{grid-template-columns:repeat(3,1fr);gap:14px}.nm-stats.three li{font-size:13px}.nm-pal{grid-template-columns:1fr 1fr;gap:14px}.nm-pal i{width:34px;height:34px}.nm-zones li{font-size:17px;padding:10px 0}.nm-btns{flex-direction:column;align-items:stretch}.nm-btns.center{align-items:center}.nm-btn{min-height:50px;padding:0 24px}.nm-r,.nm-r .elementor-heading-title{text-align:left!important}.nm-footer{padding-bottom:110px!important}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nm-kb,.nm-bokeh span{animation:none}.nm-snow{display:none}html.nm-js .nm-ph img{transition:none}}</style><script>(function () {\nvar root = document.documentElement;\nif (document.body && document.body.classList.contains('elementor-editor-active')) return;\nvar reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;\nif (!('IntersectionObserver' in window)) return;\nif (!reduce) root.classList.add('nm-js');\nfunction init() {\nvar slides = [].slice.call(document.querySelectorAll('.nm-slide'));\nif (!slides.length) return;\nif (!reduce) {\nvar items = [];\nslides.forEach(function (s) {\nvar k = 0;\n[].slice.call(s.querySelectorAll('.elementor-widget, .nm-card')).forEach(function (el) {\nif (el.classList.contains('nm-fx')) return;\nvar p = el.parentElement.closest('.nm-card');\nif (p && s.contains(p)) return;\nel.classList.add('nm-rv'); el.style.transitionDelay = Math.min(k++ % 6 * 70, 350) + 'ms'; items.push(el);\n});\n});\nvar rv = new IntersectionObserver(function (es) {\nes.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); rv.unobserve(e.target); } });\n}, { rootMargin: '0px 0px -6% 0px', threshold: 0 });\nitems.forEach(function (el) { rv.observe(el); });\nsetTimeout(function () { items.forEach(function (el) { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('is-in'); }); }, 60);\n}\nvar ui = document.createElement('div');\nui.className = 'nm-tour';\nui.innerHTML = '<div class=\"nm-bar\"><i></i></div><div class=\"nm-brand\"><b>Multiplaza</b><i></i>Navidad 2026</div><nav class=\"nm-dots\" aria-label=\"Secciones\"></nav>' +\n'<div class=\"nm-foot\"><div class=\"nm-count\" aria-live=\"polite\"></div><button class=\"nm-next\" type=\"button\"><span>Siguiente</span><i aria-hidden=\"true\">→</i></button></div>';\ndocument.body.appendChild(ui);\nvar bar = ui.querySelector('.nm-bar i'), dots = ui.querySelector('.nm-dots'), count = ui.querySelector('.nm-count'),\nnext = ui.querySelector('.nm-next'), label = next.querySelector('span');\nslides.forEach(function (s, i) {\nvar b = document.createElement('button'), t = titleOf(i);\nb.type = 'button'; b.setAttribute('aria-label', t); b.innerHTML = '<span>' + t + '</span>';\nb.addEventListener('click', function () { go(i); });\ndots.appendChild(b);\n});\nvar cur = -1;\nfunction titleOf(i) {\nvar s = slides[i]; if (!s) return '';\nvar e = s.querySelector('.nm-eyebrow .elementor-heading-title') || s.querySelector('.elementor-heading-title');\nreturn s.getAttribute('data-nm-title') || (e ? e.textContent.replace(/^[\\d\\s]+/, '').trim() : 'Sección ' + (i + 1));\n}\nfunction pad(n) { return (n < 10 ? '0' : '') + n; }\nfunction paint(i) {\nif (i === cur) return;\ncur = i;\n[].forEach.call(dots.children, function (d, k) { d.classList.toggle('on', k === i); });\nbar.style.width = ((i + 1) / slides.length * 100) + '%';\ncount.innerHTML = '<b>' + pad(i + 1) + '</b>/ ' + pad(slides.length);\nvar last = i >= slides.length - 1;\nlabel.textContent = last ? 'Volver al inicio' : (i === 0 ? 'Iniciar recorrido' : titleOf(i + 1));\nnext.classList.toggle('back', last);\n}\nfunction go(i) {\ni = Math.max(0, Math.min(slides.length - 1, i));\nvar top = slides[i].getBoundingClientRect().top + window.pageYOffset;\nwindow.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });\npaint(i);\n}\nfunction sync() {\nvar mid = innerHeight / 2, best = 0;\nfor (var i = 0; i < slides.length; i++) if (slides[i].getBoundingClientRect().top <= mid) best = i;\npaint(best);\n}\nvar ticking = false;\naddEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; sync(); }); } }, { passive: true });\naddEventListener('resize', sync);\nnext.addEventListener('click', function () { go(cur >= slides.length - 1 ? 0 : cur + 1); });\ndocument.addEventListener('keydown', function (e) {\nif (e.altKey || e.ctrlKey || e.metaKey) return;\nif (e.target.closest && e.target.closest('input,textarea,select,[contenteditable],a,button')) return;\nvar k = e.key;\nif (k === 'ArrowRight' || k === 'PageDown' || k === ' ') { e.preventDefault(); go(cur + 1); }\nelse if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); go(cur - 1); }\n});\nsync();\n}\nfunction snow() {\nif (reduce) return;\nvar c = document.querySelector('.nm-snow'); if (!c) return;\nvar x = c.getContext('2d'), w, h, d = Math.min(window.devicePixelRatio || 1, 2), f = [];\nfunction size() { w = c.clientWidth; h = c.clientHeight; c.width = w * d; c.height = h * d; x.setTransform(d, 0, 0, d, 0, 0); }\nsize(); addEventListener('resize', size);\nvar n = Math.round(Math.min(70, w / 18));\nfor (var i = 0; i < n; i++) f.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 1.6 + .5, s: Math.random() * .3 + .15,\no: Math.random() * 6.28, g: Math.random() < .3 });\nvar on = true;\nnew IntersectionObserver(function (es) { on = es[0].isIntersecting; if (on) requestAnimationFrame(tick); }).observe(c);\nfunction tick(t) {\nif (!on || document.hidden) return;\nx.clearRect(0, 0, w, h);\nfor (var i = 0; i < f.length; i++) { var p = f[i];\np.y += p.s; p.x += Math.sin(t / 2600 + p.o) * .2; if (p.y > h + 5) { p.y = -5; p.x = Math.random() * w; }\nx.beginPath(); x.arc(p.x, p.y, p.r, 0, 6.283);\nx.fillStyle = p.g ? 'rgba(235,217,174,.55)' : 'rgba(255,255,255,.5)'; x.fill(); }\nrequestAnimationFrame(tick);\n}\ndocument.addEventListener('visibilitychange', function () { if (!document.hidden) requestAnimationFrame(tick); });\n}\nfunction bokeh() {\nvar b = document.querySelector('.nm-bokeh'); if (!b || reduce) return;\nvar h = '';\nfor (var i = 0; i < 14; i++) { var s = Math.round(40 + Math.random() * 130);\nh += '<span style=\"width:' + s + 'px;height:' + s + 'px;left:' + (Math.random() * 100).toFixed(1) + '%;top:' + (Math.random() * 100).toFixed(1) +\n'%;--o:' + (.18 + Math.random() * .32).toFixed(2) + ';--d:' + (14 + Math.random() * 16).toFixed(1) + 's;--dl:-' + (Math.random() * 20).toFixed(1) + 's\"></span>'; }\nb.innerHTML = h;\n}\nfunction start() { init(); snow(); bokeh(); }\nif (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();\n})();</script>",
       "_css_classes": "nm-fx"
      },
      "elements": []
@@ -78,102 +75,21 @@
     {
      "id": "n000002",
      "elType": "widget",
-     "widgetType": "heading",
+     "widgetType": "html",
      "isInner": false,
      "settings": {
-      "title": "Multiplaza · Navidad 2026",
-      "header_size": "p",
-      "align": "center",
-      "_css_classes": "nm-eyebrow nm-c",
-      "__globals__": {
-       "title_color": "globals/colors?id=accent",
-       "typography_typography": "globals/typography?id=accent"
-      }
+      "html": "<div class=\"nm-ph left\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-rojo-dorado-1536x864.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-rojo-dorado-768x432.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-rojo-dorado-1536x864.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-rojo-dorado-2048x1152.jpg 2048w\" sizes=\"100vw\" alt=\"Esferas rojas y doradas en un pino de Navidad\" fetchpriority=\"high\"></div></div><div class=\"nm-ov left\"></div>",
+      "_css_classes": "nm-bgw"
      },
      "elements": []
     },
     {
-     "id": "n000003",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "Luces de <em>Encuentro</em>",
-      "header_size": "h1",
-      "align": "center",
-      "_css_classes": "",
-      "__globals__": {
-       "title_color": "globals/colors?id=blanco",
-       "typography_typography": "globals/typography?id=primary"
-      },
-      "typography_font_size": {
-       "unit": "px",
-       "size": 112
-      },
-      "typography_font_size_tablet": {
-       "unit": "px",
-       "size": 87
-      },
-      "typography_font_size_mobile": {
-       "unit": "px",
-       "size": 63
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000004",
-     "elType": "widget",
-     "widgetType": "divider",
-     "isInner": false,
-     "settings": {
-      "width": {
-       "unit": "px",
-       "size": 90
-      },
-      "weight": {
-       "unit": "px",
-       "size": 1
-      },
-      "align": "center",
-      "_css_classes": "nm-line nm-c",
-      "__globals__": {
-       "color": "globals/colors?id=accent"
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000005",
-     "elType": "widget",
-     "widgetType": "text-editor",
-     "isInner": false,
-     "settings": {
-      "editor": "<p>Una Navidad donde la luz nos reúne: experiencias, decoración y momentos que convierten cada visita en tradición.</p>",
-      "align": "center",
-      "__globals__": {
-       "text_color": "globals/colors?id=oroclaro",
-       "typography_typography": "globals/typography?id=text"
-      },
-      "_element_width": "initial",
-      "_element_custom_width": {
-       "unit": "px",
-       "size": 620
-      },
-      "_element_custom_width_mobile": {
-       "unit": "%",
-       "size": 100
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000008",
+     "id": "n000009",
      "elType": "container",
      "isInner": true,
      "settings": {
       "content_width": "full",
-      "flex_direction": "row",
+      "flex_direction": "column",
       "padding": {
        "unit": "px",
        "top": 0,
@@ -182,48 +98,115 @@
        "left": 0,
        "isLinked": false
       },
-      "flex_wrap": "wrap",
-      "flex_direction_mobile": "row",
+      "width": {
+       "unit": "%",
+       "size": 62
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100
+      },
+      "flex_justify_content": "center",
       "gap": {
        "unit": "px",
-       "size": 14,
-       "column": "14",
-       "row": "14"
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 80
       }
      },
      "elements": [
       {
-       "id": "n000006",
+       "id": "n000003",
        "elType": "widget",
-       "widgetType": "button",
+       "widgetType": "heading",
        "isInner": false,
        "settings": {
-        "text": "Iniciar recorrido",
-        "link": {
-         "url": "#concepto"
-        },
-        "size": "md",
-        "border_radius": {
-         "unit": "px",
-         "top": 999,
-         "right": 999,
-         "bottom": 999,
-         "left": 999,
-         "isLinked": true
-        },
-        "text_padding": {
-         "unit": "px",
-         "top": 17,
-         "right": 34,
-         "bottom": 17,
-         "left": 34,
-         "isLinked": false
-        },
+        "title": "Multiplaza · Navidad 2026",
+        "header_size": "p",
+        "align": "left",
+        "_css_classes": "nm-eyebrow",
         "__globals__": {
-         "typography_typography": "globals/typography?id=accent",
-         "background_color": "globals/colors?id=accent",
-         "button_text_color": "globals/colors?id=noche",
-         "button_background_hover_color": "globals/colors?id=oroclaro"
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000004",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "La Navidad se <em>enciende</em> plaza a plaza",
+        "header_size": "h1",
+        "align": "left",
+        "_css_classes": "nm-t nm-hero-t",
+        "__globals__": {
+         "title_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=primary"
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 88
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 70
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 51
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000005",
+       "elType": "widget",
+       "widgetType": "divider",
+       "isInner": false,
+       "settings": {
+        "width": {
+         "unit": "px",
+         "size": 90
+        },
+        "weight": {
+         "unit": "px",
+         "size": 1
+        },
+        "align": "left",
+        "_css_classes": "nm-line",
+        "__globals__": {
+         "color": "globals/colors?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000006",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<p>Propuesta de decoración para Multiplaza Escazú y Multiplaza Curridabat: fachadas, túneles de luz, plazas temáticas y piezas protagonistas, zona por zona.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=oroclaro",
+         "typography_typography": "globals/typography?id=text"
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "px",
+         "size": 560
+        },
+        "_element_custom_width_mobile": {
+         "unit": "%",
+         "size": 100
         }
        },
        "elements": []
@@ -231,47 +214,25 @@
       {
        "id": "n000007",
        "elType": "widget",
-       "widgetType": "button",
+       "widgetType": "text-editor",
        "isInner": false,
        "settings": {
-        "text": "Calendario",
-        "link": {
-         "url": "#calendario"
-        },
-        "size": "md",
-        "border_radius": {
-         "unit": "px",
-         "top": 999,
-         "right": 999,
-         "bottom": 999,
-         "left": 999,
-         "isLinked": true
-        },
-        "text_padding": {
-         "unit": "px",
-         "top": 17,
-         "right": 34,
-         "bottom": 17,
-         "left": 34,
-         "isLinked": false
-        },
+        "editor": "<ul class=\"nm-stats sm on-dark three\"><li><b>2</b>centros comerciales</li><li><b>15</b>zonas decoradas</li><li><b>7 m</b>árbol protagonista</li></ul>",
+        "align": "left",
         "__globals__": {
-         "typography_typography": "globals/typography?id=accent",
-         "button_text_color": "globals/colors?id=blanco",
-         "border_color": "globals/colors?id=accent",
-         "button_background_hover_color": "globals/colors?id=accent",
-         "hover_color": "globals/colors?id=noche"
-        },
-        "background_color": "transparent",
-        "border_border": "solid",
-        "border_width": {
-         "unit": "px",
-         "top": 1,
-         "right": 1,
-         "bottom": 1,
-         "left": 1,
-         "isLinked": true
+         "text_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=text"
         }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000008",
+       "elType": "widget",
+       "widgetType": "html",
+       "isInner": false,
+       "settings": {
+        "html": "<div class=\"nm-btns left\"><a class=\"nm-btn\" href=\"#recorrido\">Iniciar recorrido</a><a class=\"nm-btn ghost\" href=\"#curridabat\">Ver Curridabat</a></div>"
        },
        "elements": []
       }
@@ -280,7 +241,7 @@
    ]
   },
   {
-   "id": "n000013",
+   "id": "n00001a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -288,27 +249,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -322,11 +291,11 @@
      "background_color": "globals/colors?id=marfil"
     },
     "css_classes": "nm-slide",
-    "_element_id": "concepto"
+    "_element_id": "recorrido"
    },
    "elements": [
     {
-     "id": "n000012",
+     "id": "n000019",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -344,15 +313,467 @@
       "flex_direction_mobile": "column",
       "gap": {
        "unit": "px",
-       "size": 56,
-       "column": "56",
-       "row": "56"
+       "size": 64,
+       "column": "64",
+       "row": "64"
       },
-      "flex_align_items": "center"
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
      },
      "elements": [
       {
        "id": "n00000f",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 36
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_justify_content": "center",
+        "gap": {
+         "unit": "px",
+         "size": 22,
+         "column": "22",
+         "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "n00000b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "01 &nbsp;El recorrido",
+          "header_size": "p",
+          "align": "left",
+          "_css_classes": "nm-eyebrow",
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n00000c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Quince zonas, un mismo recorrido de luz",
+          "header_size": "h2",
+          "align": "left",
+          "_css_classes": "nm-t",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 56
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 45
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 32
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n00000d",
+         "elType": "widget",
+         "widgetType": "divider",
+         "isInner": false,
+         "settings": {
+          "width": {
+           "unit": "px",
+           "size": 72
+          },
+          "weight": {
+           "unit": "px",
+           "size": 1
+          },
+          "align": "left",
+          "_css_classes": "nm-line",
+          "__globals__": {
+           "color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n00000e",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>La propuesta recorre cada centro comercial de principio a fin. En Escazú se diseñan diez zonas; en Curridabat, cinco plazas que retoman los mejores diseños de Escazú.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          },
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 440
+          },
+          "_element_custom_width_mobile": {
+           "unit": "%",
+           "size": 100
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "n000018",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 60
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_justify_content": "center",
+        "gap": {
+         "unit": "px",
+         "size": 22,
+         "column": "22",
+         "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "n000017",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": 0,
+           "right": 0,
+           "bottom": 0,
+           "left": 0,
+           "isLinked": false
+          },
+          "flex_wrap": "nowrap",
+          "flex_direction_mobile": "column",
+          "gap": {
+           "unit": "px",
+           "size": 40,
+           "column": "40",
+           "row": "40"
+          },
+          "flex_align_items": "flex-start"
+         },
+         "elements": [
+          {
+           "id": "n000012",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": 0,
+             "right": 0,
+             "bottom": 0,
+             "left": 0,
+             "isLinked": false
+            },
+            "width": {
+             "unit": "%",
+             "size": 54
+            },
+            "width_mobile": {
+             "unit": "%",
+             "size": 100
+            },
+            "flex_justify_content": "flex-start",
+            "gap": {
+             "unit": "px",
+             "size": 10,
+             "column": "10",
+             "row": "10"
+            }
+           },
+           "elements": [
+            {
+             "id": "n000010",
+             "elType": "widget",
+             "widgetType": "heading",
+             "isInner": false,
+             "settings": {
+              "title": "Escazú",
+              "header_size": "h3",
+              "align": "left",
+              "_css_classes": "nm-t",
+              "__globals__": {
+               "title_color": "globals/colors?id=primary",
+               "typography_typography": "globals/typography?id=secondary"
+              },
+              "typography_font_size": {
+               "unit": "px",
+               "size": 26
+              },
+              "typography_font_size_tablet": {
+               "unit": "px",
+               "size": 21
+              },
+              "typography_font_size_mobile": {
+               "unit": "px",
+               "size": 20
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "n000011",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
+              "editor": "<ul class=\"nm-zones\"><li>Fachadas</li><li>Plaza Starbucks</li><li>Pasillo Starbucks → Tukis</li><li>Casa de Santa</li><li>Plaza Tukis</li><li>Plaza Brunos</li><li>Pasillo Quinta Etapa</li><li>Plaza Siman</li><li>Pasillo BCR – Vértigo</li><li>Plaza Honor</li></ul>",
+              "align": "left",
+              "__globals__": {
+               "text_color": "globals/colors?id=text",
+               "typography_typography": "globals/typography?id=text"
+              }
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "n000016",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": 0,
+             "right": 0,
+             "bottom": 0,
+             "left": 0,
+             "isLinked": false
+            },
+            "width": {
+             "unit": "%",
+             "size": 42
+            },
+            "width_mobile": {
+             "unit": "%",
+             "size": 100
+            },
+            "flex_justify_content": "flex-start",
+            "gap": {
+             "unit": "px",
+             "size": 10,
+             "column": "10",
+             "row": "10"
+            }
+           },
+           "elements": [
+            {
+             "id": "n000013",
+             "elType": "widget",
+             "widgetType": "heading",
+             "isInner": false,
+             "settings": {
+              "title": "Curridabat",
+              "header_size": "h3",
+              "align": "left",
+              "_css_classes": "nm-t",
+              "__globals__": {
+               "title_color": "globals/colors?id=primary",
+               "typography_typography": "globals/typography?id=secondary"
+              },
+              "typography_font_size": {
+               "unit": "px",
+               "size": 26
+              },
+              "typography_font_size_tablet": {
+               "unit": "px",
+               "size": 21
+              },
+              "typography_font_size_mobile": {
+               "unit": "px",
+               "size": 20
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "n000014",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
+              "editor": "<ul class=\"nm-zones\"><li>Plaza Santo Katrin</li><li>Plaza Reebok</li><li>Plaza Cinemark</li><li>Plaza Kolbi</li><li>Plaza Old Navy</li></ul>",
+              "align": "left",
+              "__globals__": {
+               "text_color": "globals/colors?id=text",
+               "typography_typography": "globals/typography?id=text"
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "n000015",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
+              "editor": "<p class=\"nm-note\">Plaza Cinemark, Plaza Kolbi y Plaza Old Navy retoman diseños de Escazú.</p>",
+              "align": "left",
+              "__globals__": {
+               "text_color": "globals/colors?id=text",
+               "typography_typography": "globals/typography?id=text"
+              }
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n000025",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 26,
+     "column": "26",
+     "row": "26"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=blanco"
+    },
+    "css_classes": "nm-slide"
+   },
+   "elements": [
+    {
+     "id": "n000024",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": false
+      },
+      "flex_wrap": "nowrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 72,
+       "column": "72",
+       "row": "72"
+      },
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
+     },
+     "elements": [
+      {
+       "id": "n00001c",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -380,16 +801,69 @@
          "size": 22,
          "column": "22",
          "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
         }
        },
        "elements": [
         {
-         "id": "n00000a",
+         "id": "n00001b",
+         "elType": "widget",
+         "widgetType": "html",
+         "isInner": false,
+         "settings": {
+          "html": "<figure class=\"nm-frame tall\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c03-1536x1077.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c03-768x539.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c03-1536x1077.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c03-2048x1436.jpg 2048w\" sizes=\"(max-width:767px) 100vw, 50vw\" alt=\"Cascabeles rojos y blancos con una estrella navideña\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "n000023",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 48
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_justify_content": "center",
+        "gap": {
+         "unit": "px",
+         "size": 22,
+         "column": "22",
+         "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "n00001d",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "01 &nbsp;La idea",
+          "title": "02 &nbsp;Fachadas e identidad",
           "header_size": "p",
           "align": "left",
           "_css_classes": "nm-eyebrow",
@@ -401,36 +875,36 @@
          "elements": []
         },
         {
-         "id": "n00000b",
+         "id": "n00001e",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Una Navidad que ilumina encuentros",
+          "title": "Una misma imagen, de la fachada a cada plaza",
           "header_size": "h2",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 58
+           "size": 50
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 45
+           "size": 40
           },
           "typography_font_size_mobile": {
            "unit": "px",
-           "size": 32
+           "size": 29
           }
          },
          "elements": []
         },
         {
-         "id": "n00000c",
+         "id": "n00001f",
          "elType": "widget",
          "widgetType": "divider",
          "isInner": false,
@@ -452,12 +926,12 @@
          "elements": []
         },
         {
-         "id": "n00000d",
+         "id": "n000020",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Luces de Encuentro convierte a Multiplaza en el lugar donde la temporada sucede. Cada pasillo se vuelve un recorrido de luz; cada activación, una excusa para reunirse. Una identidad cálida y sofisticada que invita a quedarse, compartir y volver.</p>",
+          "editor": "<p>Este año continuó el proyecto de fachadas: ya están terminadas todas las fachadas del centro comercial. La decoración se alinea con el tema y la campaña; los key visuals y los cascabeles acompañan el recorrido.</p>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=text",
@@ -466,7 +940,7 @@
           "_element_width": "initial",
           "_element_custom_width": {
            "unit": "px",
-           "size": 520
+           "size": 500
           },
           "_element_custom_width_mobile": {
            "unit": "%",
@@ -476,38 +950,334 @@
          "elements": []
         },
         {
-         "id": "n00000e",
+         "id": "n000021",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "title": "Donde la luz nos reúne.",
-          "header_size": "p",
+          "editor": "<ul class=\"nm-pal\"><li><i style=\"--c:#B3122E\"></i><span><b>Rojo</b>Referencia Red Silk 351516</span></li><li><i style=\"--c:#FFFFFF\"></i><span><b>Blanco</b>Árbol, trineo y adornos</span></li><li><i style=\"--c:#C9CDD2\"></i><span><b>Plateado</b>Esferas, trineo y bancas</span></li><li><i style=\"--c:#C9A45C\"></i><span><b>Dorado</b>Adornos y esferas</span></li><li><i style=\"--c:#0F3B2E\"></i><span><b>Verde oscuro</b>Tarima y follaje</span></li><li><i style=\"--c:#FFE3A3\"></i><span><b>Blanco cálido</b>Iluminación</span></li></ul>",
           "align": "left",
-          "_css_classes": "nm-quote",
           "__globals__": {
-           "title_color": "globals/colors?id=vino",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 26
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 20
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000022",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p class=\"nm-note\">Muestras de color aproximadas. El rojo de referencia del deck es Red Silk 351516.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
           }
          },
          "elements": []
         }
        ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n00002d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 26,
+     "column": "26",
+     "row": "26"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=noche"
+    },
+    "css_classes": "nm-slide nm-has-bg nm-dark"
+   },
+   "elements": [
+    {
+     "id": "n000026",
+     "elType": "widget",
+     "widgetType": "html",
+     "isInner": false,
+     "settings": {
+      "html": "<div class=\"nm-ph left\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-1536x1026.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-768x513.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-1536x1026.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13.jpg 1920w\" sizes=\"100vw\" alt=\"Árbol envuelto en luces cálidas\" loading=\"lazy\" decoding=\"async\"></div></div><div class=\"nm-ov left\"></div>",
+      "_css_classes": "nm-bgw"
+     },
+     "elements": []
+    },
+    {
+     "id": "n00002c",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": false
+      },
+      "width": {
+       "unit": "%",
+       "size": 56
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100
+      },
+      "flex_justify_content": "center",
+      "gap": {
+       "unit": "px",
+       "size": 22,
+       "column": "22",
+       "row": "22"
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 80
+      }
+     },
+     "elements": [
+      {
+       "id": "n000027",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "03 &nbsp;Plaza Starbucks",
+        "header_size": "p",
+        "align": "left",
+        "_css_classes": "nm-eyebrow",
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
       },
       {
-       "id": "n000011",
+       "id": "n000028",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "Un túnel de luz <em>hacia el árbol</em>",
+        "header_size": "h2",
+        "align": "left",
+        "_css_classes": "nm-t nm-shine",
+        "__globals__": {
+         "title_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=primary"
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 60
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 48
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 35
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000029",
+       "elType": "widget",
+       "widgetType": "divider",
+       "isInner": false,
+       "settings": {
+        "width": {
+         "unit": "px",
+         "size": 72
+        },
+        "weight": {
+         "unit": "px",
+         "size": 1
+        },
+        "align": "left",
+        "_css_classes": "nm-line",
+        "__globals__": {
+         "color": "globals/colors?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00002a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<p>Aprovechando los arcos de la plaza, un túnel de luz guía a los visitantes, por ambos lados, hasta el túnel del árbol. El pasillo que une Plaza Starbucks con Plaza Tukis continúa el recorrido.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=oroclaro",
+         "typography_typography": "globals/typography?id=text"
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "px",
+         "size": 500
+        },
+        "_element_custom_width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00002b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<ul class=\"nm-keys\"><li>Túnel de luz en los arcos</li><li>Túnel del árbol</li><li>Acceso por ambos lados</li><li>Pasillo Starbucks → Tukis</li></ul>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=text"
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n000037",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 26,
+     "column": "26",
+     "row": "26"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=marfil"
+    },
+    "css_classes": "nm-slide"
+   },
+   "elements": [
+    {
+     "id": "n000036",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": false
+      },
+      "flex_wrap": "nowrap",
+      "flex_direction_mobile": "column",
+      "gap": {
+       "unit": "px",
+       "size": 72,
+       "column": "72",
+       "row": "72"
+      },
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
+     },
+     "elements": [
+      {
+       "id": "n000033",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -535,867 +1305,27 @@
          "size": 22,
          "column": "22",
          "row": "22"
-        }
-       },
-       "elements": [
-        {
-         "id": "n000010",
-         "elType": "widget",
-         "widgetType": "html",
-         "isInner": false,
-         "settings": {
-          "html": "<div class=\"nm-art tall\" data-art=\"arbol\" data-label=\"Árbol de luz dorado\"></div>",
-          "_css_classes": "nm-art-w"
-         },
-         "elements": []
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "n000023",
-   "elType": "container",
-   "isInner": false,
-   "settings": {
-    "content_width": "boxed",
-    "flex_direction": "column",
-    "padding": {
-     "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
-     "isLinked": false
-    },
-    "boxed_width": {
-     "unit": "px",
-     "size": 1180
-    },
-    "flex_justify_content": "center",
-    "min_height": {
-     "unit": "vh",
-     "size": 100
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
-     "isLinked": false
-    },
-    "gap": {
-     "unit": "px",
-     "size": 26,
-     "column": "26",
-     "row": "26"
-    },
-    "background_background": "classic",
-    "__globals__": {
-     "background_color": "globals/colors?id=primary"
-    },
-    "css_classes": "nm-slide"
-   },
-   "elements": [
-    {
-     "id": "n000014",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "02 &nbsp;Por qué",
-      "header_size": "p",
-      "align": "center",
-      "_css_classes": "nm-eyebrow nm-c",
-      "__globals__": {
-       "title_color": "globals/colors?id=accent",
-       "typography_typography": "globals/typography?id=accent"
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000015",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "Tres pilares para la temporada",
-      "header_size": "h2",
-      "align": "center",
-      "_css_classes": "",
-      "__globals__": {
-       "title_color": "globals/colors?id=blanco",
-       "typography_typography": "globals/typography?id=primary"
-      },
-      "typography_font_size": {
-       "unit": "px",
-       "size": 52
-      },
-      "typography_font_size_tablet": {
-       "unit": "px",
-       "size": 41
-      },
-      "typography_font_size_mobile": {
-       "unit": "px",
-       "size": 29
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000022",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "content_width": "full",
-      "flex_direction": "row",
-      "padding": {
-       "unit": "px",
-       "top": 0,
-       "right": 0,
-       "bottom": 0,
-       "left": 0,
-       "isLinked": false
-      },
-      "flex_wrap": "wrap",
-      "flex_direction_mobile": "column",
-      "gap": {
-       "unit": "px",
-       "size": 24,
-       "column": "24",
-       "row": "24"
-      }
-     },
-     "elements": [
-      {
-       "id": "n000019",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 38,
-         "right": 34,
-         "bottom": 38,
-         "left": 34,
-         "isLinked": false
         },
-        "width": {
-         "unit": "%",
-         "size": 30
-        },
-        "width_mobile": {
+        "width_tablet": {
          "unit": "%",
          "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
-       },
-       "elements": [
-        {
-         "id": "n000016",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "I",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 40
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 31
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 22
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000017",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Destino navideño",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 26
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 20
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000018",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Consolidar a Multiplaza como la referencia de la Navidad en la región.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n00001d",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 38,
-         "right": 34,
-         "bottom": 38,
-         "left": 34,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 30
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
-       },
-       "elements": [
-        {
-         "id": "n00001a",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "II",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 40
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 31
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 22
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00001b",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Momentos compartidos",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 26
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 20
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00001c",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Crear experiencias que reúnan a las familias y se cuenten después.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n000021",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 38,
-         "right": 34,
-         "bottom": 38,
-         "left": 34,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 30
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
-       },
-       "elements": [
-        {
-         "id": "n00001e",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "III",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 40
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 31
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 22
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00001f",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Visitas y permanencia",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 26
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 20
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000020",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Atraer más visitas y alargar cada estadía, con beneficio directo para los locatarios.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "n000037",
-   "elType": "container",
-   "isInner": false,
-   "settings": {
-    "content_width": "boxed",
-    "flex_direction": "column",
-    "padding": {
-     "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
-     "isLinked": false
-    },
-    "boxed_width": {
-     "unit": "px",
-     "size": 1180
-    },
-    "flex_justify_content": "center",
-    "min_height": {
-     "unit": "vh",
-     "size": 100
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
-     "isLinked": false
-    },
-    "gap": {
-     "unit": "px",
-     "size": 26,
-     "column": "26",
-     "row": "26"
-    },
-    "background_background": "classic",
-    "__globals__": {
-     "background_color": "globals/colors?id=marfil"
-    },
-    "css_classes": "nm-slide"
-   },
-   "elements": [
-    {
-     "id": "n000024",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "03 &nbsp;Las experiencias",
-      "header_size": "p",
-      "align": "center",
-      "_css_classes": "nm-eyebrow nm-c",
-      "__globals__": {
-       "title_color": "globals/colors?id=secondary",
-       "typography_typography": "globals/typography?id=accent"
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000025",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "Momentos que <em>brillan</em>",
-      "header_size": "h2",
-      "align": "center",
-      "_css_classes": "nm-shine",
-      "__globals__": {
-       "title_color": "globals/colors?id=primary",
-       "typography_typography": "globals/typography?id=primary"
-      },
-      "typography_font_size": {
-       "unit": "px",
-       "size": 52
-      },
-      "typography_font_size_tablet": {
-       "unit": "px",
-       "size": 41
-      },
-      "typography_font_size_mobile": {
-       "unit": "px",
-       "size": 29
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n000036",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "content_width": "full",
-      "flex_direction": "row",
-      "padding": {
-       "unit": "px",
-       "top": 0,
-       "right": 0,
-       "bottom": 0,
-       "left": 0,
-       "isLinked": false
-      },
-      "flex_wrap": "wrap",
-      "flex_direction_mobile": "column",
-      "gap": {
-       "unit": "px",
-       "size": 20,
-       "column": "20",
-       "row": "20"
-      }
-     },
-     "elements": [
-      {
-       "id": "n000029",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 14,
-         "right": 10,
-         "bottom": 14,
-         "left": 10,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card",
-        "background_background": "classic",
-        "__globals__": {
-         "background_color": "globals/colors?id=blanco"
-        }
-       },
-       "elements": [
-        {
-         "id": "n000026",
-         "elType": "widget",
-         "widgetType": "html",
-         "isInner": false,
-         "settings": {
-          "html": "<div class=\"nm-art card\" data-art=\"arbol\" data-label=\"El gran encendido\"></div>",
-          "_css_classes": "nm-art-w"
-         },
-         "elements": []
-        },
-        {
-         "id": "n000027",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "El gran encendido",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=primary",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000028",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>La ceremonia que abre la temporada con una instalación de luz monumental.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=text",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n00002d",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 14,
-         "right": 10,
-         "bottom": 14,
-         "left": 10,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card",
-        "background_background": "classic",
-        "__globals__": {
-         "background_color": "globals/colors?id=blanco"
-        }
-       },
-       "elements": [
-        {
-         "id": "n00002a",
-         "elType": "widget",
-         "widgetType": "html",
-         "isInner": false,
-         "settings": {
-          "html": "<div class=\"nm-art card\" data-art=\"villa\" data-label=\"La aldea\"></div>",
-          "_css_classes": "nm-art-w"
-         },
-         "elements": []
-        },
-        {
-         "id": "n00002b",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "La aldea",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=primary",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00002c",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Un recorrido inmersivo, lleno de detalles, para vivir en familia.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=text",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n000031",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 14,
-         "right": 10,
-         "bottom": 14,
-         "left": 10,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card",
-        "background_background": "classic",
-        "__globals__": {
-         "background_color": "globals/colors?id=blanco"
         }
        },
        "elements": [
         {
          "id": "n00002e",
          "elType": "widget",
-         "widgetType": "html",
+         "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "html": "<div class=\"nm-art card\" data-art=\"musica\" data-label=\"Escenario de luz\"></div>",
-          "_css_classes": "nm-art-w"
+          "title": "04 &nbsp;Zona familiar",
+          "header_size": "p",
+          "align": "left",
+          "_css_classes": "nm-eyebrow",
+          "__globals__": {
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
          },
          "elements": []
         },
@@ -1405,25 +1335,25 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Escenario de luz",
-          "header_size": "h3",
+          "title": "Casa de Santa y Plaza Tukis",
+          "header_size": "h2",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 24
+           "size": 50
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 19
+           "size": 40
           },
           "typography_font_size_mobile": {
            "unit": "px",
-           "size": 20
+           "size": 29
           }
          },
          "elements": []
@@ -1431,10 +1361,57 @@
         {
          "id": "n000030",
          "elType": "widget",
+         "widgetType": "divider",
+         "isInner": false,
+         "settings": {
+          "width": {
+           "unit": "px",
+           "size": 72
+          },
+          "weight": {
+           "unit": "px",
+           "size": 1
+          },
+          "align": "left",
+          "_css_classes": "nm-line",
+          "__globals__": {
+           "color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000031",
+         "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Coros, música en vivo y presentaciones que llenan de celebración los fines de semana.</p>",
+          "editor": "<p><strong>Casa de Santa.</strong> La Casa de Santa tiene su propia ambientación interior y es una parada clave del recorrido en Escazú.</p><p><strong>Plaza Tukis.</strong> Plaza Tukis se convierte en el espacio de juego de la temporada, con un ball pit semicircular y una guirnalda iluminada en todo su perímetro.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          },
+          "_css_classes": "nm-prose",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 520
+          },
+          "_element_custom_width_mobile": {
+           "unit": "%",
+           "size": 100
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000032",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<ul class=\"nm-stats sm\"><li><b>158 m²</b>Ball pit en forma semicircular</li><li><b>360°</b>Guirnalda en todo el perímetro de la plaza</li><li><b>7 cm</b>Esferas plateadas y rojas en la guirnalda</li><li><b>Cálida</b>Iluminación en blanco cálido</li></ul>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=text",
@@ -1454,94 +1431,41 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 14,
-         "right": 10,
-         "bottom": 14,
-         "left": 10,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 44
         },
         "width_mobile": {
          "unit": "%",
          "size": 100
         },
-        "flex_grow": 1,
+        "flex_justify_content": "center",
         "gap": {
          "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
+         "size": 22,
+         "column": "22",
+         "row": "22"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card",
-        "background_background": "classic",
-        "__globals__": {
-         "background_color": "globals/colors?id=blanco"
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
         }
        },
        "elements": [
         {
-         "id": "n000032",
+         "id": "n000034",
          "elType": "widget",
          "widgetType": "html",
          "isInner": false,
          "settings": {
-          "html": "<div class=\"nm-art card\" data-art=\"regalo\" data-label=\"Encuentro con Santa\"></div>",
-          "_css_classes": "nm-art-w"
-         },
-         "elements": []
-        },
-        {
-         "id": "n000033",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Encuentro con Santa",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=primary",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000034",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Cartas, fotos y sorpresas en un espacio pensado para los más pequeños.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=text",
-           "typography_typography": "globals/typography?id=text"
-          }
+          "html": "<figure class=\"nm-frame tall\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esferas-navidad-1536x1024.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esferas-navidad-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esferas-navidad-1536x1024.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esferas-navidad-2048x1365.jpg 2048w\" sizes=\"(max-width:767px) 100vw, 50vw\" alt=\"Esferas navideñas pintadas a mano\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
          "elements": []
         }
@@ -1552,7 +1476,7 @@
    ]
   },
   {
-   "id": "n000046",
+   "id": "n000042",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1560,27 +1484,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -1593,11 +1525,11 @@
     "__globals__": {
      "background_color": "globals/colors?id=noche"
     },
-    "css_classes": "nm-slide"
+    "css_classes": "nm-slide nm-dark"
    },
    "elements": [
     {
-     "id": "n000045",
+     "id": "n000041",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1615,15 +1547,16 @@
       "flex_direction_mobile": "column",
       "gap": {
        "unit": "px",
-       "size": 56,
-       "column": "56",
-       "row": "56"
+       "size": 64,
+       "column": "64",
+       "row": "64"
       },
-      "flex_align_items": "center"
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
      },
      "elements": [
       {
-       "id": "n00003d",
+       "id": "n00003e",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1639,7 +1572,7 @@
         },
         "width": {
          "unit": "%",
-         "size": 40
+         "size": 58
         },
         "width_mobile": {
          "unit": "%",
@@ -1651,6 +1584,10 @@
          "size": 22,
          "column": "22",
          "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
         }
        },
        "elements": [
@@ -1660,7 +1597,7 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "04 &nbsp;Identidad visual",
+          "title": "05 &nbsp;Plaza Brunos",
           "header_size": "p",
           "align": "left",
           "_css_classes": "nm-eyebrow",
@@ -1677,25 +1614,25 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Un bosque de luz y oro",
+          "title": "La escena <em>protagonista</em>",
           "header_size": "h2",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t nm-shine",
           "__globals__": {
            "title_color": "globals/colors?id=blanco",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 52
+           "size": 56
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 41
+           "size": 45
           },
           "typography_font_size_mobile": {
            "unit": "px",
-           "size": 29
+           "size": 32
           }
          },
          "elements": []
@@ -1728,7 +1665,7 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Verdes profundos, dorados champán y destellos rojo vino. Materiales nobles, miles de luces cálidas y piezas protagonistas que invitan a detenerse, mirar hacia arriba y tomar la foto de la temporada.</p>",
+          "editor": "<p>Un árbol de 7 metros en blanco y rojo, un trineo blanco con plateado y un desfile de soldados, regalos y escaleras espejadas. La tarima verde oscuro y el trineo llevan el logo de Kolbi.</p>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=oroclaro",
@@ -1737,7 +1674,7 @@
           "_element_width": "initial",
           "_element_custom_width": {
            "unit": "px",
-           "size": 460
+           "size": 560
           },
           "_element_custom_width_mobile": {
            "unit": "%",
@@ -1752,10 +1689,25 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<ul class=\"nm-keys\"><li>Dorados cálidos</li><li>Luz que envuelve</li><li>Materiales nobles</li><li>Piezas protagonistas</li></ul>",
+          "editor": "<ul class=\"nm-stats sm on-dark\"><li><b>7 m</b>Árbol con decoración blanca y roja</li><li><b>30</b>Regalos de 40, 50 y 60 cm</li><li><b>16</b>Árboles de ambientación de 2 a 3 m</li><li><b>80</b>Extensiones de micro luces LED</li></ul>",
           "align": "left",
           "__globals__": {
-           "text_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=blanco",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n00003d",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<ul class=\"nm-specs\"><li><b>Trineo</b>2,90 × 1,55 × 1,35 m, blanco con plateado, logo Kolbi</li><li><b>Tarima</b>Estructura verde oscuro con logo Kolbi</li><li><b>Soldados de 1,70 m</b>6 de pie y 1 con carretilla de regalos</li><li><b>Soldados de 1,30 m</b>4 con regalo en la mano</li><li><b>Pareja de soldados</b>Con esfera, uno sobre los hombros del otro</li><li><b>Escalera espejada</b>5 m, con 2 soldados de 1,30 m</li><li><b>Escaleras</b>2 de 2 m, con soldado de 1,30 m</li><li><b>Stand</b>4,50 × 4,00 m</li><li><b>Bancas</b>8 modernas de fibra de vidrio plateada</li></ul>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=oroclaro",
            "typography_typography": "globals/typography?id=text"
           }
          },
@@ -1764,7 +1716,7 @@
        ]
       },
       {
-       "id": "n000044",
+       "id": "n000040",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1780,7 +1732,7 @@
         },
         "width": {
          "unit": "%",
-         "size": 56
+         "size": 36
         },
         "width_mobile": {
          "unit": "%",
@@ -1789,109 +1741,26 @@
         "flex_justify_content": "center",
         "gap": {
          "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
+         "size": 22,
+         "column": "22",
+         "row": "22"
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
         }
        },
        "elements": [
         {
-         "id": "n000040",
-         "elType": "container",
-         "isInner": true,
+         "id": "n00003f",
+         "elType": "widget",
+         "widgetType": "html",
+         "isInner": false,
          "settings": {
-          "content_width": "full",
-          "flex_direction": "row",
-          "padding": {
-           "unit": "px",
-           "top": 0,
-           "right": 0,
-           "bottom": 0,
-           "left": 0,
-           "isLinked": false
-          },
-          "flex_wrap": "nowrap",
-          "flex_direction_mobile": "row",
-          "gap": {
-           "unit": "px",
-           "size": 14,
-           "column": "14",
-           "row": "14"
-          }
+          "html": "<figure class=\"nm-frame tall\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c12-1536x1024.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c12-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c12-1536x1024.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c12.jpg 1920w\" sizes=\"(max-width:767px) 100vw, 40vw\" alt=\"Árbol de Navidad monumental entre palmeras\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
-         "elements": [
-          {
-           "id": "n00003e",
-           "elType": "widget",
-           "widgetType": "html",
-           "isInner": false,
-           "settings": {
-            "html": "<div class=\"nm-art tile\" data-art=\"esferas\" data-label=\"Esferas\"></div>",
-            "_css_classes": "nm-art-w"
-           },
-           "elements": []
-          },
-          {
-           "id": "n00003f",
-           "elType": "widget",
-           "widgetType": "html",
-           "isInner": false,
-           "settings": {
-            "html": "<div class=\"nm-art tile\" data-art=\"copo\" data-label=\"Copo de nieve\"></div>",
-            "_css_classes": "nm-art-w"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "n000043",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "content_width": "full",
-          "flex_direction": "row",
-          "padding": {
-           "unit": "px",
-           "top": 0,
-           "right": 0,
-           "bottom": 0,
-           "left": 0,
-           "isLinked": false
-          },
-          "flex_wrap": "nowrap",
-          "flex_direction_mobile": "row",
-          "gap": {
-           "unit": "px",
-           "size": 14,
-           "column": "14",
-           "row": "14"
-          }
-         },
-         "elements": [
-          {
-           "id": "n000041",
-           "elType": "widget",
-           "widgetType": "html",
-           "isInner": false,
-           "settings": {
-            "html": "<div class=\"nm-art tile\" data-art=\"guirnalda\" data-label=\"Guirnalda\"></div>",
-            "_css_classes": "nm-art-w"
-           },
-           "elements": []
-          },
-          {
-           "id": "n000042",
-           "elType": "widget",
-           "widgetType": "html",
-           "isInner": false,
-           "settings": {
-            "html": "<div class=\"nm-art tile\" data-art=\"estrella\" data-label=\"Estrella\"></div>",
-            "_css_classes": "nm-art-w"
-           },
-           "elements": []
-          }
-         ]
+         "elements": []
         }
        ]
       }
@@ -1900,7 +1769,7 @@
    ]
   },
   {
-   "id": "n00005a",
+   "id": "n000056",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1908,27 +1777,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -1939,19 +1816,18 @@
     },
     "background_background": "classic",
     "__globals__": {
-     "background_color": "globals/colors?id=marfil"
+     "background_color": "globals/colors?id=blanco"
     },
-    "css_classes": "nm-slide",
-    "_element_id": "calendario"
+    "css_classes": "nm-slide"
    },
    "elements": [
     {
-     "id": "n000047",
+     "id": "n000043",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
      "settings": {
-      "title": "05 &nbsp;La temporada",
+      "title": "06 &nbsp;Pasillos y plazas",
       "header_size": "p",
       "align": "center",
       "_css_classes": "nm-eyebrow nm-c",
@@ -1963,26 +1839,26 @@
      "elements": []
     },
     {
-     "id": "n000048",
+     "id": "n000044",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
      "settings": {
-      "title": "Cuatro momentos, una misma luz",
+      "title": "Cada tramo de Escazú tiene su propia escena",
       "header_size": "h2",
       "align": "center",
-      "_css_classes": "",
+      "_css_classes": "nm-t",
       "__globals__": {
        "title_color": "globals/colors?id=primary",
        "typography_typography": "globals/typography?id=primary"
       },
       "typography_font_size": {
        "unit": "px",
-       "size": 52
+       "size": 50
       },
       "typography_font_size_tablet": {
        "unit": "px",
-       "size": 41
+       "size": 40
       },
       "typography_font_size_mobile": {
        "unit": "px",
@@ -1992,7 +1868,7 @@
      "elements": []
     },
     {
-     "id": "n000059",
+     "id": "n000055",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -2010,12 +1886,107 @@
       "flex_direction_mobile": "column",
       "gap": {
        "unit": "px",
-       "size": 28,
-       "column": "28",
-       "row": "28"
-      }
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "flex_align_items": "stretch"
      },
      "elements": [
+      {
+       "id": "n000048",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 46
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_grow": 1,
+        "gap": {
+         "unit": "px",
+         "size": 14,
+         "column": "14",
+         "row": "14"
+        },
+        "css_classes": "nm-card"
+       },
+       "elements": [
+        {
+         "id": "n000045",
+         "elType": "widget",
+         "widgetType": "html",
+         "isInner": false,
+         "settings": {
+          "html": "<figure class=\"nm-frame card\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-adornos-arbol-1536x1024.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-adornos-arbol-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-adornos-arbol-1536x1024.jpg 1536w\" sizes=\"(max-width:767px) 100vw, 25vw\" alt=\"Adornos y cascabeles en un pino\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
+         },
+         "elements": []
+        },
+        {
+         "id": "n000046",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Pasillo Quinta Etapa",
+          "header_size": "h3",
+          "align": "left",
+          "_css_classes": "nm-t",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
+          },
+          "typography_font_size": {
+           "unit": "px",
+           "size": 24
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 19
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000047",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "isInner": false,
+         "settings": {
+          "editor": "<p>Ambientación de pasillo; el deck presenta la opción 1.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
       {
        "id": "n00004c",
        "elType": "container",
@@ -2025,15 +1996,19 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 23
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 46
         },
         "width_mobile": {
          "unit": "%",
@@ -2042,35 +2017,21 @@
         "flex_grow": 1,
         "gap": {
          "unit": "px",
-         "size": 10,
-         "column": "10",
-         "row": "10"
+         "size": 14,
+         "column": "14",
+         "row": "14"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-phase"
+        "css_classes": "nm-card"
        },
        "elements": [
         {
          "id": "n000049",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "html",
          "isInner": false,
          "settings": {
-          "title": "Noviembre",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "nm-label",
-          "__globals__": {
-           "title_color": "globals/colors?id=secondary",
-           "typography_typography": "globals/typography?id=accent"
-          }
+          "html": "<figure class=\"nm-frame card\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-estrella-1153x1536.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-estrella-769x1024.jpg 769w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-estrella-1153x1536.jpg 1153w\" sizes=\"(max-width:767px) 100vw, 25vw\" alt=\"Estrella dorada\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
          "elements": []
         },
@@ -2080,21 +2041,21 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "El encendido",
+          "title": "Plaza Siman",
           "header_size": "h3",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 28
+           "size": 24
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 22
+           "size": 19
           },
           "typography_font_size_mobile": {
            "unit": "px",
@@ -2109,7 +2070,7 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Lanzamiento y ceremonia de apertura; la expectativa empieza en redes.</p>",
+          "editor": "<p>Plaza decorada según la propuesta visual del deck.</p>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=text",
@@ -2129,15 +2090,19 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 23
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 46
         },
         "width_mobile": {
          "unit": "%",
@@ -2146,35 +2111,21 @@
         "flex_grow": 1,
         "gap": {
          "unit": "px",
-         "size": 10,
-         "column": "10",
-         "row": "10"
+         "size": 14,
+         "column": "14",
+         "row": "14"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-phase"
+        "css_classes": "nm-card"
        },
        "elements": [
         {
          "id": "n00004d",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "html",
          "isInner": false,
          "settings": {
-          "title": "Diciembre · 1ª quincena",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "nm-label",
-          "__globals__": {
-           "title_color": "globals/colors?id=secondary",
-           "typography_typography": "globals/typography?id=accent"
-          }
+          "html": "<figure class=\"nm-frame card\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esfera-1536x1025.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esfera-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-esfera-1536x1025.jpg 1536w\" sizes=\"(max-width:767px) 100vw, 25vw\" alt=\"Campana navideña plateada\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
          "elements": []
         },
@@ -2184,21 +2135,21 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Descubrimiento",
+          "title": "Pasillo BCR – Vértigo",
           "header_size": "h3",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 28
+           "size": 24
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 22
+           "size": 19
           },
           "typography_font_size_mobile": {
            "unit": "px",
@@ -2213,7 +2164,7 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Todas las experiencias abiertas y agenda de fin de semana.</p>",
+          "editor": "<p>18 adornos blanco con dorado y 18 esferas plateadas y doradas.</p>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=text",
@@ -2233,15 +2184,19 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 23
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 46
         },
         "width_mobile": {
          "unit": "%",
@@ -2250,35 +2205,21 @@
         "flex_grow": 1,
         "gap": {
          "unit": "px",
-         "size": 10,
-         "column": "10",
-         "row": "10"
+         "size": 14,
+         "column": "14",
+         "row": "14"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-phase"
+        "css_classes": "nm-card"
        },
        "elements": [
         {
          "id": "n000051",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "html",
          "isInner": false,
          "settings": {
-          "title": "Diciembre · 2ª quincena",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "nm-label",
-          "__globals__": {
-           "title_color": "globals/colors?id=secondary",
-           "typography_typography": "globals/typography?id=accent"
-          }
+          "html": "<figure class=\"nm-frame card\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-arbol-festivo-1536x976.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-arbol-festivo-768x488.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-arbol-festivo-1536x976.jpg 1536w\" sizes=\"(max-width:767px) 100vw, 25vw\" alt=\"Árbol de Navidad decorado\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
          "elements": []
         },
@@ -2288,21 +2229,21 @@
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "La gran celebración",
+          "title": "Plaza Honor",
           "header_size": "h3",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 28
+           "size": 24
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 22
+           "size": 19
           },
           "typography_font_size_mobile": {
            "unit": "px",
@@ -2317,111 +2258,7 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Programación especial hasta Nochebuena, el punto más alto.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=text",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n000058",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 10,
-         "column": "10",
-         "row": "10"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-phase"
-       },
-       "elements": [
-        {
-         "id": "n000055",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Enero",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "nm-label",
-          "__globals__": {
-           "title_color": "globals/colors?id=secondary",
-           "typography_typography": "globals/typography?id=accent"
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000056",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Cierre y balance",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=primary",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 28
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 22
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000057",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Medición de resultados y aprendizajes para la próxima temporada.</p>",
+          "editor": "<p>Un diseño que se repite en Plaza Old Navy de Curridabat.</p>",
           "align": "left",
           "__globals__": {
            "text_color": "globals/colors?id=text",
@@ -2437,7 +2274,7 @@
    ]
   },
   {
-   "id": "n00006e",
+   "id": "n000060",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -2445,27 +2282,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -2476,59 +2321,269 @@
     },
     "background_background": "classic",
     "__globals__": {
-     "background_color": "globals/colors?id=primary"
+     "background_color": "globals/colors?id=noche"
+    },
+    "css_classes": "nm-slide nm-has-bg nm-dark",
+    "_element_id": "curridabat"
+   },
+   "elements": [
+    {
+     "id": "n000057",
+     "elType": "widget",
+     "widgetType": "html",
+     "isInner": false,
+     "settings": {
+      "html": "<div class=\"nm-ph full\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c05-1536x1024.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c05-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c05-1536x1024.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c05-2048x1365.jpg 2048w\" sizes=\"100vw\" alt=\"Pino con luces blancas y nieve\" loading=\"lazy\" decoding=\"async\"></div></div><div class=\"nm-ov full\"></div>",
+      "_css_classes": "nm-bgw"
+     },
+     "elements": []
+    },
+    {
+     "id": "n00005f",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": 0,
+       "right": 0,
+       "bottom": 0,
+       "left": 0,
+       "isLinked": false
+      },
+      "width": {
+       "unit": "%",
+       "size": 64
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100
+      },
+      "flex_justify_content": "center",
+      "gap": {
+       "unit": "px",
+       "size": 22,
+       "column": "22",
+       "row": "22"
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 90
+      }
+     },
+     "elements": [
+      {
+       "id": "n000058",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "07 &nbsp;Curridabat",
+        "header_size": "p",
+        "align": "left",
+        "_css_classes": "nm-eyebrow",
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n000059",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "Un cielo de <em>cables de luz</em>",
+        "header_size": "h2",
+        "align": "left",
+        "_css_classes": "nm-t nm-shine",
+        "__globals__": {
+         "title_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=primary"
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 60
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 48
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 35
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00005a",
+       "elType": "widget",
+       "widgetType": "divider",
+       "isInner": false,
+       "settings": {
+        "width": {
+         "unit": "px",
+         "size": 72
+        },
+        "weight": {
+         "unit": "px",
+         "size": 1
+        },
+        "align": "left",
+        "_css_classes": "nm-line",
+        "__globals__": {
+         "color": "globals/colors?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00005b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<p>Curridabat retoma lo mejor de Escazú: Plaza Cinemark y Plaza Kolbi son espejo de Escazú, y Plaza Old Navy es espejo de Plaza Honor. La pieza nueva es Plaza Santo Katrin, cubierta por un cielo de cables.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=oroclaro",
+         "typography_typography": "globals/typography?id=text"
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "px",
+         "size": 560
+        },
+        "_element_custom_width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00005c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<ul class=\"nm-mirror\"><li><b>Plaza Cinemark</b>Espejo de Escazú</li><li><b>Plaza Kolbi</b>Espejo de Escazú</li><li><b>Plaza Old Navy</b>Espejo de Plaza Honor</li></ul>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00005d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "title": "Plaza Santo Katrin",
+        "header_size": "h3",
+        "align": "left",
+        "_css_classes": "nm-t",
+        "__globals__": {
+         "title_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=secondary"
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 19
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 20
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "n00005e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "isInner": false,
+       "settings": {
+        "editor": "<ul class=\"nm-stats sm on-dark\"><li><b>4 × 22 m</b>Área de Plaza Santo Katrin</li><li><b>19</b>Cables de lado a lado</li><li><b>1</b>Cable central de tres fachadas</li><li><b>Cuadrícula</b>De cables frente a Koaj</li></ul>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=blanco",
+         "typography_typography": "globals/typography?id=text"
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n00006b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 26,
+     "column": "26",
+     "row": "26"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=marfil"
     },
     "css_classes": "nm-slide"
    },
    "elements": [
     {
-     "id": "n00005b",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "06 &nbsp;Resultados",
-      "header_size": "p",
-      "align": "center",
-      "_css_classes": "nm-eyebrow nm-c",
-      "__globals__": {
-       "title_color": "globals/colors?id=accent",
-       "typography_typography": "globals/typography?id=accent"
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n00005c",
-     "elType": "widget",
-     "widgetType": "heading",
-     "isInner": false,
-     "settings": {
-      "title": "Cómo mediremos el impacto",
-      "header_size": "h2",
-      "align": "center",
-      "_css_classes": "",
-      "__globals__": {
-       "title_color": "globals/colors?id=blanco",
-       "typography_typography": "globals/typography?id=primary"
-      },
-      "typography_font_size": {
-       "unit": "px",
-       "size": 52
-      },
-      "typography_font_size_tablet": {
-       "unit": "px",
-       "size": 41
-      },
-      "typography_font_size_mobile": {
-       "unit": "px",
-       "size": 29
-      }
-     },
-     "elements": []
-    },
-    {
-     "id": "n00006d",
+     "id": "n00006a",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -2542,18 +2597,20 @@
        "left": 0,
        "isLinked": false
       },
-      "flex_wrap": "wrap",
+      "flex_wrap": "nowrap",
       "flex_direction_mobile": "column",
       "gap": {
        "unit": "px",
-       "size": 20,
-       "column": "20",
-       "row": "20"
-      }
+       "size": 72,
+       "column": "72",
+       "row": "72"
+      },
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
      },
      "elements": [
       {
-       "id": "n000060",
+       "id": "n000062",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -2561,231 +2618,48 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 46
         },
         "width_mobile": {
          "unit": "%",
          "size": 100
         },
-        "flex_grow": 1,
+        "flex_justify_content": "center",
         "gap": {
          "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
+         "size": 22,
+         "column": "22",
+         "row": "22"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
-       },
-       "elements": [
-        {
-         "id": "n00005d",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "01",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 34
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 27
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00005e",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Afluencia",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00005f",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Visitas, circulación y permanencia frente a la temporada anterior.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
-           "typography_typography": "globals/typography?id=text"
-          }
-         },
-         "elements": []
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
         }
-       ]
-      },
-      {
-       "id": "n000064",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
        },
        "elements": [
         {
          "id": "n000061",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "html",
          "isInner": false,
          "settings": {
-          "title": "02",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 34
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 27
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000062",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Ventas",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n000063",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "isInner": false,
-         "settings": {
-          "editor": "<p>Desempeño de locatarios y ticket promedio durante la campaña.</p>",
-          "align": "left",
-          "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
-           "typography_typography": "globals/typography?id=text"
-          }
+          "html": "<figure class=\"nm-frame tall\"><div class=\"nm-ph\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c06-1536x1017.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c06-768x509.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c06-1536x1017.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c06-2048x1356.jpg 2048w\" sizes=\"(max-width:767px) 100vw, 50vw\" alt=\"Copo de nieve decorativo colgando\" loading=\"lazy\" decoding=\"async\"></div></div></figure>",
+          "_css_classes": "nm-frame-w"
          },
          "elements": []
         }
        ]
       },
       {
-       "id": "n000068",
+       "id": "n000069",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -2793,63 +2667,97 @@
         "flex_direction": "column",
         "padding": {
          "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
+         "top": 0,
+         "right": 0,
+         "bottom": 0,
+         "left": 0,
          "isLinked": false
         },
         "width": {
          "unit": "%",
-         "size": 22
+         "size": 46
         },
         "width_mobile": {
          "unit": "%",
          "size": 100
         },
-        "flex_grow": 1,
+        "flex_justify_content": "center",
         "gap": {
          "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
+         "size": 22,
+         "column": "22",
+         "row": "22"
         },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
        },
        "elements": [
         {
-         "id": "n000065",
+         "id": "n000063",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "03",
+          "title": "08 &nbsp;Plaza Reebok",
           "header_size": "p",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-eyebrow",
           "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
+           "title_color": "globals/colors?id=secondary",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000064",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "title": "Árboles de espejo",
+          "header_size": "h2",
+          "align": "left",
+          "_css_classes": "nm-t",
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=primary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 34
+           "size": 56
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 27
+           "size": 45
           },
           "typography_font_size_mobile": {
            "unit": "px",
-           "size": 20
+           "size": 32
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "n000065",
+         "elType": "widget",
+         "widgetType": "divider",
+         "isInner": false,
+         "settings": {
+          "width": {
+           "unit": "px",
+           "size": 72
+          },
+          "weight": {
+           "unit": "px",
+           "size": 1
+          },
+          "align": "left",
+          "_css_classes": "nm-line",
+          "__globals__": {
+           "color": "globals/colors?id=accent"
           }
          },
          "elements": []
@@ -2857,28 +2765,23 @@
         {
          "id": "n000066",
          "elType": "widget",
-         "widgetType": "heading",
+         "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "title": "Conversación",
-          "header_size": "h3",
+          "editor": "<p>Una instalación de árboles de espejo sobre una estructura de borde cuadrado, con la base llena de esferas y bancas para detenerse y tomar la foto.</p>",
           "align": "left",
-          "_css_classes": "",
           "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
+           "text_color": "globals/colors?id=text",
+           "typography_typography": "globals/typography?id=text"
           },
-          "typography_font_size": {
+          "_element_width": "initial",
+          "_element_custom_width": {
            "unit": "px",
-           "size": 24
+           "size": 480
           },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
+          "_element_custom_width_mobile": {
+           "unit": "%",
+           "size": 100
           }
          },
          "elements": []
@@ -2889,126 +2792,25 @@
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Alcance, menciones y contenido que comparten los visitantes.</p>",
+          "editor": "<ul class=\"nm-keys\"><li>Árboles de espejo</li><li>Estructura de borde cuadrado</li><li>4 bancas modernas</li><li>Esferas de 20 cm en la base</li></ul>",
           "align": "left",
           "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
+           "text_color": "globals/colors?id=primary",
            "typography_typography": "globals/typography?id=text"
           }
          },
          "elements": []
-        }
-       ]
-      },
-      {
-       "id": "n00006c",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": 30,
-         "right": 26,
-         "bottom": 30,
-         "left": 26,
-         "isLinked": false
-        },
-        "width": {
-         "unit": "%",
-         "size": 22
-        },
-        "width_mobile": {
-         "unit": "%",
-         "size": 100
-        },
-        "flex_grow": 1,
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "column": "14",
-         "row": "14"
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": 18,
-         "right": 18,
-         "bottom": 18,
-         "left": 18,
-         "isLinked": true
-        },
-        "css_classes": "nm-card nm-glass"
-       },
-       "elements": [
-        {
-         "id": "n000069",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "04",
-          "header_size": "p",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=accent",
-           "typography_typography": "globals/typography?id=secondary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 34
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 27
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
         },
         {
-         "id": "n00006a",
-         "elType": "widget",
-         "widgetType": "heading",
-         "isInner": false,
-         "settings": {
-          "title": "Participación",
-          "header_size": "h3",
-          "align": "left",
-          "_css_classes": "",
-          "__globals__": {
-           "title_color": "globals/colors?id=blanco",
-           "typography_typography": "globals/typography?id=primary"
-          },
-          "typography_font_size": {
-           "unit": "px",
-           "size": 24
-          },
-          "typography_font_size_tablet": {
-           "unit": "px",
-           "size": 19
-          },
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 20
-          }
-         },
-         "elements": []
-        },
-        {
-         "id": "n00006b",
+         "id": "n000068",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
          "settings": {
-          "editor": "<p>Asistencia e interacción en cada experiencia y activación.</p>",
+          "editor": "<p class=\"nm-note\">El montaje requiere montacargas.</p>",
           "align": "left",
           "__globals__": {
-           "text_color": "globals/colors?id=oroclaro",
+           "text_color": "globals/colors?id=text",
            "typography_typography": "globals/typography?id=text"
           }
          },
@@ -3021,7 +2823,7 @@
    ]
   },
   {
-   "id": "n000074",
+   "id": "n000071",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3029,27 +2831,35 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": 110,
-     "right": 48,
-     "bottom": 110,
-     "left": 48,
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "flex_justify_content": "center",
     "min_height": {
      "unit": "vh",
      "size": 100
     },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
     "padding_mobile": {
      "unit": "px",
-     "top": 77,
-     "right": 20,
-     "bottom": 77,
-     "left": 20,
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -3058,31 +2868,181 @@
      "column": "26",
      "row": "26"
     },
-    "background_background": "gradient",
-    "__globals__": {},
-    "css_classes": "nm-slide",
-    "flex_align_items": "center",
-    "background_color": "#9B1530",
-    "background_color_b": "#4A0614",
-    "background_gradient_type": "radial",
-    "background_gradient_position": "center center",
-    "background_color_stop": {
-     "unit": "%",
-     "size": 0
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=noche"
     },
-    "background_color_b_stop": {
-     "unit": "%",
-     "size": 100
-    }
+    "css_classes": "nm-slide nm-has-bg nm-dark"
    },
    "elements": [
     {
-     "id": "n00006f",
+     "id": "n00006c",
+     "elType": "widget",
+     "widgetType": "html",
+     "isInner": false,
+     "settings": {
+      "html": "<div class=\"nm-ph blur\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-1536x1026.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-768x513.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13-1536x1026.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c13.jpg 1920w\" sizes=\"100vw\" alt=\"\" loading=\"lazy\" decoding=\"async\"></div></div><div class=\"nm-ov blur\"></div>",
+      "_css_classes": "nm-bgw"
+     },
+     "elements": []
+    },
+    {
+     "id": "n00006d",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
      "settings": {
-      "title": "07 &nbsp;Siguiente paso",
+      "title": "09 &nbsp;En cifras",
+      "header_size": "p",
+      "align": "center",
+      "_css_classes": "nm-eyebrow nm-c",
+      "__globals__": {
+       "title_color": "globals/colors?id=accent",
+       "typography_typography": "globals/typography?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "n00006e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "La propuesta, en números",
+      "header_size": "h2",
+      "align": "center",
+      "_css_classes": "nm-t",
+      "__globals__": {
+       "title_color": "globals/colors?id=blanco",
+       "typography_typography": "globals/typography?id=primary"
+      },
+      "typography_font_size": {
+       "unit": "px",
+       "size": 56
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 45
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 32
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "n00006f",
+     "elType": "widget",
+     "widgetType": "divider",
+     "isInner": false,
+     "settings": {
+      "width": {
+       "unit": "px",
+       "size": 90
+      },
+      "weight": {
+       "unit": "px",
+       "size": 1
+      },
+      "align": "center",
+      "_css_classes": "nm-line nm-c",
+      "__globals__": {
+       "color": "globals/colors?id=accent"
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "n000070",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "isInner": false,
+     "settings": {
+      "editor": "<ul class=\"nm-stats big c on-dark\"><li><b>158 m²</b>de ball pit en Plaza Tukis</li><li><b>7 m</b>de altura del árbol de Plaza Brunos</li><li><b>80</b>extensiones de micro luces LED</li><li><b>30</b>regalos gigantes</li><li><b>19</b>cables de luz en Santo Katrin</li><li><b>36</b>adornos y esferas en el pasillo BCR – Vértigo</li></ul>",
+      "align": "left",
+      "__globals__": {
+       "text_color": "globals/colors?id=oroclaro",
+       "typography_typography": "globals/typography?id=text"
+      }
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "n000078",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": 120,
+     "right": 56,
+     "bottom": 120,
+     "left": 56,
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200
+    },
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "vh",
+     "size": 100
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": 96,
+     "right": 40,
+     "bottom": 96,
+     "left": 40,
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": 84,
+     "right": 22,
+     "bottom": 84,
+     "left": 22,
+     "isLinked": false
+    },
+    "gap": {
+     "unit": "px",
+     "size": 26,
+     "column": "26",
+     "row": "26"
+    },
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": "globals/colors?id=noche"
+    },
+    "css_classes": "nm-slide nm-has-bg nm-dark nm-center",
+    "flex_align_items": "center"
+   },
+   "elements": [
+    {
+     "id": "n000072",
+     "elType": "widget",
+     "widgetType": "html",
+     "isInner": false,
+     "settings": {
+      "html": "<div class=\"nm-ph center\"><div class=\"nm-kb\"><img src=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c01-1536x1024.jpg\" srcset=\"https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c01-768x512.jpg 768w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c01-1536x1024.jpg 1536w, https://lindsaymeneses.com/wp-content/uploads/2026/09/nm-c01-2048x1365.jpg 2048w\" sizes=\"100vw\" alt=\"Luz de bengala encendida\" loading=\"lazy\" decoding=\"async\"></div></div><div class=\"nm-ov center\"></div>",
+      "_css_classes": "nm-bgw"
+     },
+     "elements": []
+    },
+    {
+     "id": "n000073",
+     "elType": "widget",
+     "widgetType": "heading",
+     "isInner": false,
+     "settings": {
+      "title": "10 &nbsp;Siguiente paso",
       "header_size": "p",
       "align": "center",
       "_css_classes": "nm-eyebrow nm-c",
@@ -3094,36 +3054,36 @@
      "elements": []
     },
     {
-     "id": "n000070",
+     "id": "n000074",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
      "settings": {
-      "title": "Encendamos juntos esta Navidad",
+      "title": "Encendamos juntos la Navidad 2026",
       "header_size": "h2",
       "align": "center",
-      "_css_classes": "",
+      "_css_classes": "nm-t",
       "__globals__": {
        "title_color": "globals/colors?id=blanco",
        "typography_typography": "globals/typography?id=primary"
       },
       "typography_font_size": {
        "unit": "px",
-       "size": 76
+       "size": 72
       },
       "typography_font_size_tablet": {
        "unit": "px",
-       "size": 59
+       "size": 58
       },
       "typography_font_size_mobile": {
        "unit": "px",
-       "size": 43
+       "size": 42
       }
      },
      "elements": []
     },
     {
-     "id": "n000071",
+     "id": "n000075",
      "elType": "widget",
      "widgetType": "divider",
      "isInner": false,
@@ -3145,12 +3105,12 @@
      "elements": []
     },
     {
-     "id": "n000072",
+     "id": "n000076",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
      "settings": {
-      "editor": "<p>Una temporada para volver, compartir y recordar. Todo está listo para que Multiplaza brille como nunca.</p>",
+      "editor": "<p>Las zonas, las piezas y las medidas están definidas. Conversemos los siguientes pasos: opciones por pasillo, patrocinios y montaje.</p>",
       "align": "center",
       "__globals__": {
        "text_color": "globals/colors?id=oroclaro",
@@ -3169,45 +3129,19 @@
      "elements": []
     },
     {
-     "id": "n000073",
+     "id": "n000077",
      "elType": "widget",
-     "widgetType": "button",
+     "widgetType": "html",
      "isInner": false,
      "settings": {
-      "text": "Conversemos",
-      "link": {
-       "url": "mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026"
-      },
-      "size": "md",
-      "border_radius": {
-       "unit": "px",
-       "top": 999,
-       "right": 999,
-       "bottom": 999,
-       "left": 999,
-       "isLinked": true
-      },
-      "text_padding": {
-       "unit": "px",
-       "top": 17,
-       "right": 34,
-       "bottom": 17,
-       "left": 34,
-       "isLinked": false
-      },
-      "__globals__": {
-       "typography_typography": "globals/typography?id=accent",
-       "background_color": "globals/colors?id=accent",
-       "button_text_color": "globals/colors?id=noche",
-       "button_background_hover_color": "globals/colors?id=oroclaro"
-      }
+      "html": "<div class=\"nm-btns center\"><a class=\"nm-btn\" href=\"mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026\">Conversemos</a></div>"
      },
      "elements": []
     }
    ]
   },
   {
-   "id": "n000080",
+   "id": "n000084",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3216,21 +3150,21 @@
     "padding": {
      "unit": "px",
      "top": 64,
-     "right": 48,
+     "right": 56,
      "bottom": 40,
-     "left": 48,
+     "left": 56,
      "isLinked": false
     },
     "boxed_width": {
      "unit": "px",
-     "size": 1180
+     "size": 1200
     },
     "padding_mobile": {
      "unit": "px",
      "top": 48,
-     "right": 20,
-     "bottom": 90,
-     "left": 20,
+     "right": 22,
+     "bottom": 110,
+     "left": 22,
      "isLinked": false
     },
     "gap": {
@@ -3247,7 +3181,7 @@
    },
    "elements": [
     {
-     "id": "n00007d",
+     "id": "n000081",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3273,7 +3207,7 @@
      },
      "elements": [
       {
-       "id": "n000077",
+       "id": "n00007b",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3305,7 +3239,7 @@
        },
        "elements": [
         {
-         "id": "n000075",
+         "id": "n000079",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
@@ -3313,7 +3247,7 @@
           "title": "Multiplaza",
           "header_size": "p",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=blanco",
            "typography_typography": "globals/typography?id=primary"
@@ -3324,7 +3258,7 @@
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 23
+           "size": 24
           },
           "typography_font_size_mobile": {
            "unit": "px",
@@ -3334,15 +3268,15 @@
          "elements": []
         },
         {
-         "id": "n000076",
+         "id": "n00007a",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Un centro de Grupo Roble",
+          "title": "Grupo Roble",
           "header_size": "p",
           "align": "left",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=accent",
            "typography_typography": "globals/typography?id=accent"
@@ -3353,7 +3287,7 @@
        ]
       },
       {
-       "id": "n000079",
+       "id": "n00007d",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3385,26 +3319,26 @@
        },
        "elements": [
         {
-         "id": "n000078",
+         "id": "n00007c",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
          "settings": {
-          "title": "Donde la luz nos reúne.",
+          "title": "Navidad 2026 · Escazú y Curridabat",
           "header_size": "p",
           "align": "center",
-          "_css_classes": "",
+          "_css_classes": "nm-t",
           "__globals__": {
            "title_color": "globals/colors?id=oroclaro",
            "typography_typography": "globals/typography?id=secondary"
           },
           "typography_font_size": {
            "unit": "px",
-           "size": 22
+           "size": 20
           },
           "typography_font_size_tablet": {
            "unit": "px",
-           "size": 17
+           "size": 16
           },
           "typography_font_size_mobile": {
            "unit": "px",
@@ -3416,7 +3350,7 @@
        ]
       },
       {
-       "id": "n00007c",
+       "id": "n000080",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3448,7 +3382,7 @@
        },
        "elements": [
         {
-         "id": "n00007a",
+         "id": "n00007e",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
@@ -3456,7 +3390,7 @@
           "title": "Contacto",
           "header_size": "p",
           "align": "right",
-          "_css_classes": "",
+          "_css_classes": "nm-t nm-r",
           "__globals__": {
            "title_color": "globals/colors?id=accent",
            "typography_typography": "globals/typography?id=accent"
@@ -3465,7 +3399,7 @@
          "elements": []
         },
         {
-         "id": "n00007b",
+         "id": "n00007f",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
@@ -3475,7 +3409,8 @@
           "__globals__": {
            "text_color": "globals/colors?id=oroclaro",
            "typography_typography": "globals/typography?id=text"
-          }
+          },
+          "_css_classes": "nm-r"
          },
          "elements": []
         }
@@ -3484,7 +3419,7 @@
      ]
     },
     {
-     "id": "n00007e",
+     "id": "n000082",
      "elType": "widget",
      "widgetType": "divider",
      "isInner": false,
@@ -3506,17 +3441,18 @@
      "elements": []
     },
     {
-     "id": "n00007f",
+     "id": "n000083",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
      "settings": {
-      "editor": "<p>Luces de Encuentro · Propuesta creativa Navidad 2026 para Multiplaza · Grupo Roble</p>",
+      "editor": "<p>Propuesta de decoración navideña 2026 para Multiplaza · Grupo Roble · Fotografías de referencia CC0 (Unsplash).</p>",
       "align": "center",
       "__globals__": {
        "text_color": "globals/colors?id=salvia",
        "typography_typography": "globals/typography?id=text"
-      }
+      },
+      "_css_classes": "nm-note"
      },
      "elements": []
     }

@@ -28,30 +28,42 @@ Sitio: lindsaymeneses.com · Elementor 4.3.2 instalado y activo.
 | `text`      | Párrafos                | Manrope 400, 17px, 1.65         |
 | `accent`    | Etiquetas y botones     | Manrope 600, 13px, mayúsculas, 0.2em |
 
-## Estructura de la página (`navidad-multiplaza-elementor.json`)
+## Estructura de la página (v3 · línea editorial con fotografía)
 
-1. Portada: pantalla completa, degradado noche → pino, 2 botones
-2. Concepto: gran idea + key visual
-3. Objetivos: 3 tarjetas con ícono
-4. Experiencias: 4 tarjetas con imagen
-5. Decoración: texto + mosaico de 4 imágenes
-6. Calendario: 4 fases (nov → ene)
-7. Cifras: contadores animados
-8. Cierre: fondo vino + llamado a la acción
+Contenido real del deck (ver `ANALISIS-PPT.md`); textos en `copy.json`, estilos y recorrido en `fx/`.
 
-Plantilla "Elementor Canvas" (sin cabecera ni pie del tema), animaciones de entrada y
-tamaños adaptados a tableta y celular. Los textos marcados **[PPT]** se reemplazan con
-el contenido real del deck; las imágenes están vacías hasta subir las del PPT.
+1. Portada: foto a sangre, titular «La Navidad se enciende plaza a plaza», 3 datos, 2 botones alineados
+2. El recorrido: índice de las 15 zonas (10 en Escazú, 5 en Curridabat)
+3. Fachadas e identidad: foto enmarcada (cascabeles) + paleta del deck (Red Silk 351516)
+4. Plaza Starbucks: túnel de luz hacia el árbol (foto a sangre)
+5. Zona familiar: Casa de Santa y Plaza Tukis (ball pit 158 m², guirnalda, esferas 7 cm)
+6. Plaza Brunos: árbol de 7 m, trineo, soldados, regalos (ficha completa de piezas)
+7. Pasillos y plazas de Escazú: Quinta Etapa, Siman, BCR – Vértigo, Honor
+8. Curridabat: plazas espejo y cielo de cables de Santo Katrin (4 × 22 m, 19 cables)
+9. Plaza Reebok: árboles de espejo
+10. En cifras: 6 datos del deck sobre luces desenfocadas
+11. Cierre: «Encendamos juntos la Navidad 2026» + botón Conversemos (mailto)
 
-Regenerar: `python3 build_template.py` (JSON importable, con marcas [PPT] e imágenes vacías)
-y `python3 build_template.py --page` (datos para la página publicada: sin marcas [PPT] y con
-paneles decorativos degradado + ícono dorado en lugar de las imágenes que aún no existen).
+**Línea gráfica:** Fraunces en peso ligero con cursiva dorada, etiquetas Manrope espaciadas con filete,
+alternancia marfil / blanco / noche, fotos con filete dorado desplazado, botones rectos de igual altura.
+
+**Animaciones (sutiles):** cada elemento aparece con fundido y un leve desenfoque que se aclara; las fotos
+entran desenfocadas y enfocan, luego derivan muy despacio (Ken Burns); bokeh cálido flotante y nieve suave
+en la portada; sin «clic en cualquier parte». Respeta «reducir movimiento».
+
+**Fotos:** CC0 (Unsplash vía Wikimedia Commons) subidas a Medios (`nm-*.jpg`, IDs 9, 10, 14–17, 19, 21,
+23, 24, 26, 27). Son de referencia: se pueden cambiar por renders del PPT exportados como imagen editando
+`FOTOS` en `build_template.py`.
+
+Regenerar: `python3 build_template.py --page` → publicar `page-elementor-data.json` en el meta
+`_elementor_data` de la página 7 y limpiar caché (`DELETE elementor/v1/cache`).
+Vista previa local: `python3 preview.py && NODE_PATH=$(npm root -g) node preview-shots.js`.
 
 ## Página publicada
 
 - https://lindsaymeneses.com/navidad-multiplaza-2026/ — página ID 7, plantilla Elementor Canvas.
 - Se creó vía `wp/v2/pages` con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
-- 2026-09-25: publicada la **v2** (recorrido guiado). Verificado: el meta devuelto por la API es
+- 2026-09-25: publicada la **v3** (fotografía, contenido del deck, animaciones sutiles); antes, la v2 (recorrido guiado). Verificado: el meta devuelto por la API es
   idéntico a `page-elementor-data.json`, se limpió el caché de Elementor y el HTML renderizado
   contiene «Luces de», `nm-slide` y el `mailto:` de contacto.
 - No es la portada todavía.
