@@ -5,6 +5,7 @@ Uso:  python3 build_template.py         ->  navidad-multiplaza-elementor.json (p
 Textos en copy.json; efectos, ilustraciones y recorrido en fx/ (se incrustan en un widget HTML).
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -42,8 +43,11 @@ def widget(kind, settings):
 
 
 def fx_widget():
-    css = (HERE / "fx/fx.css").read_text()
+    css = re.sub(r"/\*.*?\*/", "", (HERE / "fx/fx.css").read_text(), flags=re.S)
+    css = re.sub(r"\s*\n\s*", "", css)
     js = (HERE / "fx/art.js").read_text() + "\n" + (HERE / "fx/tour.js").read_text()
+    # compacta: sin comentarios de línea completa ni sangrías (el JS usa ; explícitos)
+    js = "\n".join(l.strip() for l in js.splitlines() if l.strip() and not l.strip().startswith(("//", "/*")))
     html = f'<canvas class="nm-snow" aria-hidden="true"></canvas><style>{css}</style><script>{js}</script>'
     return widget("html", {"html": html, "_css_classes": "nm-fx"})
 
