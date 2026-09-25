@@ -259,7 +259,7 @@ cierre = section([
     heading("Hagamos brillar esta Navidad", "h2", "blanco", "center", px=64),
     text("<p>[PPT] Una temporada para volver, compartir y recordar. Encendamos juntos la Navidad "
          "más luminosa de Multiplaza.</p>", "oroclaro", "center"),
-    button("Conversemos", "#contacto"),
+    button("Conversemos", "mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026"),
 ], "vino", pad=140, extra={"flex_align_items": "center"})
 
 template = {
