@@ -1,0 +1,68 @@
+{
+ "nombre_campana": "Luces de Encuentro",
+ "alternativas_nombre": ["Luminanza", "Brillo compartido"],
+ "portada": {
+  "eyebrow": "Multiplaza · Navidad 2026",
+  "titulo_html": "Luces de <em>Encuentro</em>",
+  "bajada": "Una Navidad donde la luz nos reúne: experiencias, decoración y momentos que convierten cada visita en tradición.",
+  "cta_primario": "Iniciar recorrido",
+  "cta_secundario": "Calendario"
+ },
+ "concepto": {
+  "eyebrow": "La idea",
+  "titulo": "Una Navidad que ilumina encuentros",
+  "texto": "Luces de Encuentro convierte a Multiplaza en el lugar donde la temporada sucede. Cada pasillo se vuelve un recorrido de luz; cada activación, una excusa para reunirse. Una identidad cálida y sofisticada que invita a quedarse, compartir y volver.",
+  "cita": "Donde la luz nos reúne."
+ },
+ "objetivos": {
+  "eyebrow": "Por qué",
+  "titulo": "Tres pilares para la temporada",
+  "items": [
+   {"titulo": "Destino navideño", "texto": "Consolidar a Multiplaza como la referencia de la Navidad en la región."},
+   {"titulo": "Momentos compartidos", "texto": "Crear experiencias que reúnan a las familias y se cuenten después."},
+   {"titulo": "Visitas y permanencia", "texto": "Atraer más visitas y alargar cada estadía, con beneficio directo para los locatarios."}
+  ]
+ },
+ "experiencias": {
+  "eyebrow": "Las experiencias",
+  "titulo_html": "Momentos que <em>brillan</em>",
+  "items": [
+   {"titulo": "El gran encendido", "texto": "La ceremonia que abre la temporada con una instalación de luz monumental."},
+   {"titulo": "La aldea", "texto": "Un recorrido inmersivo, lleno de detalles, para vivir en familia."},
+   {"titulo": "Escenario de luz", "texto": "Coros, música en vivo y presentaciones que llenan de celebración los fines de semana."},
+   {"titulo": "Encuentro con Santa", "texto": "Cartas, fotos y sorpresas en un espacio pensado para los más pequeños."}
+  ]
+ },
+ "decoracion": {
+  "eyebrow": "Identidad visual",
+  "titulo": "Un bosque de luz y oro",
+  "texto": "Verdes profundos, dorados champán y destellos rojo vino. Materiales nobles, miles de luces cálidas y piezas protagonistas que invitan a detenerse, mirar hacia arriba y tomar la foto de la temporada.",
+  "claves": ["Dorados cálidos", "Luz que envuelve", "Materiales nobles", "Piezas protagonistas"]
+ },
+ "calendario": {
+  "eyebrow": "La temporada",
+  "titulo": "Cuatro momentos, una misma luz",
+  "fases": [
+   {"etiqueta": "Noviembre", "titulo": "El encendido", "texto": "Lanzamiento y ceremonia de apertura; la expectativa empieza en redes."},
+   {"etiqueta": "Diciembre · 1ª quincena", "titulo": "Descubrimiento", "texto": "Todas las experiencias abiertas y agenda de fin de semana."},
+   {"etiqueta": "Diciembre · 2ª quincena", "titulo": "La gran celebración", "texto": "Programación especial hasta Nochebuena, el punto más alto."},
+   {"etiqueta": "Enero", "titulo": "Cierre y balance", "texto": "Medición de resultados y aprendizajes para la próxima temporada."}
+  ]
+ },
+ "medicion": {
+  "eyebrow": "Resultados",
+  "titulo": "Cómo mediremos el impacto",
+  "items": [
+   {"titulo": "Afluencia", "texto": "Visitas, circulación y permanencia frente a la temporada anterior."},
+   {"titulo": "Ventas", "texto": "Desempeño de locatarios y ticket promedio durante la campaña."},
+   {"titulo": "Conversación", "texto": "Alcance, menciones y contenido que comparten los visitantes."},
+   {"titulo": "Participación", "texto": "Asistencia e interacción en cada experiencia y activación."}
+  ]
+ },
+ "cierre": {
+  "titulo": "Encendamos juntos esta Navidad",
+  "texto": "Una temporada para volver, compartir y recordar. Todo está listo para que Multiplaza brille como nunca.",
+  "cta": "Conversemos"
+ },
+ "pie": {"frase": "Donde la luz nos reúne."}
+}

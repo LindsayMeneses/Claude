@@ -1,0 +1,87 @@
+/* Navidad Multiplaza 2026 — estilos de efectos, recorrido guiado y detalles finos */
+html{scroll-behavior:smooth}
+body{background:#0A241C}
+.nm-slide{min-height:100vh;min-height:100svh;position:relative}
+.nm-hero{overflow:hidden}
+.nm-hero>*>*:not(.nm-fx){position:relative;z-index:1}
+.nm-fx{position:absolute!important;inset:0;margin:0!important;pointer-events:none;z-index:0;width:100%!important;max-width:none!important}
+.nm-fx .elementor-widget-container{height:100%}
+.nm-snow{width:100%;height:100%;display:block}
+/* marco fino dorado en la portada */
+.nm-hero::after{content:"";position:absolute;inset:22px;border:1px solid rgba(201,164,92,.28);border-radius:4px;pointer-events:none;z-index:1}
+.nm-hero h1 em,.nm-shine em{background:linear-gradient(100deg,#C9A45C 20%,#FFF3D1 40%,#EBD9AE 50%,#C9A45C 70%);background-size:220% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:nm-shine 6s ease-in-out infinite;padding-right:.06em}
+@keyframes nm-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+/* etiquetas con filete */
+.nm-eyebrow .elementor-heading-title::before{content:"";display:inline-block;width:32px;height:1px;background:currentColor;vertical-align:middle;margin:0 14px 3px 0;opacity:.8}
+.nm-eyebrow.nm-c .elementor-heading-title::after{content:"";display:inline-block;width:32px;height:1px;background:currentColor;vertical-align:middle;margin:0 0 3px 14px;opacity:.8}
+.nm-quote .elementor-heading-title{border-left:1px solid #C9A45C;padding-left:22px}
+/* tarjetas */
+.nm-card{border:1px solid rgba(201,164,92,.28);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .5s}
+.nm-card:hover{transform:translateY(-6px);border-color:rgba(201,164,92,.7);box-shadow:0 28px 60px -30px rgba(10,36,28,.55)}
+.nm-glass{background:rgba(255,255,255,.035)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.nm-phase{border:0!important;border-top:1px solid rgba(201,164,92,.55)!important;border-radius:0!important;background:transparent!important;position:relative}
+.nm-phase::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:#C9A45C;box-shadow:0 0 0 5px rgba(201,164,92,.18)}
+.nm-phase:hover{transform:none;box-shadow:none}
+/* ilustraciones */
+.nm-art{position:relative;border-radius:16px;overflow:hidden;background:#0F3B2E;height:var(--h,220px)}
+.nm-art svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.nm-art.tall{--h:520px}.nm-art.tile{--h:210px}.nm-art.card{--h:180px}
+@media(max-width:767px){.nm-art.tall{--h:300px}.nm-art.tile{--h:130px}.nm-art.card{--h:170px}}
+.nm-tw{animation:nm-tw 3s ease-in-out infinite}
+@keyframes nm-tw{0%,100%{opacity:.35}50%{opacity:1}}
+.nm-spin{animation:nm-spin 5s ease-in-out infinite}
+@keyframes nm-spin{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.08)}}
+.nm-spin-slow{animation:nm-rot 60s linear infinite}
+@keyframes nm-rot{to{transform:rotate(360deg)}}
+.nm-sway{animation:nm-sway 5s ease-in-out infinite}
+@keyframes nm-sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+.nm-flow{animation:nm-flow 4s ease-in-out infinite alternate}
+@keyframes nm-flow{to{transform:translateY(6px)}}
+/* líneas que se dibujan */
+.nm-line{transform-origin:left}
+.nm-c .elementor-divider,.nm-line.nm-c{transform-origin:center}
+/* revelado por diapositiva (solo si hay JS) */
+html.nm-js .nm-rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.nm-js .nm-slide.is-on .nm-rv{opacity:1;transform:none}
+html.nm-js .nm-line.nm-rv{transform:scaleX(0)}
+html.nm-js .nm-slide.is-on .nm-line.nm-rv{transform:scaleX(1)}
+.elementor-editor-active .nm-rv{opacity:1!important;transform:none!important}
+/* interfaz del recorrido */
+.nm-tour{position:fixed;inset:0;pointer-events:none;z-index:9990;font-family:'Manrope',sans-serif}
+.nm-bar{position:absolute;top:0;left:0;right:0;height:2px;background:rgba(201,164,92,.15)}
+.nm-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#C9A45C,#EBD9AE);transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.nm-brand{position:absolute;top:22px;left:40px;font:600 11px/1 'Manrope',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#EBD9AE;opacity:.85;mix-blend-mode:difference}
+.nm-brand b{font-family:'Fraunces',serif;font-weight:600;letter-spacing:.02em;text-transform:none;font-size:15px;margin-right:10px;color:#fff}
+.nm-dots{position:absolute;right:28px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:14px;pointer-events:auto}
+.nm-dots button{all:unset;cursor:pointer;width:8px;height:8px;border-radius:50%;border:1px solid #C9A45C;transition:all .4s;position:relative}
+.nm-dots button.on{background:#C9A45C;transform:scale(1.35);box-shadow:0 0 0 4px rgba(201,164,92,.18)}
+.nm-dots button span{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 10px 'Manrope',sans-serif;letter-spacing:.2em;
+  text-transform:uppercase;color:#C9A45C;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(10,36,28,.85);padding:6px 10px;border-radius:3px}
+.nm-dots button:hover span,.nm-dots button:focus-visible span{opacity:1}
+.nm-foot{position:absolute;left:40px;right:40px;bottom:26px;display:flex;align-items:center;justify-content:space-between}
+.nm-count{font:600 11px 'Manrope',sans-serif;letter-spacing:.25em;color:#C9A45C;mix-blend-mode:difference}
+.nm-count b{font-family:'Fraunces',serif;font-size:22px;letter-spacing:0;color:#EBD9AE;margin-right:6px}
+.nm-next{all:unset;pointer-events:auto;cursor:pointer;display:flex;align-items:center;gap:14px;font:600 11px 'Manrope',sans-serif;letter-spacing:.22em;
+  text-transform:uppercase;color:#0A241C;background:#C9A45C;border-radius:999px;padding:13px 14px 13px 22px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5);
+  transition:background .3s,transform .3s}
+.nm-next:hover{background:#EBD9AE;transform:translateY(-2px)}
+.nm-next:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}
+.nm-next i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#0A241C;color:#EBD9AE;font-style:normal;font-size:14px;transition:transform .4s}
+.nm-next.back i{transform:rotate(-90deg)}
+.nm-hint{position:absolute;bottom:88px;left:50%;transform:translateX(-50%);font:600 10px 'Manrope',sans-serif;letter-spacing:.3em;text-transform:uppercase;
+  color:#EBD9AE;opacity:.8;transition:opacity .6s;animation:nm-hint 2.4s ease-in-out infinite}
+.nm-hint.off{opacity:0}
+@keyframes nm-hint{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-6px)}}
+@media(max-width:767px){.nm-dots,.nm-brand{display:none}.nm-foot{left:16px;right:16px;bottom:16px}.nm-hint{bottom:78px;white-space:nowrap}
+  .nm-hero::after{inset:10px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  .nm-hero h1 em,.nm-tw,.nm-spin,.nm-spin-slow,.nm-sway,.nm-flow,.nm-hint{animation:none}
+  html.nm-js .nm-rv{transition:none;opacity:1;transform:none}.nm-card,.nm-card:hover{transition:none;transform:none}.nm-snow{display:none}}
+/* lista de claves de decoración */
+.nm-keys{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.nm-keys li{font:600 12px/1.4 'Manrope',sans-serif;letter-spacing:.18em;text-transform:uppercase;padding-left:18px;position:relative}
+.nm-keys li::before{content:"";position:absolute;left:0;top:.45em;width:7px;height:7px;background:#C9A45C;transform:rotate(45deg)}
+.nm-footer a{text-decoration:none;border-bottom:1px solid rgba(201,164,92,.5)}
+.nm-art-w{flex:1 1 0;min-width:0;width:100%}
+.nm-shine em{background-image:linear-gradient(100deg,#8A6A2F 15%,#C9A45C 40%,#E4C57E 50%,#8A6A2F 75%)}

@@ -1,31 +1,38 @@
-"""Genera la plantilla Elementor (JSON importable) de la página Navidad Multiplaza 2026.
+"""Genera la página Elementor de Navidad Multiplaza 2026 (v2: recorrido guiado).
 
-Uso:  python3 build_template.py         ->  escribe navidad-multiplaza-elementor.json
-      python3 build_template.py --page  ->  escribe page-elementor-data.json (meta _elementor_data)
-Los textos marcados con «[PPT]» se reemplazan con el contenido real del deck.
+Uso:  python3 build_template.py         ->  navidad-multiplaza-elementor.json (plantilla importable)
+      python3 build_template.py --page  ->  page-elementor-data.json (meta _elementor_data de la página)
+Textos en copy.json; efectos, ilustraciones y recorrido en fx/ (se incrustan en un widget HTML).
 """
 import json
-import secrets
 import sys
+from pathlib import Path
 
-# --page: datos para una página WordPress; sin imágenes del PPT, cada imagen vacía se
-# sustituye por un panel decorativo para que no queden huecos.
+HERE = Path(__file__).parent
 PAGE = "--page" in sys.argv
-
+COPY = json.loads((HERE / "copy.json").read_text(encoding="utf-8"))
 C = "globals/colors?id="
 T = "globals/typography?id="
-
+MAIL = "mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026"
 
 _seq = iter(range(1, 10**6))
 
 
 def uid():
-    # En modo página, IDs cortos y deterministas para un JSON estable.
-    return f"n{next(_seq):06x}" if PAGE else secrets.token_hex(4)[:7]
+    return f"n{next(_seq):06x}"
 
 
-def container(children, settings=None, inner=False):
-    s = {"content_width": "boxed", "flex_direction": "column", "boxed_width": {"unit": "px", "size": 1200}}
+def px(v, unit="px"):
+    return {"unit": unit, "size": v}
+
+
+def pad(t, r=None, b=None, l=None):
+    r = t if r is None else r
+    return {"unit": "px", "top": t, "right": r, "bottom": t if b is None else b, "left": r if l is None else l, "isLinked": False}
+
+
+def container(children, settings=None, inner=True):
+    s = {"content_width": "full", "flex_direction": "column", "padding": pad(0)}
     s.update(settings or {})
     return {"id": uid(), "elType": "container", "isInner": inner, "settings": s, "elements": children}
 
@@ -34,318 +41,218 @@ def widget(kind, settings):
     return {"id": uid(), "elType": "widget", "widgetType": kind, "isInner": False, "settings": settings, "elements": []}
 
 
-FX = """<canvas class="nm-snow" aria-hidden="true"></canvas>
-<style>
-.nm-hero{position:relative;overflow:hidden}
-.nm-hero>*>*:not(.nm-fx){position:relative;z-index:1}
-.nm-fx{position:absolute!important;inset:0;margin:0!important;pointer-events:none;z-index:0;width:100%!important}
-.nm-fx .elementor-widget-container{height:100%}
-.nm-snow{width:100%;height:100%;display:block}
-.nm-hero h1 em{background:linear-gradient(100deg,#C9A45C 20%,#FFF3D1 40%,#EBD9AE 50%,#C9A45C 70%);
-  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:nm-shine 5s ease-in-out infinite}
-@keyframes nm-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
-.nm-card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
-.nm-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -24px rgba(10,36,28,.45)!important}
-.nm-panel svg{animation:nm-twinkle 3.2s ease-in-out infinite;transform-origin:center}
-.nm-panel:nth-child(2n) svg{animation-delay:1.1s}
-@keyframes nm-twinkle{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.12);opacity:1;
-  filter:drop-shadow(0 0 10px rgba(235,217,174,.6))}}
-.nm-line .elementor-divider-separator,.nm-line{transform-origin:left}
-.nm-line.nm-in{animation:nm-grow 1s cubic-bezier(.2,.7,.2,1) both}
-@keyframes nm-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-@media (prefers-reduced-motion:reduce){.nm-hero h1 em,.nm-panel svg,.nm-line.nm-in{animation:none}
-  .nm-card,.nm-card:hover{transition:none;transform:none}.nm-snow{display:none}}
-</style>
-<script>
-(function(){
-  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('.nm-line').forEach(function(el){
-    if(!('IntersectionObserver' in window)){el.classList.add('nm-in');return;}
-    new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('nm-in');o.unobserve(e.target);}});},{threshold:.6}).observe(el);
-  });
-  if(reduce)return;
-  var c=document.querySelector('.nm-snow');if(!c)return;
-  var x=c.getContext('2d'),w,h,d=Math.min(window.devicePixelRatio||1,2),f=[];
-  function size(){w=c.clientWidth;h=c.clientHeight;c.width=w*d;c.height=h*d;x.setTransform(d,0,0,d,0,0);}
-  size();addEventListener('resize',size);
-  var n=Math.round(Math.min(110,w/12));
-  for(var i=0;i<n;i++)f.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2.2+.6,
-    s:Math.random()*.5+.25,o:Math.random()*Math.PI*2,g:Math.random()<.22});
-  function tick(t){
-    x.clearRect(0,0,w,h);
-    for(var i=0;i<f.length;i++){var p=f[i];
-      p.y+=p.s;p.x+=Math.sin(t/1800+p.o)*.35;if(p.y>h+5){p.y=-5;p.x=Math.random()*w;}
-      var a=p.g?.55+.45*Math.sin(t/400+p.o):.75;
-      x.beginPath();x.arc(p.x,p.y,p.g?p.r*.9:p.r,0,6.283);
-      x.fillStyle=p.g?'rgba(235,217,174,'+a+')':'rgba(255,255,255,'+a*.8+')';
-      if(p.g){x.shadowBlur=8;x.shadowColor='rgba(235,217,174,.9)';}else x.shadowBlur=0;
-      x.fill();}
-    if(!document.hidden)requestAnimationFrame(tick);
-  }
-  document.addEventListener('visibilitychange',function(){if(!document.hidden)requestAnimationFrame(tick);});
-  requestAnimationFrame(tick);
-})();
-</script>"""
+def fx_widget():
+    css = (HERE / "fx/fx.css").read_text()
+    js = (HERE / "fx/art.js").read_text() + "\n" + (HERE / "fx/tour.js").read_text()
+    html = f'<canvas class="nm-snow" aria-hidden="true"></canvas><style>{css}</style><script>{js}</script>'
+    return widget("html", {"html": html, "_css_classes": "nm-fx"})
 
 
-def eyebrow(text, color="accent", align="left"):
+def art(kind, size="card", label=""):
+    return widget("html", {"html": f'<div class="nm-art {size}" data-art="{kind}" data-label="{label}"></div>',
+                           "_css_classes": "nm-art-w"})
+
+
+def eyebrow(num, text, color="accent", align="left", rule=True):
     return widget("heading", {
-        "title": text, "header_size": "p", "align": align,
-        "typography_text_transform": "uppercase",
-        "typography_letter_spacing": {"unit": "em", "size": 0.25},
+        "title": f"{num} &nbsp;{text}" if num else text, "header_size": "p", "align": align,
+        "_css_classes": ("nm-eyebrow" if rule else "nm-label") + (" nm-c" if align == "center" and rule else ""),
         "__globals__": {"title_color": C + color, "typography_typography": T + "accent"},
     })
 
 
-def heading(text, size="h2", color="primary", align="left", px=None):
-    s = {"title": text, "header_size": size, "align": align, "_animation": "fadeInUp",
-         "__globals__": {"title_color": C + color, "typography_typography": T + "primary"}}
-    if px:
-        s["typography_font_size"] = {"unit": "px", "size": px}
-        s["typography_font_size_tablet"] = {"unit": "px", "size": round(px * 0.75)}
-        s["typography_font_size_mobile"] = {"unit": "px", "size": max(round(px * 0.55), 20)}
+def heading(text, size="h2", color="primary", align="left", fs=None, cls="", typo="primary"):
+    s = {"title": text, "header_size": size, "align": align, "_css_classes": cls,
+         "__globals__": {"title_color": C + color, "typography_typography": T + typo}}
+    if fs:
+        s["typography_font_size"] = px(fs)
+        s["typography_font_size_tablet"] = px(round(fs * .78))
+        s["typography_font_size_mobile"] = px(max(round(fs * .56), 20))
     return widget("heading", s)
 
 
-def text(html, color="text", align="left"):
-    return widget("text-editor", {"editor": html, "align": align,
-                                  "__globals__": {"text_color": C + color, "typography_typography": T + "text"}})
+def text(html, color="text", align="left", maxw=None):
+    s = {"editor": html, "align": align, "__globals__": {"text_color": C + color, "typography_typography": T + "text"}}
+    if maxw:
+        s["_element_width"] = "initial"
+        s["_element_custom_width"] = px(maxw)
+        s["_element_custom_width_mobile"] = px(100, "%")
+    return widget("text-editor", s)
 
 
-def button(label, url, bg="accent", fg="noche", outline=False):
+def button(label, url, outline=False, fg="noche"):
     s = {"text": label, "link": {"url": url}, "size": "md",
          "border_radius": {"unit": "px", "top": 999, "right": 999, "bottom": 999, "left": 999, "isLinked": True},
-         "text_padding": {"unit": "px", "top": 16, "right": 34, "bottom": 16, "left": 34, "isLinked": False},
-         "hover_animation": "grow",
-         "__globals__": {"typography_typography": T + "accent"}}
+         "text_padding": pad(17, 34), "__globals__": {"typography_typography": T + "accent"}}
     if outline:
         s.update({"background_color": "transparent", "border_border": "solid",
                   "border_width": {"unit": "px", "top": 1, "right": 1, "bottom": 1, "left": 1, "isLinked": True}})
-        s["__globals__"].update({"button_text_color": C + fg, "border_color": C + fg,
-                                 "button_background_hover_color": C + fg, "hover_color": C + "noche"})
+        s["__globals__"].update({"button_text_color": C + fg, "border_color": C + "accent",
+                                 "button_background_hover_color": C + "accent", "hover_color": C + "noche"})
     else:
-        s["__globals__"].update({"background_color": C + bg, "button_text_color": C + fg,
+        s["__globals__"].update({"background_color": C + "accent", "button_text_color": C + "noche",
                                  "button_background_hover_color": C + "oroclaro"})
     return widget("button", s)
 
 
-def divider(color="accent", width=64):
-    return widget("divider", {"width": {"unit": "px", "size": width}, "weight": {"unit": "px", "size": 2},
-                              "_css_classes": "nm-line",
-                              "__globals__": {"color": C + color}})
+def line(color="accent", width=72, center=False):
+    return widget("divider", {"width": px(width), "weight": px(1), "align": "center" if center else "left",
+                              "_css_classes": "nm-line" + (" nm-c" if center else ""), "__globals__": {"color": C + color}})
 
 
-PANEL_ICONS = {"Key visual de la campaña": "fas fa-star", "Encendido del árbol": "fas fa-tree",
-               "Villa navideña": "fas fa-home", "Show y música": "fas fa-music",
-               "Santa en Multiplaza": "fas fa-gift", "Mood 1": "fas fa-snowflake", "Mood 2": "fas fa-star",
-               "Mood 3": "fas fa-gifts", "Mood 4": "fas fa-candy-cane"}
-
-
-def panel(label):
-    # Panel decorativo en lugar de una imagen que aún no existe.
-    tall = label.startswith("Key")
-    return container([widget("icon", {"selected_icon": {"value": PANEL_ICONS.get(label, "fas fa-star"), "library": "fa-solid"},
-                                       "size": {"unit": "px", "size": 72 if tall else 40},
-                                       "__globals__": {"primary_color": C + "accent"}})], {
-        "content_width": "full", "flex_justify_content": "center", "flex_align_items": "center", "flex_grow": 1,
-        "min_height": {"unit": "px", "size": 420 if tall else 170},
-        "min_height_mobile": {"unit": "px", "size": 260 if tall else 120},
-        "border_radius": {"unit": "px", "top": 18, "right": 18, "bottom": 18, "left": 18, "isLinked": True},
-        "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#0F3B2E",
-        "background_gradient_type": "radial", "background_gradient_position": "center center",
-        "_title": label, "css_classes": "nm-panel",
-    }, inner=True)
-
-
-def image(label):
-    if PAGE:
-        return panel(label)
-    # Imagen provisional hasta subir las del PPT a la biblioteca de medios.
-    return widget("image", {"image": {"url": "", "id": ""}, "image_size": "large",
-                            "_title": label,
-                            "image_border_radius": {"unit": "px", "top": 18, "right": 18, "bottom": 18, "left": 18, "isLinked": True}})
-
-
-def section(children, bg, pad=120, extra=None):
-    s = {"padding": {"unit": "px", "top": pad, "right": 24, "bottom": pad, "left": 24, "isLinked": False},
-         "padding_mobile": {"unit": "px", "top": round(pad * 0.6), "right": 16, "bottom": round(pad * 0.6), "left": 16, "isLinked": False},
-         "gap": {"unit": "px", "size": 24, "column": "24", "row": "24"},
-         "background_background": "classic",
-         "__globals__": {"background_color": C + bg}}
-    s.update(extra or {})
+def row(children, gap=28, mobile="column", wrap=True, align=None):
+    s = {"flex_direction": "row", "flex_wrap": "wrap" if wrap else "nowrap", "flex_direction_mobile": mobile,
+         "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)}}
+    if align:
+        s["flex_align_items"] = align
     return container(children, s)
 
 
-def row(children, gap=32, wrap=True, mobile_row=False):
-    return container(children, {"flex_direction": "row", "flex_wrap": "wrap" if wrap else "nowrap",
-                                "flex_direction_mobile": "row" if mobile_row else "column",
-                                "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)},
-                                "content_width": "full", "padding": {"unit": "px", "top": 0, "right": 0, "bottom": 0, "left": 0, "isLinked": True}},
-                     inner=True)
+def col(children, width, gap=22, justify="center"):
+    return container(children, {"width": px(width, "%"), "width_mobile": px(100, "%"), "flex_justify_content": justify,
+                                "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)}})
 
 
-def card(children, bg="blanco", basis=30, anim="fadeInUp", delay=0):
-    return container(children, {
-        "content_width": "full", "width": {"unit": "%", "size": basis}, "width_mobile": {"unit": "%", "size": 100},
-        "flex_grow": 1,
-        "padding": {"unit": "px", "top": 36, "right": 32, "bottom": 36, "left": 32, "isLinked": False},
-        "border_radius": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20, "isLinked": True},
-        "background_background": "classic", "__globals__": {"background_color": C + bg},
-        "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": {"horizontal": 0, "vertical": 18, "blur": 40, "spread": -18, "color": "rgba(10,36,28,0.25)"},
-        "_animation": anim, "animation_delay": delay, "css_classes": "nm-card",
-    }, inner=True)
+def card(children, bg=None, basis=23, cls="nm-card", p=30, gap=14):
+    s = {"width": px(basis, "%"), "width_mobile": px(100, "%"), "flex_grow": 1, "padding": pad(p, p - 4),
+         "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)},
+         "border_radius": {"unit": "px", "top": 18, "right": 18, "bottom": 18, "left": 18, "isLinked": True},
+         "css_classes": cls}
+    if bg:
+        s.update({"background_background": "classic", "__globals__": {"background_color": C + bg}})
+    return container(children, s)
 
+
+def slide(children, bg, extra=None, cls="", pad_y=110):
+    s = {"content_width": "boxed", "boxed_width": px(1180), "flex_direction": "column", "flex_justify_content": "center",
+         "min_height": px(100, "vh"), "padding": pad(pad_y, 48), "padding_mobile": pad(round(pad_y * .7), 20),
+         "gap": {"unit": "px", "size": 26, "column": "26", "row": "26"},
+         "background_background": "classic", "__globals__": {"background_color": C + bg},
+         "css_classes": ("nm-slide " + cls).strip()}
+    s.update(extra or {})
+    return container(children, s, inner=False)
+
+
+K = COPY
 
 # 1 · Portada
-hero = section([
-    widget("html", {"html": FX, "_css_classes": "nm-fx"}),
-    eyebrow("Multiplaza · Navidad 2026", "accent", "center"),
-    heading("La Navidad que <em>se vive</em> en Multiplaza", "h1", "blanco", "center", px=84),
-    text("<p>[PPT] Una temporada diseñada para reunir, sorprender y emocionar: experiencias, "
-         "decoración y momentos que convierten cada visita en un recuerdo.</p>", "oroclaro", "center"),
-    row([button("Ver la propuesta", "#concepto"), button("Calendario", "#calendario", fg="blanco", outline=True)], gap=16),
-], "noche", pad=180, extra={
-    "min_height": {"unit": "vh", "size": 100}, "flex_justify_content": "center", "flex_align_items": "center",
-    "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#0F3B2E",
-    "background_gradient_type": "radial", "background_gradient_position": "top center",
-    "background_color_stop": {"unit": "%", "size": 10}, "background_color_b_stop": {"unit": "%", "size": 95},
-    "__globals__": {}, "css_classes": "nm-hero",
+p = K["portada"]
+hero = slide([
+    fx_widget(),
+    eyebrow("", p["eyebrow"], "accent", "center"),
+    heading(p["titulo_html"], "h1", "blanco", "center", fs=112),
+    line("accent", 90, center=True),
+    text(f"<p>{p['bajada']}</p>", "oroclaro", "center", maxw=620),
+    row([button(p["cta_primario"], "#concepto"), button(p["cta_secundario"], "#calendario", outline=True, fg="blanco")],
+        gap=14, mobile="row"),
+], "noche", cls="nm-hero", extra={
+    "flex_align_items": "center", "_element_id": "inicio",
+    "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#15523F",
+    "background_gradient_type": "radial", "background_gradient_position": "center center",
+    "background_color_stop": px(30, "%"), "background_color_b_stop": px(130, "%"), "__globals__": {},
 })
 
 # 2 · Concepto
-concepto = section([
+p = K["concepto"]
+concepto = slide([
     row([
-        container([
-            eyebrow("El concepto", "secondary"),
-            heading("[PPT] Destellos de Navidad", "h2", "primary", px=56),
-            divider(),
-            text("<p>[PPT] La Navidad no se compra: se vive. Este año, Multiplaza se transforma en un "
-                 "bosque encendido de luz y oro, donde cada pasillo guarda una sorpresa y cada visita "
-                 "se convierte en tradición familiar.</p>"),
-        ], {"content_width": "full", "width": {"unit": "%", "size": 50}, "width_mobile": {"unit": "%", "size": 100},
-            "flex_justify_content": "center", "_animation": "fadeInLeft"}, inner=True),
-        container([image("Key visual de la campaña")],
-                  {"content_width": "full", "width": {"unit": "%", "size": 46}, "width_mobile": {"unit": "%", "size": 100},
-                   "_animation": "fadeInRight"}, inner=True),
-    ], gap=48, wrap=False),
+        col([eyebrow("01", p["eyebrow"], "secondary"), heading(p["titulo"], "h2", "primary", fs=58), line(),
+             text(f"<p>{p['texto']}</p>", maxw=520),
+             heading(p["cita"], "p", "vino", fs=26, cls="nm-quote", typo="secondary")], 46),
+        col([art("arbol", "tall", "Árbol de luz dorado")], 50),
+    ], gap=56, wrap=False, align="center"),
 ], "marfil", extra={"_element_id": "concepto"})
 
 # 3 · Objetivos
-objetivos = section([
-    eyebrow("Objetivos", "secondary", "center"),
-    heading("Lo que vamos a lograr", "h2", "primary", "center", px=48),
-    row([
-        card([widget("icon-box", {"selected_icon": {"value": icon, "library": "fa-solid"}, "title_text": t,
-                                  "description_text": d, "position": "top", "title_size": "h3",
-                                  "__globals__": {"primary_color": C + "secondary", "title_color": C + "primary",
-                                                  "description_color": C + "text",
-                                                  "title_typography_typography": T + "secondary",
-                                                  "description_typography_typography": T + "text"}})],
-             delay=i * 150)
-        for i, (icon, t, d) in enumerate([
-            ("fas fa-users", "Afluencia", "[PPT] Atraer más visitas durante noviembre y diciembre."),
-            ("fas fa-shopping-bag", "Ventas", "[PPT] Impulsar el ticket promedio de los locatarios."),
-            ("fas fa-heart", "Emoción", "[PPT] Crear momentos memorables que se compartan."),
-        ])
-    ]),
-], "blanco")
-
-# 4 · Experiencias
-experiencias = section([
-    eyebrow("Experiencias", "accent", "center"),
-    heading("Momentos que <em>brillan</em>", "h2", "blanco", "center", px=48),
-    row([
-        card([image(t), heading(t, "h3", "primary", px=26), text(f"<p>{d}</p>")], "marfil", basis=22, delay=i * 120)
-        for i, (t, d) in enumerate([
-            ("Encendido del árbol", "[PPT] El evento de apertura de la temporada."),
-            ("Villa navideña", "[PPT] Un recorrido inmersivo para toda la familia."),
-            ("Show y música", "[PPT] Coros, conciertos y personajes."),
-            ("Santa en Multiplaza", "[PPT] Fotos, cartas y sorpresas."),
-        ])
-    ], gap=24),
+p = K["objetivos"]
+objetivos = slide([
+    eyebrow("02", p["eyebrow"], "accent", "center"),
+    heading(p["titulo"], "h2", "blanco", "center", fs=52),
+    row([card([heading(n, "p", "accent", fs=40, typo="secondary"), heading(it["titulo"], "h3", "blanco", fs=26),
+               text(f"<p>{it['texto']}</p>", "oroclaro")], basis=30, cls="nm-card nm-glass", p=38)
+         for n, it in zip(("I", "II", "III"), p["items"])], gap=24),
 ], "primary")
 
-# 5 · Decoración / mood
-decoracion = section([
+# 4 · Experiencias
+p = K["experiencias"]
+experiencias = slide([
+    eyebrow("03", p["eyebrow"], "secondary", "center"),
+    heading(p["titulo_html"], "h2", "primary", "center", fs=52, cls="nm-shine"),
+    row([card([art(k, "card", it["titulo"]), heading(it["titulo"], "h3", "primary", fs=24), text(f"<p>{it['texto']}</p>")],
+              "blanco", basis=22, p=14, gap=12)
+         for k, it in zip(("arbol", "villa", "musica", "regalo"), p["items"])], gap=20),
+], "marfil")
+
+# 5 · Decoración
+p = K["decoracion"]
+claves = "".join(f"<li>{c}</li>" for c in p["claves"])
+decoracion = slide([
     row([
-        container([
-            eyebrow("Decoración", "secondary"),
-            heading("[PPT] Un bosque de luz y oro", "h2", "primary", px=48),
-            divider("secondary"),
-            text("<p>[PPT] Verdes profundos, dorados champán y destellos rojo vino. Materiales nobles, "
-                 "miles de luces cálidas y piezas monumentales que invitan a detenerse, mirar hacia "
-                 "arriba y tomar la foto de la temporada.</p>"),
-        ], {"content_width": "full", "width": {"unit": "%", "size": 38}, "width_mobile": {"unit": "%", "size": 100},
-            "flex_justify_content": "center"}, inner=True),
-        container([row([image("Mood 1"), image("Mood 2")], gap=16, mobile_row=True),
-                   row([image("Mood 3"), image("Mood 4")], gap=16, mobile_row=True)],
-                  {"content_width": "full", "width": {"unit": "%", "size": 58}, "width_mobile": {"unit": "%", "size": 100},
-                   "gap": {"unit": "px", "size": 16, "column": "16", "row": "16"}, "_animation": "zoomIn"}, inner=True),
-    ], gap=48, wrap=False),
-], "salvia")
+        col([eyebrow("04", p["eyebrow"], "accent"), heading(p["titulo"], "h2", "blanco", fs=52), line(),
+             text(f"<p>{p['texto']}</p>", "oroclaro", maxw=460),
+             text(f'<ul class="nm-keys">{claves}</ul>', "accent")], 40),
+        col([row([art("esferas", "tile", "Esferas"), art("copo", "tile", "Copo de nieve")], gap=14, mobile="row", wrap=False),
+             row([art("guirnalda", "tile", "Guirnalda"), art("estrella", "tile", "Estrella")], gap=14, mobile="row", wrap=False)],
+            56, gap=14),
+    ], gap=56, wrap=False, align="center"),
+], "noche")
 
 # 6 · Calendario
-fases = [("Nov", "Lanzamiento", "[PPT] Encendido y apertura de la temporada."),
-         ("Dic · 1ª quincena", "Temporada alta", "[PPT] Activaciones y shows de fin de semana."),
-         ("Dic · 2ª quincena", "Cierre mágico", "[PPT] Nochebuena y último impulso de compras."),
-         ("Ene", "Balance", "[PPT] Resultados y aprendizajes.")]
-calendario = section([
-    eyebrow("Calendario", "secondary", "center"),
-    heading("La temporada, paso a paso", "h2", "primary", "center", px=48),
-    row([card([eyebrow(f, "secondary"), heading(t, "h3", "primary", px=26), text(f"<p>{d}</p>")],
-              "marfil", basis=22, delay=i * 120) for i, (f, t, d) in enumerate(fases)], gap=24),
-], "blanco", extra={"_element_id": "calendario"})
+p = K["calendario"]
+calendario = slide([
+    eyebrow("05", p["eyebrow"], "secondary", "center"),
+    heading(p["titulo"], "h2", "primary", "center", fs=52),
+    row([card([eyebrow("", f["etiqueta"], "secondary", rule=False), heading(f["titulo"], "h3", "primary", fs=28),
+               text(f"<p>{f['texto']}</p>")], basis=22, cls="nm-card nm-phase", p=30, gap=10)
+         for f in p["fases"]], gap=28),
+], "marfil", extra={"_element_id": "calendario"})
 
-# 7 · Cifras
-cifras = section([
-    row([
-        container([widget("counter", {"starting_number": 0, "ending_number": n, "suffix": suf, "title": t,
-                                      "__globals__": {"number_color": C + "accent", "title_color": C + "oroclaro",
-                                                      "typography_number_typography": T + "primary",
-                                                      "typography_title_typography": T + "accent"}})],
-                  {"content_width": "full", "width": {"unit": "%", "size": 22}, "width_mobile": {"unit": "%", "size": 100}},
-                  inner=True)
-        for n, suf, t in [(45, "", "[PPT] Días de temporada"), (30, "+", "[PPT] Activaciones"),
-                          (1, "M+", "[PPT] Visitas esperadas"), (100, "%", "Magia navideña")]
-    ], gap=24),
-], "noche", pad=90)
+# 7 · Medición
+p = K["medicion"]
+medicion = slide([
+    eyebrow("06", p["eyebrow"], "accent", "center"),
+    heading(p["titulo"], "h2", "blanco", "center", fs=52),
+    row([card([heading(f"0{i + 1}", "p", "accent", fs=34, typo="secondary"), heading(it["titulo"], "h3", "blanco", fs=24),
+               text(f"<p>{it['texto']}</p>", "oroclaro")], basis=22, cls="nm-card nm-glass", p=30)
+         for i, it in enumerate(p["items"])], gap=20),
+], "primary")
 
 # 8 · Cierre
-cierre = section([
-    heading("Hagamos brillar esta Navidad", "h2", "blanco", "center", px=64),
-    text("<p>[PPT] Una temporada para volver, compartir y recordar. Encendamos juntos la Navidad "
-         "más luminosa de Multiplaza.</p>", "oroclaro", "center"),
-    button("Conversemos", "mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026"),
-], "vino", pad=140, extra={"flex_align_items": "center"})
+p = K["cierre"]
+cierre = slide([
+    eyebrow("07", "Siguiente paso", "oroclaro", "center"),
+    heading(p["titulo"], "h2", "blanco", "center", fs=76),
+    line("oroclaro", 90, center=True),
+    text(f"<p>{p['texto']}</p>", "oroclaro", "center", maxw=560),
+    button(p["cta"], MAIL),
+], "vino", extra={"flex_align_items": "center", "background_background": "gradient", "background_color": "#9B1530",
+                  "background_color_b": "#4A0614", "background_gradient_type": "radial",
+                  "background_gradient_position": "center center", "background_color_stop": px(0, "%"),
+                  "background_color_b_stop": px(100, "%"), "__globals__": {}})
 
-template = {
-    "version": "0.4",
-    "title": "Navidad Multiplaza 2026",
-    "type": "page",
-    "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
-    "content": [hero, concepto, objetivos, experiencias, decoracion, calendario, cifras, cierre],
-}
+# Pie de página · Multiplaza · Grupo Roble
+pie = container([
+    row([
+        col([heading("Multiplaza", "p", "blanco", fs=30), heading("Un centro de Grupo Roble", "p", "accent", typo="accent")], 32, gap=6),
+        col([heading(K["pie"]["frase"], "p", "oroclaro", "center", fs=22, typo="secondary")], 32, gap=6),
+        col([heading("Contacto", "p", "accent", "right", typo="accent"),
+             text('<p><a href="' + MAIL + '" style="color:inherit">contacto@lindsaymeneses.com</a></p>', "oroclaro", "right")], 32, gap=6),
+    ], gap=24, align="center"),
+    line("accent", 100, center=False),
+    text(f"<p>{K['nombre_campana']} · Propuesta creativa Navidad 2026 para Multiplaza · Grupo Roble</p>", "salvia", "center"),
+], {"content_width": "boxed", "boxed_width": px(1180), "padding": pad(64, 48, 40), "padding_mobile": pad(48, 20, 90),
+    "gap": {"unit": "px", "size": 28, "column": "28", "row": "28"}, "background_background": "classic",
+    "__globals__": {"background_color": C + "noche"}, "css_classes": "nm-footer"}, inner=False)
+
+CONTENT = [hero, concepto, objetivos, experiencias, decoracion, calendario, medicion, cierre, pie]
+template = {"version": "0.4", "title": "Navidad Multiplaza 2026", "type": "page",
+            "page_settings": {"hide_title": "yes", "template": "elementor_canvas"}, "content": CONTENT}
 
 if __name__ == "__main__":
     if PAGE:
-        # Datos para una página WordPress (meta _elementor_data), sin las marcas [PPT].
-        def slim(el):
-            # Quita claves redundantes para reducir el tamaño del meta.
-            if not el["isInner"]:
-                del el["isInner"]
-            if el["elType"] == "container" and el["settings"].get("content_width") == "full":
-                el["settings"].pop("boxed_width", None)
-            for child in el["elements"]:
-                slim(child)
-        for el in template["content"]:
-            slim(el)
-        data = json.dumps(template["content"], ensure_ascii=False, separators=(",", ":")).replace("[PPT] ", "")
-        with open("page-elementor-data.json", "w", encoding="utf-8") as f:
-            f.write(data)
+        data = json.dumps(CONTENT, ensure_ascii=False, separators=(",", ":"))
+        (HERE / "page-elementor-data.json").write_text(data, encoding="utf-8")
         print("ok page-elementor-data.json", len(data), "bytes")
     else:
-        with open("navidad-multiplaza-elementor.json", "w", encoding="utf-8") as f:
-            json.dump(template, f, ensure_ascii=False, indent=1)
-        print("ok", len(template["content"]), "secciones")
+        (HERE / "navidad-multiplaza-elementor.json").write_text(json.dumps(template, ensure_ascii=False, indent=1), encoding="utf-8")
+        print("ok", len(CONTENT), "bloques")
