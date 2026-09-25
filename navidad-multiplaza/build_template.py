@@ -35,6 +35,10 @@ FOTOS = {
     "arbolblanco": [(768, "nm-arbol-festivo-768x488.jpg"), (1536, "nm-arbol-festivo-1536x976.jpg")],
 }
 
+# Clips de 6 s generados con IA (ver VIDEOS-IA.md). Clave de FOTOS -> URL del .mp4 en Medios.
+# Mientras una clave no tenga video, se muestra la foto; cuando lo tenga, el clip entra en fundido sobre ella.
+VIDEOS = {}
+
 _seq = iter(range(1, 10**6))
 
 
@@ -88,14 +92,19 @@ def img(key, alt, sizes="100vw", eager=False):
             + ('fetchpriority="high">' if eager else 'loading="lazy" decoding="async">'))
 
 
+def vid(key):
+    url = VIDEOS.get(key)
+    return f'<video class="nm-vid" muted loop playsinline preload="none" data-src="{url}" aria-hidden="true"></video>' if url else ""
+
+
 def photo_bg(key, alt, ov="left", eager=False):
     """Foto a sangre como fondo de la diapositiva: entra desenfocada, enfoca y deriva lentamente."""
-    return html(f'<div class="nm-ph {ov}"><div class="nm-kb">{img(key, alt, eager=eager)}</div></div><div class="nm-ov {ov}"></div>', "nm-bgw")
+    return html(f'<div class="nm-ph {ov}"><div class="nm-kb">{img(key, alt, eager=eager)}{vid(key)}</div></div><div class="nm-ov {ov}"></div>', "nm-bgw")
 
 
 def photo(key, alt, size="tall", sizes="(max-width:767px) 100vw, 50vw"):
     """Foto enmarcada con filete dorado desplazado."""
-    return html(f'<figure class="nm-frame {size}"><div class="nm-ph"><div class="nm-kb">{img(key, alt, sizes)}</div></div></figure>',
+    return html(f'<figure class="nm-frame {size}"><div class="nm-ph"><div class="nm-kb">{img(key, alt, sizes)}{vid(key)}</div></div></figure>',
                 "nm-frame-w")
 
 

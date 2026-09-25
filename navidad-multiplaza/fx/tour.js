@@ -122,6 +122,20 @@
     b.innerHTML = h;
   }
 
-  function start() { init(); snow(); bokeh(); }
+  // Clips de 6 s: se cargan al acercarse, se reproducen solo en pantalla y se pausan fuera de ella.
+  function clips() {
+    var vs = [].slice.call(document.querySelectorAll('video.nm-vid[data-src]'));
+    if (!vs.length || reduce) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { var v = e.target;
+        if (e.isIntersecting) {
+          if (!v.src) { v.src = v.getAttribute('data-src'); v.addEventListener('playing', function () { v.classList.add('on'); }); }
+          var p = v.play(); if (p && p.catch) p.catch(function () {});
+        } else v.pause(); });
+    }, { rootMargin: '200px 0px' });
+    vs.forEach(function (v) { io.observe(v); });
+  }
+
+  function start() { init(); snow(); bokeh(); clips(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
