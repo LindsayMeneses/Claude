@@ -1,13 +1,52 @@
 # Catálogo de agentes y skills instalados
 
-**506 skills** y **48 agentes**, organizados por área. Se instalan en `.claude/skills/` y `.claude/agents/`, y Claude Code los carga automáticamente al trabajar en este repo.
+**538 skills** y **48 agentes**, organizados por área. Se instalan en `.claude/skills/` y `.claude/agents/`, y Claude Code los carga automáticamente al trabajar en este repo.
 
 - **Skills:** se activan solas cuando lo que pides encaja con su descripción. También puedes llamarlas por nombre con `/nombre-de-skill`.
 - **Agentes:** pídele a Claude, por ejemplo: *“usa el agente `market-content` para…”*.
 
 Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en `.claude/installed-manifest.json`.
 
-## 🎨 Branding e identidad (32)
+## 🧊 Diseño 3D, WebGL y experiencias inmersivas (19)
+
+| Tipo | Nombre | Qué hace | Fuente |
+|---|---|---|---|
+| skill | `3dicon` | Turn a prompt or a still image into a looping animated icon with real transparency — GPT Image / Nano Banana for the art, Seedance via OpenR… | samyost1/3dicon |
+| skill | `3dviz-pro-max` | Design and build expressive 3D scenes, explainers and interactive models with grounded subject knowledge. Use for 3D creation or edits, incl… | viettranx/3dviz-pro-max |
+| skill | `aframe-webxr` | Declarative web framework for building browser-based 3D, VR, and AR experiences using HTML and entity-component architecture. Use this skill… | freshtechbro/claudedesignskills |
+| skill | `babylonjs-engine` | Comprehensive skill for Babylon.js 3D web rendering engine. Use this skill when building real-time 3D experiences, browser-based games, inte… | freshtechbro/claudedesignskills |
+| skill | `blender-web-pipeline` | Blender to web export workflows for 3D models and animations. Use this skill when exporting Blender models to glTF for web, optimizing 3D as… | freshtechbro/claudedesignskills |
+| skill | `lightweight-3d-effects` | Lightweight 3D effects for decorative elements and micro-interactions using Zdog, Vanta.js, and Vanilla-Tilt.js. Use this skill when adding … | freshtechbro/claudedesignskills |
+| skill | `liquid-metal-border` | Add and tune animated liquid-metal WebGL borders with the React `metal-fx` package. Use when buttons, icon controls, chips, tabs, cards, or … | boraoztunc/skills |
+| skill | `pixijs-2d` | Fast, lightweight 2D rendering engine for creating interactive graphics, particle effects, and canvas-based applications using WebGL/WebGPU.… | freshtechbro/claudedesignskills |
+| skill | `playcanvas-engine` | Lightweight WebGL/WebGPU game engine with entity-component architecture and visual editor integration. Use this skill when building browser-… | freshtechbro/claudedesignskills |
+| skill | `react-three-fiber` | Build declarative 3D scenes with React Three Fiber (R3F) - a React renderer for Three.js. Use when building interactive 3D experiences in Re… | freshtechbro/claudedesignskills |
+| skill | `shaders-cursor-ripples` | Add cursor-following fluid WebGPU distortion over an existing image with the Shaders library's ImageTexture and CursorRipples components. Us… | boraoztunc/skills |
+| skill | `spline-interactive` | Browser-based 3D design tool with visual editor, animation, and web export. Use this skill when creating 3D scenes without code, designing i… | freshtechbro/claudedesignskills |
+| skill | `substance-3d-texturing` | Comprehensive skill for Adobe Substance 3D Painter texturing and material creation workflow. Use this skill when creating PBR materials, exp… | freshtechbro/claudedesignskills |
+| skill | `thinking-orbs` | Add accessible animated AI loading and agent-status indicators with the React thinking-orbs library. Use when a chat, copilot, voice, search… | boraoztunc/skills |
+| skill | `three` | Three.js and WebGL adapter patterns for HyperFrames. Use when creating deterministic Three.js scenes, WebGL canvas layers, AnimationMixer ti… | boraoztunc/skills |
+| skill | `threejs-webgl` | Comprehensive skill for Three.js 3D web development. Use this skill when building interactive 3D scenes, WebGL/WebGPU applications, product … | freshtechbro/claudedesignskills |
+| skill | `typegpu` | TypeGPU and raw WebGPU adapter patterns for HyperFrames. Use when creating GPU-rendered compositions with TypeGPU, raw WebGPU, WGSL fragment… | boraoztunc/skills |
+| skill | `web3d-integration-patterns` | Meta-skill for combining Three.js, GSAP ScrollTrigger, React Three Fiber, Motion, and React Spring for complex 3D web experiences. Use when … | freshtechbro/claudedesignskills |
+| skill | `webgl-laser` | Create a fixed full-screen WebGL laser background effect with a thin white-hot vertical core, restrained brand-colored halo, and soft smoky … | boraoztunc/skills |
+
+## 🖼️ Generación de imágenes con IA (10)
+
+| Tipo | Nombre | Qué hace | Fuente |
+|---|---|---|---|
+| 🤖 agente | `gallery-researcher` | Gallery search and inspiration agent. Delegates here when user wants to find references, explore styles, build a mood board, or needs inspir… | wshobson/agents (meigen-ai-design) |
+| 🤖 agente | `image-generator` | Image generation executor agent. Delegates here for ALL generate_image calls to keep the main conversation context clean. Spawn one per imag… | wshobson/agents (meigen-ai-design) |
+| 🤖 agente | `prompt-crafter` | Batch prompt writing agent. Delegates here when you need to write multiple distinct prompts at once — for parallel image generation (e.g., "… | wshobson/agents (meigen-ai-design) |
+| skill | `brandkit` | Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world prese… | Leonxlnx/taste-skill |
+| skill | `image` | When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile ban… | coreyhaines31/marketingskills |
+| skill | `imagegen-frontend-mobile` | Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-pla… | Leonxlnx/taste-skill |
+| skill | `imagegen-frontend-web` | Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE… | Leonxlnx/taste-skill |
+| skill | `product-photoshoot` | Optional product imagery planning. Use when the user asks for help to "shoot a product", "make e-commerce product images", "product photogra… | jau123/MeiGen-AI-Design-MCP |
+| skill | `social-thumbnail` | Optional thumbnail planning for short-video platforms and social feeds. Use when the user asks for creative help with a "video thumbnail", "… | jau123/MeiGen-AI-Design-MCP |
+| skill | `visual-creative` | Optional visual planning assistant. Use when the user asks MeiGen to develop a creative idea, explore visual directions, improve a prompt, o… | jau123/MeiGen-AI-Design-MCP |
+
+## 🎨 Branding e identidad (31)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
@@ -32,7 +71,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `brand-story` | Craft a brand's origin story, founder narrative, and "why we exist" statement. Use when the user says "brand story", "origin story", "founde… | arnabbagxd/Brand-building-skills |
 | skill | `brand-strategy` | Full brand strategy workflow for agencies and brand consultants. Acts as a senior brand strategist — collects client information through a s… | arnabbagxd/Brand-building-skills |
 | skill | `brand-voice` | Define a brand's verbal identity — tone, voice, writing style, vocabulary, and messaging rules. Use when the user says "brand voice", "tone … | arnabbagxd/Brand-building-skills |
-| skill | `brandkit` | Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world prese… | Leonxlnx/taste-skill |
 | skill | `campaign-naming-convention-builder` | Builds a consistent, filterable naming convention across your Google and Meta accounts based on your campaign types, objectives, targeting, … | irinabuht12-oss/marketing-skills |
 | skill | `competitor-branding` | Analyze how competitors present their brand — identity, messaging, positioning, voice, and visual style — to find gaps and opportunities. Us… | arnabbagxd/Brand-building-skills |
 | skill | `critique-brand-consistency` | Critique a rendered screen against mood.md, voice.md, and tokens.md. Use when those brand files exist and you are checking compliance. For d… | Owl-Listener/designer-skills |
@@ -44,7 +82,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `rebranding` | Plan and execute a brand transformation — from diagnosis to new brand definition to rollout. Use when the user says "rebrand", "rebranding",… | arnabbagxd/Brand-building-skills |
 | skill | `storybrand-messaging` | Clarify brand messaging using narrative structure that positions the customer as hero. Use when the user mentions "brand message", "website … | wondelai/skills |
 
-## 📢 Publicidad pagada (Google, Meta, LinkedIn, TikTok) (41)
+## 📢 Publicidad pagada (Google, Meta, LinkedIn, TikTok) (37)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
@@ -65,10 +103,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `competitor-creative-analysis` | Pulls competitor ads from Meta Ad Library and Google Ads Transparency Center, categorizes their messaging angles, formats, CTAs, and creativ… | irinabuht12-oss/marketing-skills |
 | skill | `cpa-diagnostics` | When your CPA spikes, Claude breaks down exactly what caused it. It looks across your campaign data and isolates the contributing factors — … | irinabuht12-oss/marketing-skills |
 | skill | `creative-fatigue-detection` | Monitors your ads for early signs of fatigue before performance fully collapses. Tracks frequency buildup, CTR decay, CPM increases, and eng… | irinabuht12-oss/marketing-skills |
-| skill | `day-hour-performance-breakdown` | Analyzes performance by day of week and hour of day across your campaigns. Identifies when your ads perform best and worst, recommends ad sc… | irinabuht12-oss/marketing-skills |
-| skill | `device-performance-split` | Analyzes how your campaigns perform across mobile, desktop, and tablet. Identifies where device performance diverges significantly and recom… | irinabuht12-oss/marketing-skills |
 | skill | `frequency-cap-recommendations` | Analyzes frequency data across your Meta campaigns, identifies where you're overserving ads to the same people, and recommends frequency cap… | irinabuht12-oss/marketing-skills |
-| skill | `geo-performance-analysis` | Breaks down campaign performance by geographic location at whatever level matters — country, state, city, DMA, zip code. Flags underperformi… | irinabuht12-oss/marketing-skills |
 | skill | `good-strategy-bad-strategy` | Formulate and audit real strategy using Richard Rumelt''s "Good Strategy Bad Strategy": an honest diagnosis, a guiding policy, and coherent … | wondelai/skills |
 | skill | `google-ads` | Plan, build, and optimize Google Ads campaigns — Search, Shopping, Performance Max, Display, and YouTube — including keyword research, match… | arnabbagxd/Brand-building-skills |
 | skill | `google-ads-audit` | Comprehensive Google Ads account health analysis detecting wasted spend, search term leaks, negative keyword gaps, bid strategy issues, and … | irinabuht12-oss/marketing-skills |
@@ -79,7 +114,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `meta-ads-audit` | Meta/Facebook/Instagram Ads campaign structure analysis detecting creative fatigue, audience overlap, scaling opportunities, and iOS trackin… | irinabuht12-oss/marketing-skills |
 | skill | `pacing-monitor` | Tracks daily spend against monthly budget targets across all campaigns and accounts. Tells you exactly where you'll land at current pace, fl… | irinabuht12-oss/marketing-skills |
 | skill | `paid-ads` | When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platform… | alirezarezvani/claude-skills (marketing) |
-| skill | `performance-benchmarking` | Compares your key metrics against industry benchmarks for your specific vertical, campaign type, and platform. Tells you where you're ahead,… | irinabuht12-oss/marketing-skills |
 | skill | `quality-score-breakdown` | Breaks down Quality Score components for your Google Ads keywords — expected CTR, ad relevance, and landing page experience — and tells you … | irinabuht12-oss/marketing-skills |
 | skill | `reddit-ads-audit` | Reddit Ads campaign analysis detecting community targeting issues, creative fatigue, bid inefficiencies, and subreddit performance problems.… | irinabuht12-oss/marketing-skills |
 | skill | `retargeting-window-analysis` | Analyzes your conversion lag data to determine the optimal retargeting window for each audience segment. Tells you whether your 30-day retar… | irinabuht12-oss/marketing-skills |
@@ -176,18 +210,21 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `seo-audit` | Run a comprehensive SEO audit — keyword research, on-page analysis, content gaps, technical checks, and competitor comparison. Use when asse… | anthropics/knowledge-work-plugins (marketing) |
 | skill | `site-architecture` | When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use wh… | coreyhaines31/marketingskills |
 
-## 📈 Estrategia, growth y CRO (117)
+## 📈 Estrategia, growth y CRO (124)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
+| 🤖 agente | `business-analyst` | Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI framework… | wshobson/agents (business-analytics) |
+| 🤖 agente | `cs-demand-gen-specialist` | Demand generation and acquisition-funnel specialist orchestrating the marketing-demand-acquisition, paid-ads, and email-sequence skills. Use… | alirezarezvani/claude-skills |
 | 🤖 agente | `customer-support` | Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichannel support e… | wshobson/agents (customer-sales-automation) |
-| 🤖 agente | `gallery-researcher` | Gallery search and inspiration agent. Delegates here when user wants to find references, explore styles, build a mood board, or needs inspir… | wshobson/agents (meigen-ai-design) |
 | 🤖 agente | `growth-marketer` | Growth marketing specialist for bootstrapped startups and indie hackers. Builds content engines, optimizes funnels, runs launch sequences, a… | alirezarezvani/claude-skills |
 | 🤖 agente | `market-competitive` |  | zubair-trabzada/ai-marketing-claude |
 | 🤖 agente | `market-conversion` |  | zubair-trabzada/ai-marketing-claude |
 | 🤖 agente | `market-strategy` |  | zubair-trabzada/ai-marketing-claude |
 | 🤖 agente | `market-technical` |  | zubair-trabzada/ai-marketing-claude |
 | 🤖 agente | `sales-automator` | Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales out… | wshobson/agents (customer-sales-automation) |
+| 🤖 agente | `search-specialist` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verificat… | wshobson/agents (content-marketing) |
+| 🤖 agente | `solo-founder` | Your co-founder who doesn't exist yet. Covers product, engineering, marketing, and strategy for one-person startups — because nobody's stopp… | alirezarezvani/claude-skills |
 | 🤖 agente | `startup-analyst` | Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-st… | wshobson/agents (startup-business-analyst) |
 | skill | `ab-test-analyzer` | Statistical significance calculator for A/B test results with sample size requirements, segment breakdowns, and hypothesis generation. Use w… | irinabuht12-oss/marketing-skills |
 | skill | `ab-test-setup` | When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "expe… | alirezarezvani/claude-skills (marketing) |
@@ -201,7 +238,9 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `aso` | When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimi… | coreyhaines31/marketingskills |
 | skill | `behavioural-analytics` | Read funnels, retention curves, and event data as a designer — separating a design problem from a tracking artefact. Use when handed product… | Owl-Listener/designer-skills |
 | skill | `blue-ocean-strategy` | Create uncontested market space using value innovation instead of competing head-to-head. Use when the user mentions "blue ocean", "red ocea… | wondelai/skills |
+| skill | `business-name-fit` | Suggest, pick, or vet a business, startup, or product name that stays true to the founder's cultural origin while working professionally in … | alirezarezvani/claude-skills (marketing) |
 | skill | `campaign-analytics` | Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI calculation for marketing optimization. Use … | alirezarezvani/claude-skills (marketing) |
+| skill | `campaign-plan` | Generate a full campaign brief with objectives, audience, messaging, channel strategy, content calendar, and success metrics. Use when plann… | anthropics/knowledge-work-plugins (marketing) |
 | skill | `card-sort-analysis` | Analyse open or closed card sort results into a proposed grouping and label set. Use after running a sort study. For turning that evidence i… | Owl-Listener/designer-skills |
 | skill | `churn-prevention` | When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategie… | coreyhaines31/marketingskills |
 | skill | `click-test-plan` | Design first-click and click tests for findability and navigation. Use when testing whether people can locate something. For full task-based… | Owl-Listener/designer-skills |
@@ -229,6 +268,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `free-tools` | When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also us… | coreyhaines31/marketingskills |
 | skill | `grow-business` | Guided journey from a business with lucky months to a repeatable growth engine that produces a forecast. Orchestrates nine skills phase by p… | wondelai/skills |
 | skill | `grow-website` | Guided journey from a website with traffic it under-converts to a research-driven growth engine that captures more leads, persuades more buy… | wondelai/skills |
+| skill | `heuristic-evaluation` | Run an expert review against Nielsen's heuristics and domain criteria, with severity ratings. Use when you need findings without recruiting … | Owl-Listener/designer-skills |
 | skill | `hundred-million-offers` | Create irresistible offers using the Value Equation, bonus stacking, risk-reversing guarantees, and ethical scarcity. Use when the user ment… | wondelai/skills |
 | skill | `icp-research-assistant` | Build detailed B2B buyer personas with pain points, objections, buying triggers, and messaging angles. Use when given a product and market t… | irinabuht12-oss/marketing-skills |
 | skill | `improve-retention` | Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users sign up but dont stick around", "activa… | wondelai/skills |
@@ -269,11 +309,11 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `page-cro` | When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, … | alirezarezvani/claude-skills (marketing) |
 | skill | `paywall-upgrade-cro` | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions… | alirezarezvani/claude-skills (marketing) |
 | skill | `paywalls` | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions… | coreyhaines31/marketingskills |
-| skill | `performance-report` | Build a marketing performance report with key metrics, trend analysis, wins and misses, and prioritized optimization recommendations. Use wh… | anthropics/knowledge-work-plugins (marketing) |
 | skill | `popup-cro` | When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user me… | alirezarezvani/claude-skills (marketing) |
 | skill | `popups` | When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user me… | coreyhaines31/marketingskills |
 | skill | `predictable-revenue` | Build a scalable outbound B2B sales machine with specialized roles (SDR, AE, CSM). Use when the user mentions "outbound sales", "Cold Callin… | wondelai/skills |
 | skill | `pricing` | When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing ti… | coreyhaines31/marketingskills |
+| skill | `pricing-page` | Use when designing or rewriting a high-converting SaaS pricing page (structure, plan design, copywriting, SEO/AEO, FAQs, layout patterns, ex… | boraoztunc/skills |
 | skill | `pricing-strategy` | Design, optimize, and communicate SaaS pricing — tier structure, value metrics, pricing pages, and price increase strategy. Use when buildin… | alirezarezvani/claude-skills (marketing) |
 | skill | `product-marketing` | When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'market… | coreyhaines31/marketingskills |
 | skill | `prospecting` | When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesse… | coreyhaines31/marketingskills |
@@ -294,6 +334,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `team-composition-analysis` | Design optimal team structures, hiring plans, compensation strategies, and equity allocation for early-stage startups from pre-seed through … | wshobson/agents (startup-business-analyst) |
 | skill | `test-scenario` | Write realistic usability task scenarios with success criteria and facilitation notes. Use when you have a study and need the tasks. For the… | Owl-Listener/designer-skills |
 | skill | `usability-test-plan` | Design a usability study — research questions, methodology, participant criteria, metrics, and facilitation guide. Use when planning the stu… | Owl-Listener/designer-skills |
+| skill | `user-flow-diagram` | Diagram screen-level paths, decision points, and branch logic. Use when specifying how a feature is traversed. For the emotional end-to-end … | Owl-Listener/designer-skills |
 | skill | `user-persona` | Build research-grounded personas with goals, frustrations, and behavioural patterns. Use when decisions need a consistent user reference. Fo… | Owl-Listener/designer-skills |
 | skill | `user-research` | Plan, conduct, and synthesize user research. Trigger with "user research plan", "interview guide", "usability test", "survey design", "resea… | anthropics/knowledge-work-plugins (design) |
 | skill | `utm-tracking-generator` | Generate consistent UTM parameters, GA4 event naming, and conversion tracking specs following taxonomy best practices. Use when describing c… | irinabuht12-oss/marketing-skills |
@@ -317,13 +358,12 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `theme-factory` | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set t… | anthropics/skills |
 | skill | `wonder-pill` | Turns open-ended requests into things to think WITH instead of answers to accept. Audits the hidden assumptions inside a topic, inverts them… | ara-mkr/Wonder-Pill |
 
-## 🖌️ Diseño UI/UX y visual (164)
+## 🖌️ Diseño UI/UX y visual (159)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
 | 🤖 agente | `accessibility-expert` | Expert accessibility specialist ensuring WCAG compliance, inclusive design, and assistive technology compatibility. Masters screen reader op… | wshobson/agents (ui-design) |
 | 🤖 agente | `design-system-architect` | Expert design system architect specializing in design tokens, component libraries, theming infrastructure, and scalable design operations. M… | wshobson/agents (ui-design) |
-| 🤖 agente | `image-generator` | Image generation executor agent. Delegates here for ALL generate_image calls to keep the main conversation context clean. Spawn one per imag… | wshobson/agents (meigen-ai-design) |
 | 🤖 agente | `ui-designer` | Expert UI designer specializing in component creation, layout systems, and visual design implementation. Masters modern design patterns, res… | wshobson/agents (ui-design) |
 | 🤖 agente | `ui-ux-designer` | Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializ… | wshobson/agents |
 | 🤖 agente | `ui-visual-validator` | Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification. Masters screenshot a… | wshobson/agents (accessibility-compliance) |
@@ -390,7 +430,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `feedback-patterns` | Design confirmations, status updates, and notifications that tell users an action registered. Use when the system must acknowledge success o… | Owl-Listener/designer-skills |
 | skill | `fitts-law` | Apply Fitts's Law — target acquisition time depends on size and distance. Use when sizing and positioning controls, especially for touch. Fo… | Owl-Listener/designer-skills |
 | skill | `form-design` | Design a form end to end — field order, grouping, validation, and completion. Use when the artifact is a form. For product-wide error strate… | Owl-Listener/designer-skills |
-| skill | `frontend-design` | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typog… | anthropics/skills |
 | skill | `generate-design` | Generate new screens from text prompts or images, edit existing screens with prompts and design system tokens, and generate design variants … | google-labs-code/stitch-skills |
 | skill | `gesture-patterns` | Design gesture interactions for touch and pointer — swipe, drag, long-press, and their discoverability. Use when input is gestural. For OS-s… | Owl-Listener/designer-skills |
 | skill | `glass-dark-ui` | Build dark-mode glassmorphism interfaces with readable contrast, frosted surfaces, and gradient borders using a pseudo-element mask. Use whe… | boraoztunc/skills |
@@ -401,10 +440,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `hooked-ux` | Design habit-forming product loops using the Hook Model (Trigger, Action, Variable Reward, Investment). Use when the user mentions "users ar… | wondelai/skills |
 | skill | `icon-system` | Specify an icon system — grid, sizing, stroke weight, naming, categories, and implementation. Use when standardising iconography. For broade… | Owl-Listener/designer-skills |
 | skill | `illustration-style` | Define an illustration style guide — visual language, colour usage, and application rules. Use when commissioning or standardising illustrat… | Owl-Listener/designer-skills |
-| skill | `image` | When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile ban… | coreyhaines31/marketingskills |
 | skill | `image-to-code-skill` | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply ana… | Leonxlnx/taste-skill |
-| skill | `imagegen-frontend-mobile` | Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-pla… | Leonxlnx/taste-skill |
-| skill | `imagegen-frontend-web` | Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE… | Leonxlnx/taste-skill |
 | skill | `impeccable` | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, e… | boraoztunc/skills |
 | skill | `information-architecture` | Design content structure, hierarchy, labelling, and the navigation model. Use when organising what exists. For the UI that exposes it use `n… | Owl-Listener/designer-skills |
 | skill | `interaction-design` | Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, i… | wshobson/agents (ui-design) |
@@ -433,6 +469,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `minimalist-skill` | Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy sha… | Leonxlnx/taste-skill |
 | skill | `mobile-android-design` | Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Use when designing Android interfaces, implementing … | wshobson/agents (ui-design) |
 | skill | `mobile-ios-design` | Master iOS Human Interface Guidelines and SwiftUI patterns for building native iOS apps. Use when designing iOS interfaces, implementing Swi… | wshobson/agents (ui-design) |
+| skill | `modern-web-design` | Modern web design trends, principles, and implementation patterns for 2024-2025. Use this skill when designing websites, creating interactiv… | freshtechbro/claudedesignskills |
 | skill | `motion-system` | Define motion tokens — durations, easing vocabulary, and reduced-motion handling — for consistency product-wide. Use when standardising moti… | Owl-Listener/designer-skills |
 | skill | `navigation-patterns` | Select and design a navigation pattern — tabs, drawer, hierarchy, or hub — matched to product structure and user tasks. Use when choosing ho… | Owl-Listener/designer-skills |
 | skill | `nothing-design` | This skill should be used when the user explicitly says "Nothing style", "Nothing design", "/nothing-design", or directly asks to use/apply … | dominikmartn/nothing-design-skill |
@@ -442,7 +479,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `peak-end-rule` | Apply the Peak-End Rule — a flow is remembered by its most intense moment and its last. Use when designing completion, celebration, or cance… | Owl-Listener/designer-skills |
 | skill | `platform-conventions` | Design to iOS and Android conventions — what each OS mandates, where they diverge, and when to unify. Use when shipping native apps. For bre… | Owl-Listener/designer-skills |
 | skill | `presentation-deck` | Structure a design presentation for a specific audience and decision. Use when presenting internally. For a portfolio narrative use `case-st… | Owl-Listener/designer-skills |
-| skill | `pricing-page` | Use when designing or rewriting a high-converting SaaS pricing page (structure, plan design, copywriting, SEO/AEO, FAQs, layout patterns, ex… | boraoztunc/skills |
 | skill | `product-proof-saas` | Create or redesign SaaS and AI product landing pages where a real workflow, interface, or deterministic demo is the central proof. Use for p… | boraoztunc/skills |
 | skill | `prototype-strategy` | Choose prototype fidelity and method to match the design question and the decision at stake. Use before building a prototype. For what to te… | Owl-Listener/designer-skills |
 | skill | `react-native-design` | Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native app… | wshobson/agents (ui-design) |
@@ -486,25 +522,35 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `wireframe-spec` | Specify wireframe layout — content priority, component placement, and annotation. Use when defining structure before visual design. For grid… | Owl-Listener/designer-skills |
 | skill | `zeigarnik-effect` | Apply the Zeigarnik Effect — incomplete tasks stay mentally active. Use when designing progress indicators, saved drafts, and return hooks. … | Owl-Listener/designer-skills |
 
-## 🎞️ Animación y motion (CSS/JS) (9)
+## 🎞️ Animación y motion (CSS/JS) (20)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
+| skill | `animated-component-libraries` | Pre-built animated React component collections combining Magic UI (150+ TypeScript/Tailwind/Motion components) and React Bits (90+ minimal-d… | freshtechbro/claudedesignskills |
 | skill | `animejs` | Anime.js adapter patterns for HyperFrames. Use when writing Anime.js animations or timelines inside HyperFrames compositions, registering an… | boraoztunc/skills |
+| skill | `barba-js` | Page transitions library for creating fluid, smooth transitions between website pages. Use this skill when implementing page transitions, cr… | freshtechbro/claudedesignskills |
 | skill | `css-animations` | CSS animation adapter patterns for HyperFrames. Use when authoring CSS keyframes, animation-delay based timing, animation-fill-mode, animati… | boraoztunc/skills |
 | skill | `css-border-gradient` | Apply subtle gradient-border treatments for premium web surfaces. Use when cards, pricing panels, nav bars, modals, buttons, or hero surface… | boraoztunc/skills |
 | skill | `gsap` | GSAP animation reference for HyperFrames. Covers gsap.to(), from(), fromTo(), easing, stagger, defaults, timelines (gsap.timeline(), positio… | boraoztunc/skills |
+| skill | `gsap-scrolltrigger` | Comprehensive skill for GSAP (GreenSock Animation Platform) and ScrollTrigger plugin. Use this skill when creating web animations, scroll-dr… | freshtechbro/claudedesignskills |
+| skill | `locomotive-scroll` | Comprehensive skill for Locomotive Scroll smooth scrolling library with parallax effects, viewport detection, and scroll-driven animations. … | freshtechbro/claudedesignskills |
 | skill | `lottie` | Lottie and dotLottie adapter patterns for HyperFrames. Use when embedding lottie-web JSON animations, .lottie files, @lottiefiles/dotlottie-… | boraoztunc/skills |
+| skill | `lottie-animations` | After Effects animation rendering for web and React applications. Use this skill when implementing Lottie animations, JSON vector animations… | freshtechbro/claudedesignskills |
+| skill | `motion-framer` | Modern animation library for React and JavaScript. Create smooth, production-ready animations with motion components, variants, gestures (ho… | freshtechbro/claudedesignskills |
 | skill | `progressive-blur` | Create a layered CSS progressive blur (top or bottom) using multiple backdrop-filter masks for depth and softness. Use when asked for “progr… | boraoztunc/skills |
+| skill | `react-spring-physics` | Physics-based animation library combining React Spring (spring dynamics, gesture integration, 60fps animations) and Popmotion (low-level com… | freshtechbro/claudedesignskills |
 | skill | `reveal-hover-effect` | Build cursor-following spotlight reveals that expose a second aligned image through a soft radial mask. Use for hover-to-color, before-and-a… | boraoztunc/skills |
+| skill | `rive-interactive` | State machine-based vector animation with runtime interactivity and web integration. Use this skill when creating interactive animations, st… | freshtechbro/claudedesignskills |
+| skill | `scroll-reveal-libraries` | Simple scroll-triggered reveal animations using AOS (Animate On Scroll). Use this skill when building marketing pages, landing pages, or con… | freshtechbro/claudedesignskills |
 | skill | `staggered-word-reveal` | Create subtle editorial word-by-word text reveal animations where each word fades and rises into place once it enters the viewport. Use for … | boraoztunc/skills |
+| skill | `subagent-driven-development` | Use when executing implementation plans with independent tasks in the current session | obra/superpowers |
+| skill | `test-driven-development` | Use when implementing any feature or bugfix, before writing implementation code | obra/superpowers |
 | skill | `waapi` | Web Animations API adapter patterns for HyperFrames. Use when authoring element.animate() motion, Animation currentTime seeking, document.ge… | boraoztunc/skills |
 
-## ⚡ Eficiencia de Claude y metodología (22)
+## ⚡ Eficiencia de Claude y metodología (19)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
-| 🤖 agente | `prompt-crafter` | Batch prompt writing agent. Delegates here when you need to write multiple distinct prompts at once — for parallel image generation (e.g., "… | wshobson/agents (meigen-ai-design) |
 | skill | `caveman` | Ultra-compressed communication mode that cuts output tokens while keeping technical accuracy. Levels: lite, full, ultra and the wenyan varia… | JuliusBrussee/caveman |
 | skill | `clean-code-guard` | Review generated or changed production code before it ships, using Clean Code, SOLID, DRY, KISS, YAGNI, and LLM-specific failure-mode checks… | amElnagdy/guard-skills |
 | skill | `code-review-excellence` | Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining te… | wshobson/agents |
@@ -518,22 +564,25 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `prompt-engineer-toolkit` | Turns marketing prompts into tested, versioned production assets: A/B prompt evaluation against structured test cases, immutable prompt vers… | alirezarezvani/claude-skills (marketing) |
 | skill | `receiving-code-review` | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable -… | obra/superpowers |
 | skill | `requesting-code-review` | Use when completing tasks, implementing major features, or before merging to verify work meets requirements | obra/superpowers |
-| skill | `subagent-driven-development` | Use when executing implementation plans with independent tasks in the current session | obra/superpowers |
 | skill | `systematic-debugging` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | obra/superpowers |
-| skill | `test-driven-development` | Use when implementing any feature or bugfix, before writing implementation code | obra/superpowers |
 | skill | `test-guard` | Review generated or changed test code against universal testing rules before it ships. Best used reactively after an agent writes, edits, ge… | amElnagdy/guard-skills |
 | skill | `verification-before-completion` | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and … | obra/superpowers |
 | skill | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI be… | anthropics/skills |
 | skill | `writing-plans` | Use when you have a spec or requirements for a multi-step task, before touching code | obra/superpowers |
 | skill | `writing-skills` | Use when creating new skills, editing existing skills, or verifying skills work before deployment | obra/superpowers |
 
-## 💻 Programación: WordPress, PHP, SQL, CSS, HTML, JS (66)
+## 💻 Programación: WordPress, PHP, SQL, CSS, HTML, JS (77)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
+| 🤖 agente | `backend-architect` | Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC… | wshobson/agents |
 | 🤖 agente | `database-architect` | Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database archi… | wshobson/agents |
 | 🤖 agente | `database-optimizer` | Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexi… | wshobson/agents |
+| 🤖 agente | `frontend-developer` | Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern fron… | wshobson/agents |
+| 🤖 agente | `frontend-security-coder` | Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns. Use PROAC… | wshobson/agents |
 | 🤖 agente | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PRO… | wshobson/agents |
+| 🤖 agente | `legacy-modernizer` | Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and… | wshobson/agents |
+| 🤖 agente | `performance-engineer` | Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTel… | wshobson/agents |
 | 🤖 agente | `php-pro` | Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP … | wshobson/agents |
 | 🤖 agente | `sql-pro` | Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data mod… | wshobson/agents |
 | 🤖 agente | `typescript-pro` | Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patt… | wshobson/agents |
@@ -547,6 +596,10 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `database-redis` | Optimize Redis as cache and coordination infrastructure with TTL, eviction, and latency-aware key design. Use when implementing Redis cachin… | HoangNguyen0403/agent-skills-standard |
 | skill | `database-schema-design` | Design relational or document schemas from access patterns, cardinality, and lifecycle. Use when modeling entities, choosing embed vs normal… | HoangNguyen0403/agent-skills-standard |
 | skill | `database-transactions` | Define transaction boundaries, locking, and consistency guarantees for multi-step writes. Use when designing atomic operations, retries, ide… | HoangNguyen0403/agent-skills-standard |
+| skill | `day-hour-performance-breakdown` | Analyzes performance by day of week and hour of day across your campaigns. Identifies when your ads perform best and worst, recommends ad sc… | irinabuht12-oss/marketing-skills |
+| skill | `device-performance-split` | Analyzes how your campaigns perform across mobile, desktop, and tablet. Identifies where device performance diverges significantly and recom… | irinabuht12-oss/marketing-skills |
+| skill | `frontend-design` | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typog… | anthropics/skills |
+| skill | `geo-performance-analysis` | Breaks down campaign performance by geographic location at whatever level matters — country, state, city, DMA, zip code. Flags underperformi… | irinabuht12-oss/marketing-skills |
 | skill | `javascript-best-practices` | Idiomatic JavaScript patterns and conventions for maintainable existing code. Use when reviewing or refactoring JavaScript language patterns… | HoangNguyen0403/agent-skills-standard |
 | skill | `javascript-language` | Modern JavaScript (ES2022+) patterns for clean, maintainable code. Use when working with modern JavaScript features like optional chaining, … | HoangNguyen0403/agent-skills-standard |
 | skill | `javascript-tooling` | Configure development tools, linting, formatting, and test runners for existing JavaScript projects. Use for ESLint, Prettier, Jest, or equi… | HoangNguyen0403/agent-skills-standard |
@@ -562,6 +615,8 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `laravel-tooling` | Configure Laravel ecosystem with custom Artisan commands, Vite asset bundling, Pint code styling, and Horizon queue monitoring. Use when cre… | HoangNguyen0403/agent-skills-standard |
 | skill | `modern-javascript-patterns` | Master ES6+ features including async/await, destructuring, spread operators, arrow functions, promises, modules, iterators, generators, and … | wshobson/agents |
 | skill | `nodejs-backend-patterns` | Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, data… | wshobson/agents |
+| skill | `performance-benchmarking` | Compares your key metrics against industry benchmarks for your specific vertical, campaign type, and platform. Tells you where you're ahead,… | irinabuht12-oss/marketing-skills |
+| skill | `performance-report` | Build a marketing performance report with key metrics, trend analysis, wins and misses, and prioritized optimization recommendations. Use wh… | anthropics/knowledge-work-plugins (marketing) |
 | skill | `php-best-practices` | Write PHP following PSR coding standards, SOLID principles, and code-quality guidelines. Use for PHP style, design, refactoring, naming, and… | HoangNguyen0403/agent-skills-standard |
 | skill | `php-concurrency` | Implement concurrency and non-blocking I/O in modern PHP. Use when implementing concurrent requests, async processing, or non-blocking I/O i… | HoangNguyen0403/agent-skills-standard |
 | skill | `php-error-handling` | Implement modern PHP error and exception handling patterns. Use when implementing exception hierarchies, error handlers, or custom exception… | HoangNguyen0403/agent-skills-standard |
@@ -598,20 +653,3 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `wp-wpcli-and-ops` | Use when working with WP-CLI (wp) for WordPress operations: safe search-replace, db export/import, plugin/theme/user/content management, cro… | WordPress/agent-skills |
 | skill | `wpds` | Use when building UIs leveraging the WordPress Design System (WPDS) and its components, tokens, patterns, etc. | WordPress/agent-skills |
 
-## 📦 Otros (13)
-
-| Tipo | Nombre | Qué hace | Fuente |
-|---|---|---|---|
-| 🤖 agente | `backend-architect` | Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC… | wshobson/agents |
-| 🤖 agente | `business-analyst` | Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI framework… | wshobson/agents (business-analytics) |
-| 🤖 agente | `cs-demand-gen-specialist` | Demand generation and acquisition-funnel specialist orchestrating the marketing-demand-acquisition, paid-ads, and email-sequence skills. Use… | alirezarezvani/claude-skills |
-| 🤖 agente | `frontend-developer` | Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern fron… | wshobson/agents |
-| 🤖 agente | `frontend-security-coder` | Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns. Use PROAC… | wshobson/agents |
-| 🤖 agente | `legacy-modernizer` | Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and… | wshobson/agents |
-| 🤖 agente | `performance-engineer` | Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTel… | wshobson/agents |
-| 🤖 agente | `search-specialist` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verificat… | wshobson/agents (content-marketing) |
-| 🤖 agente | `solo-founder` | Your co-founder who doesn't exist yet. Covers product, engineering, marketing, and strategy for one-person startups — because nobody's stopp… | alirezarezvani/claude-skills |
-| skill | `business-name-fit` | Suggest, pick, or vet a business, startup, or product name that stays true to the founder's cultural origin while working professionally in … | alirezarezvani/claude-skills (marketing) |
-| skill | `campaign-plan` | Generate a full campaign brief with objectives, audience, messaging, channel strategy, content calendar, and success metrics. Use when plann… | anthropics/knowledge-work-plugins (marketing) |
-| skill | `heuristic-evaluation` | Run an expert review against Nielsen's heuristics and domain criteria, with severity ratings. Use when you need findings without recruiting … | Owl-Listener/designer-skills |
-| skill | `user-flow-diagram` | Diagram screen-level paths, decision points, and branch logic. Use when specifying how a feature is traversed. For the emotional end-to-end … | Owl-Listener/designer-skills |

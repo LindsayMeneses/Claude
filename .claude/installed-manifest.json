@@ -2768,5 +2768,165 @@
   "type": "skill",
   "name": "waapi",
   "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "aframe-webxr",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "animated-component-libraries",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "babylonjs-engine",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "barba-js",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "blender-web-pipeline",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "gsap-scrolltrigger",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "lightweight-3d-effects",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "locomotive-scroll",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "lottie-animations",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "modern-web-design",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "motion-framer",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "pixijs-2d",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "playcanvas-engine",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "react-spring-physics",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "react-three-fiber",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "rive-interactive",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "scroll-reveal-libraries",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "spline-interactive",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "substance-3d-texturing",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-webgl",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "web3d-integration-patterns",
+  "source": "freshtechbro/claudedesignskills"
+ },
+ {
+  "type": "skill",
+  "name": "3dviz-pro-max",
+  "source": "viettranx/3dviz-pro-max"
+ },
+ {
+  "type": "skill",
+  "name": "3dicon",
+  "source": "samyost1/3dicon"
+ },
+ {
+  "type": "skill",
+  "name": "three",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "typegpu",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "webgl-laser",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "shaders-cursor-ripples",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "liquid-metal-border",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "thinking-orbs",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "social-thumbnail",
+  "source": "jau123/MeiGen-AI-Design-MCP"
+ },
+ {
+  "type": "skill",
+  "name": "visual-creative",
+  "source": "jau123/MeiGen-AI-Design-MCP"
+ },
+ {
+  "type": "skill",
+  "name": "product-photoshoot",
+  "source": "jau123/MeiGen-AI-Design-MCP"
  }
 ]
