@@ -14,19 +14,19 @@ Sitio: lindsaymeneses.com · Elementor 4.3.2 instalado y activo.
 | Dorado Champán | `accent`    | `#C9A45C` | ✅ aplicado        |
 | Marfil         | `marfil`    | `#FBF6EC` | ✅ aplicado        |
 | Noche Bosque   | `noche`     | `#0A241C` | ✅ aplicado        |
-| Rojo Vino      | `vino`      | `#7A0C21` | ⚠️ sin confirmar   |
-| Oro Claro      | `oroclaro`  | `#EBD9AE` | ⚠️ sin confirmar   |
-| Blanco Nieve   | `blanco`    | `#FFFFFF` | ⏳ pendiente       |
-| Salvia Suave   | `salvia`    | `#E4ECE6` | ⏳ pendiente       |
+| Rojo Vino      | `vino`      | `#7A0C21` | ✅ aplicado        |
+| Oro Claro      | `oroclaro`  | `#EBD9AE` | ✅ aplicado        |
+| Blanco Nieve   | `blanco`    | `#FFFFFF` | ✅ aplicado        |
+| Salvia Suave   | `salvia`    | `#E4ECE6` | ✅ aplicado        |
 
-**Tipografía global** (⏳ pendiente — sigue en Roboto)
+**Tipografía global** (✅ aplicada)
 
 | ID          | Uso                     | Fuente                          |
 |-------------|-------------------------|---------------------------------|
-| `primary`   | Títulos                 | Fraunces 600                    |
-| `secondary` | Subtítulos / tarjetas   | Fraunces 500 itálica            |
+| `primary`   | Títulos                 | Fraunces 600, 1.1, -0.01em      |
+| `secondary` | Subtítulos / tarjetas   | Fraunces 500 itálica, 24px      |
 | `text`      | Párrafos                | Manrope 400, 17px, 1.65         |
-| `accent`    | Etiquetas y botones     | Manrope 600, mayúsculas, 0.2em  |
+| `accent`    | Etiquetas y botones     | Manrope 600, 13px, mayúsculas, 0.2em |
 
 ## Estructura de la página (`navidad-multiplaza-elementor.json`)
 
@@ -43,15 +43,25 @@ Plantilla "Elementor Canvas" (sin cabecera ni pie del tema), animaciones de entr
 tamaños adaptados a tableta y celular. Los textos marcados **[PPT]** se reemplazan con
 el contenido real del deck; las imágenes están vacías hasta subir las del PPT.
 
-Regenerar: `python3 build_template.py`
+Regenerar: `python3 build_template.py` (JSON importable, con marcas [PPT] e imágenes vacías)
+y `python3 build_template.py --page` (datos para la página publicada: sin marcas [PPT] y con
+paneles decorativos degradado + ícono dorado en lugar de las imágenes que aún no existen).
+
+## Página publicada
+
+- https://lindsaymeneses.com/navidad-multiplaza-2026/ — página ID 7, plantilla Elementor Canvas.
+- Se creó vía `wp/v2/pages` con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
+- No es la portada todavía.
 
 ## Pendiente
 
-- [ ] Reconectar el conector `web` (se cayó la sesión MCP) → terminar los colores y las tipografías
-- [ ] Extraer el PPT en cPanel → `public_html/deck-navidad/`
-- [ ] Leer textos y tema del PPT, reemplazar los [PPT], subir las imágenes a Medios
-- [ ] Crear la página con la plantilla (API `elementor/v1/template-library/templates` o
-      importando el JSON en Elementor → Plantillas → Importar)
-- [ ] Ponerla como portada (opcional)
-- [ ] Limpieza: borrar `deck-navidad.zip`, `deck-navidad/`, `cw-runner-7f3k9q.php`,
-      `fase1-instalar-y-extraer.php`
+- [x] Colores globales (10) y tipografías globales (Fraunces + Manrope)
+- [x] Crear la página con textos provisionales
+- [ ] Subir el PPT a cPanel y extraerlo en `public_html/deck-navidad/` (al 2026-09-25 no existía
+      ni `deck-navidad/` ni `deck-navidad.zip`)
+- [ ] Leer textos y tema del PPT, reemplazar los [PPT] (texto provisional en la fuente),
+      subir las imágenes a Medios y cambiar los paneles decorativos por widgets de imagen
+- [ ] Botón «Conversemos» apunta a `#contacto`, que aún no existe (agregar sección o enlace)
+- [ ] Ponerla como portada (opcional, confirmar con la usuaria)
+- [ ] Limpieza cuando ya se haya usado el PPT: borrar `deck-navidad.zip`, `deck-navidad/`,
+      `cw-runner-7f3k9q.php`, `fase1-instalar-y-extraer.php`

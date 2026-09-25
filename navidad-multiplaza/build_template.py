@@ -1,17 +1,27 @@
 """Genera la plantilla Elementor (JSON importable) de la página Navidad Multiplaza 2026.
 
-Uso:  python3 build_template.py  ->  escribe navidad-multiplaza-elementor.json
+Uso:  python3 build_template.py         ->  escribe navidad-multiplaza-elementor.json
+      python3 build_template.py --page  ->  escribe page-elementor-data.json (meta _elementor_data)
 Los textos marcados con «[PPT]» se reemplazan con el contenido real del deck.
 """
 import json
 import secrets
+import sys
+
+# --page: datos para una página WordPress; sin imágenes del PPT, cada imagen vacía se
+# sustituye por un panel decorativo para que no queden huecos.
+PAGE = "--page" in sys.argv
 
 C = "globals/colors?id="
 T = "globals/typography?id="
 
 
+_seq = iter(range(1, 10**6))
+
+
 def uid():
-    return secrets.token_hex(4)[:7]
+    # En modo página, IDs cortos y deterministas para un JSON estable.
+    return f"n{next(_seq):06x}" if PAGE else secrets.token_hex(4)[:7]
 
 
 def container(children, settings=None, inner=False):
@@ -39,7 +49,7 @@ def heading(text, size="h2", color="primary", align="left", px=None):
     if px:
         s["typography_font_size"] = {"unit": "px", "size": px}
         s["typography_font_size_tablet"] = {"unit": "px", "size": round(px * 0.75)}
-        s["typography_font_size_mobile"] = {"unit": "px", "size": round(px * 0.55)}
+        s["typography_font_size_mobile"] = {"unit": "px", "size": max(round(px * 0.55), 20)}
     return widget("heading", s)
 
 
@@ -70,7 +80,31 @@ def divider(color="accent", width=64):
                               "__globals__": {"color": C + color}})
 
 
+PANEL_ICONS = {"Key visual de la campaña": "fas fa-star", "Encendido del árbol": "fas fa-tree",
+               "Villa navideña": "fas fa-home", "Show y música": "fas fa-music",
+               "Santa en Multiplaza": "fas fa-gift", "Mood 1": "fas fa-snowflake", "Mood 2": "fas fa-star",
+               "Mood 3": "fas fa-gifts", "Mood 4": "fas fa-candy-cane"}
+
+
+def panel(label):
+    # Panel decorativo en lugar de una imagen que aún no existe.
+    tall = label.startswith("Key")
+    return container([widget("icon", {"selected_icon": {"value": PANEL_ICONS.get(label, "fas fa-star"), "library": "fa-solid"},
+                                       "size": {"unit": "px", "size": 72 if tall else 40},
+                                       "__globals__": {"primary_color": C + "accent"}})], {
+        "content_width": "full", "flex_justify_content": "center", "flex_align_items": "center", "flex_grow": 1,
+        "min_height": {"unit": "px", "size": 420 if tall else 170},
+        "min_height_mobile": {"unit": "px", "size": 260 if tall else 150},
+        "border_radius": {"unit": "px", "top": 18, "right": 18, "bottom": 18, "left": 18, "isLinked": True},
+        "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#0F3B2E",
+        "background_gradient_type": "radial", "background_gradient_position": "center center",
+        "_title": label,
+    }, inner=True)
+
+
 def image(label):
+    if PAGE:
+        return panel(label)
     # Imagen provisional hasta subir las del PPT a la biblioteca de medios.
     return widget("image", {"image": {"url": "", "id": ""}, "image_size": "large",
                             "_title": label,
@@ -128,10 +162,11 @@ concepto = section([
     row([
         container([
             eyebrow("El concepto", "secondary"),
-            heading("[PPT] Nombre de la campaña", "h2", "primary", px=56),
+            heading("[PPT] Destellos de Navidad", "h2", "primary", px=56),
             divider(),
-            text("<p>[PPT] La gran idea en dos o tres frases: qué sentimos, qué vivimos y por qué "
-                 "Multiplaza es el lugar donde la Navidad sucede.</p>"),
+            text("<p>[PPT] La Navidad no se compra: se vive. Este año, Multiplaza se transforma en un "
+                 "bosque encendido de luz y oro, donde cada pasillo guarda una sorpresa y cada visita "
+                 "se convierte en tradición familiar.</p>"),
         ], {"content_width": "full", "width": {"unit": "%", "size": 50}, "width_mobile": {"unit": "%", "size": 100},
             "flex_justify_content": "center", "_animation": "fadeInLeft"}, inner=True),
         container([image("Key visual de la campaña")],
@@ -180,9 +215,11 @@ decoracion = section([
     row([
         container([
             eyebrow("Decoración", "secondary"),
-            heading("[PPT] Un universo visual", "h2", "primary", px=48),
+            heading("[PPT] Un bosque de luz y oro", "h2", "primary", px=48),
             divider("secondary"),
-            text("<p>[PPT] Paleta, materiales, iluminación y piezas protagonistas de la ambientación.</p>"),
+            text("<p>[PPT] Verdes profundos, dorados champán y destellos rojo vino. Materiales nobles, "
+                 "miles de luces cálidas y piezas monumentales que invitan a detenerse, mirar hacia "
+                 "arriba y tomar la foto de la temporada.</p>"),
         ], {"content_width": "full", "width": {"unit": "%", "size": 38}, "width_mobile": {"unit": "%", "size": 100},
             "flex_justify_content": "center"}, inner=True),
         container([row([image("Mood 1"), image("Mood 2")], gap=16), row([image("Mood 3"), image("Mood 4")], gap=16)],
@@ -220,7 +257,8 @@ cifras = section([
 # 8 · Cierre
 cierre = section([
     heading("Hagamos brillar esta Navidad", "h2", "blanco", "center", px=64),
-    text("<p>[PPT] Frase de cierre de la propuesta y siguiente paso.</p>", "oroclaro", "center"),
+    text("<p>[PPT] Una temporada para volver, compartir y recordar. Encendamos juntos la Navidad "
+         "más luminosa de Multiplaza.</p>", "oroclaro", "center"),
     button("Conversemos", "#contacto"),
 ], "vino", pad=140, extra={"flex_align_items": "center"})
 
@@ -233,6 +271,23 @@ template = {
 }
 
 if __name__ == "__main__":
-    with open("navidad-multiplaza-elementor.json", "w", encoding="utf-8") as f:
-        json.dump(template, f, ensure_ascii=False, indent=1)
-    print("ok", len(template["content"]), "secciones")
+    if PAGE:
+        # Datos para una página WordPress (meta _elementor_data), sin las marcas [PPT].
+        def slim(el):
+            # Quita claves redundantes para reducir el tamaño del meta.
+            if not el["isInner"]:
+                del el["isInner"]
+            if el["elType"] == "container" and el["settings"].get("content_width") == "full":
+                el["settings"].pop("boxed_width", None)
+            for child in el["elements"]:
+                slim(child)
+        for el in template["content"]:
+            slim(el)
+        data = json.dumps(template["content"], ensure_ascii=False, separators=(",", ":")).replace("[PPT] ", "")
+        with open("page-elementor-data.json", "w", encoding="utf-8") as f:
+            f.write(data)
+        print("ok page-elementor-data.json", len(data), "bytes")
+    else:
+        with open("navidad-multiplaza-elementor.json", "w", encoding="utf-8") as f:
+            json.dump(template, f, ensure_ascii=False, indent=1)
+        print("ok", len(template["content"]), "secciones")
