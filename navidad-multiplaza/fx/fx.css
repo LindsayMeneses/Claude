@@ -85,3 +85,10 @@ html.nm-js .nm-slide.is-on .nm-line.nm-rv{transform:scaleX(1)}
 .nm-footer a{text-decoration:none;border-bottom:1px solid rgba(201,164,92,.5)}
 .nm-art-w{flex:1 1 0;min-width:0;width:100%}
 .nm-shine em{background-image:linear-gradient(100deg,#8A6A2F 15%,#C9A45C 40%,#E4C57E 50%,#8A6A2F 75%)}
+@media(max-width:767px){
+  .nm-foot{left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(10,36,28,.92);
+    -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid rgba(201,164,92,.25)}
+  .nm-next{padding:9px 10px 9px 16px;font-size:10px}.nm-next i{width:24px;height:24px}
+  .nm-count{mix-blend-mode:normal}
+  .nm-slide{padding-bottom:84px!important}
+  .nm-hint{bottom:70px}}
