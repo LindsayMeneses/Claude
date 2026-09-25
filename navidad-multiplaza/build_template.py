@@ -104,11 +104,13 @@ def line(color="accent", width=72, center=False):
                               "_css_classes": "nm-line" + (" nm-c" if center else ""), "__globals__": {"color": C + color}})
 
 
-def row(children, gap=28, mobile="column", wrap=True, align=None):
+def row(children, gap=28, mobile="column", wrap=True, align=None, justify=None):
     s = {"flex_direction": "row", "flex_wrap": "wrap" if wrap else "nowrap", "flex_direction_mobile": mobile,
          "gap": {"unit": "px", "size": gap, "column": str(gap), "row": str(gap)}}
     if align:
         s["flex_align_items"] = align
+    if justify:
+        s["flex_justify_content"] = justify
     return container(children, s)
 
 
@@ -148,7 +150,7 @@ hero = slide([
     line("accent", 90, center=True),
     text(f"<p>{p['bajada']}</p>", "oroclaro", "center", maxw=620),
     row([button(p["cta_primario"], "#concepto"), button(p["cta_secundario"], "#calendario", outline=True, fg="blanco")],
-        gap=14, mobile="row"),
+        gap=14, mobile="row", justify="center"),
 ], "noche", cls="nm-hero", extra={
     "flex_align_items": "center", "_element_id": "inicio",
     "background_background": "gradient", "background_color": "#0A241C", "background_color_b": "#15523F",

@@ -189,7 +189,8 @@
        "size": 14,
        "column": "14",
        "row": "14"
-      }
+      },
+      "flex_justify_content": "center"
      },
      "elements": [
       {
