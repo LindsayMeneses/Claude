@@ -51,7 +51,11 @@ paneles decorativos degradado + ícono dorado en lugar de las imágenes que aún
 
 - https://lindsaymeneses.com/navidad-multiplaza-2026/ — página ID 7, plantilla Elementor Canvas.
 - Se creó vía `wp/v2/pages` con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
+- 2026-09-25: publicada la **v2** (recorrido guiado). Verificado: el meta devuelto por la API es
+  idéntico a `page-elementor-data.json`, se limpió el caché de Elementor y el HTML renderizado
+  contiene «Luces de», `nm-slide` y el `mailto:` de contacto.
 - No es la portada todavía.
+- Análisis del PPT y cambios sugeridos: `ANALISIS-PPT.md`.
 
 ## Pendiente
 
