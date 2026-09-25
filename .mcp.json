@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "imagenes": {
+      "command": "npx",
+      "args": ["-y", "mcp-image@0.14.0"],
+      "env": {
+        "IMAGE_PROVIDER": "${IMAGE_PROVIDER:-openai}",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY:-}",
+        "GEMINI_API_KEY": "${GEMINI_API_KEY:-}",
+        "IMAGE_QUALITY": "${IMAGE_QUALITY:-quality}",
+        "IMAGE_OUTPUT_DIR": "${IMAGE_OUTPUT_DIR:-./imagenes}"
+      }
+    },
+    "chatgpt-gemini": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/BeehiveInnovations/pal-mcp-server.git@7afc7c1cc96e23992c8f105f960132c657883bb1", "pal-mcp-server"],
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY:-}",
+        "GEMINI_API_KEY": "${GEMINI_API_KEY:-}",
+        "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY:-}",
+        "DEFAULT_MODEL": "${PAL_DEFAULT_MODEL:-auto}"
+      }
+    },
+    "meigen": {
+      "command": "npx",
+      "args": ["-y", "meigen@2.0.1"],
+      "env": {
+        "MEIGEN_API_TOKEN": "${MEIGEN_API_TOKEN:-}"
+      }
+    },
+    "blender": {
+      "command": "uvx",
+      "args": ["mcp-for-blender==2.0.4"]
+    }
+  }
+}
