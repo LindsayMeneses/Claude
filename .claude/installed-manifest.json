@@ -2928,5 +2928,410 @@
   "type": "skill",
   "name": "product-photoshoot",
   "source": "jau123/MeiGen-AI-Design-MCP"
+ },
+ {
+  "type": "skill",
+  "name": "last30days",
+  "source": "mvanhorn/last30days-skill"
+ },
+ {
+  "type": "skill",
+  "name": "shortfilm-prompt",
+  "source": "jnMetaCode/ai-shortfilm-prompts"
+ },
+ {
+  "type": "skill",
+  "name": "ecommerce-visual-copywriting",
+  "source": "feichanggege/ecommerce-visual-copywriting-skill"
+ },
+ {
+  "type": "skill",
+  "name": "ab-test-generator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "conversion-tracker",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "internal-linking-optimizer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "email-automation-builder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "multi-program-manager",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "paid-ad-copy-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "proprietary-data-generator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "affiliate-blog-builder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "comparison-post-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-decay-detector",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-moat-calculator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "how-to-tutorial-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "keyword-cluster-architect",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "listicle-generator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-pillar-atomizer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-research-brief",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "infographic-generator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "reddit-post-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "tiktok-script-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "twitter-thread-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "viral-post-writer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "bio-link-deployer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "email-drip-sequence",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "github-pages-deployer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "social-media-scheduler",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "bonus-stack-builder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "grand-slam-offer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "guarantee-generator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "landing-page-creator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "product-showcase-page",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "squeeze-page-builder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "value-ladder-architect",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "webinar-registration-page",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "category-designer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "compliance-checker",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "create-skill",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "funnel-planner",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "self-improver",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "skill-finder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "affiliate-program-search",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "commission-calculator",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-spy",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-angle-ranker",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "monopoly-niche-finder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "niche-opportunity-finder",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "purple-cow-audit",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "submit-program",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "traffic-analyzer",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "trending-content-scout",
+  "source": "Affitor/affiliate-skills"
+ },
+ {
+  "type": "skill",
+  "name": "create-video",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "ai-video-gen",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "avatar-video",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "video-edit",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "video-understand",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "ffmpeg",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "remotion-best-practices",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "flux-best-practices",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "bfl-api",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "heygen",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "elevenlabs",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "text-to-speech",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "speech-to-text",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "music",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "sound-effects",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "d3-viz",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "manim-composer",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "lottie-bodymovin",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "visual-style",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-fundamentals",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-geometry",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-materials",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-lighting",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-textures",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-animation",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-interaction",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-loaders",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-shaders",
+  "source": "calesthio/OpenMontage"
+ },
+ {
+  "type": "skill",
+  "name": "threejs-postprocessing",
+  "source": "calesthio/OpenMontage"
  }
 ]

@@ -7,7 +7,7 @@ Repositorio de trabajo de Lindsay Meneses. Se enfoca en **mercadeo, publicidad, 
 - Escribe los textos de marketing en el idioma y para el mercado del cliente. No traduzcas de forma literal.
 
 ## Herramientas instaladas
-- Hay 538 skills en `.claude/skills/` y 48 agentes en `.claude/agents/`. El índice por categoría está en `CATALOGO.md`.
+- Hay 619 skills en `.claude/skills/` y 48 agentes en `.claude/agents/`. El índice por categoría está en `CATALOGO.md`.
 - Si varias skills se solapan (por ejemplo `copywriting`, `market-copy` y `ad-creative`), usa la más específica para la tarea. Si no está claro cuál, empieza por la de `coreyhaines31/marketingskills`.
 - Para tareas grandes, como auditorías, campañas completas o rediseños, reparte el trabajo entre los agentes especializados en paralelo.
 - Los conectores MCP disponibles son `Servidor` (WHM/cPanel), `web` (WordPress) y `github`. Antes de hacer cambios en producción (DNS, email, bases de datos, SSL, publicar posts), confirma con el usuario.

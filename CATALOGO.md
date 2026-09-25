@@ -1,13 +1,100 @@
 # Catálogo de agentes y skills instalados
 
-**538 skills** y **48 agentes**, organizados por área. Se instalan en `.claude/skills/` y `.claude/agents/`, y Claude Code los carga automáticamente al trabajar en este repo.
+**619 skills** y **48 agentes**, organizados por área. Se instalan en `.claude/skills/` y `.claude/agents/`, y Claude Code los carga automáticamente al trabajar en este repo.
 
 - **Skills:** se activan solas cuando lo que pides encaja con su descripción. También puedes llamarlas por nombre con `/nombre-de-skill`.
 - **Agentes:** pídele a Claude, por ejemplo: *“usa el agente `market-content` para…”*.
 
 Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en `.claude/installed-manifest.json`.
 
-## 🧊 Diseño 3D, WebGL y experiencias inmersivas (19)
+## 🎬 Video, audio y producción con IA (22)
+
+| Tipo | Nombre | Qué hace | Fuente |
+|---|---|---|---|
+| skill | `ai-video-gen` | Generate AI videos from text prompts using multiple provider gateways. Use when: (1) Generating videos from text descriptions, (2) Creating … | calesthio/OpenMontage |
+| skill | `avatar-video` | Create AI avatar videos with precise control over avatars, voices, scripts, scenes, and backgrounds using HeyGen's v2 API. Use when: (1) Cho… | calesthio/OpenMontage |
+| skill | `bfl-api` | BFL FLUX API integration guide covering endpoints, async polling patterns, rate limiting, error handling, webhooks, and regional endpoints w… | calesthio/OpenMontage |
+| skill | `create-video` | Create videos from a text prompt using HeyGen's Video Agent. Use when: (1) Creating a video from a description or idea, (2) Generating expla… | calesthio/OpenMontage |
+| skill | `d3-viz` | Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geogr… | calesthio/OpenMontage |
+| skill | `elevenlabs` | Generate AI voiceovers, sound effects, and music using ElevenLabs APIs. Use when creating audio content for videos, podcasts, or games. Trig… | calesthio/OpenMontage |
+| skill | `ffmpeg` | Video and audio processing with FFmpeg. Use for format conversion, resizing, compression, audio extraction, and preparing assets for Remotio… | calesthio/OpenMontage |
+| skill | `flux-best-practices` | Comprehensive guide for BFL FLUX image generation models. Covers prompting, T2I, I2I, structured JSON, hex colors, typography, multi-referen… | calesthio/OpenMontage |
+| skill | `heygen` | [DEPRECATED] Use `create-video` for prompt-based video generation or `avatar-video` for precise avatar/scene control. This legacy skill comb… | calesthio/OpenMontage |
+| skill | `lottie-bodymovin` | Use when implementing Disney's 12 animation principles with Lottie animations exported from After Effects | calesthio/OpenMontage |
+| skill | `manim-composer` | Trigger when: (1) User wants to create an educational/explainer video, (2) User has a vague concept they want visualized, (3) User mentions … | calesthio/OpenMontage |
+| skill | `music` | Generate music using ElevenLabs Music API. Use when creating instrumental tracks, songs with lyrics, background music, jingles, or any AI-ge… | calesthio/OpenMontage |
+| skill | `remotion-best-practices` | Best practices for Remotion - Video creation in React | calesthio/OpenMontage |
+| skill | `shortfilm-prompt` | Generate cinematic AI shortfilm prompts (works with Seedance 2.0, Xiaoyunque, Sora, Kling, Jimeng, Veo) using the 5-stage structure from Mx-… | jnMetaCode/ai-shortfilm-prompts |
+| skill | `sound-effects` | Generate sound effects from text descriptions using ElevenLabs. Use when creating sound effects, generating audio textures, producing ambien… | calesthio/OpenMontage |
+| skill | `speech-to-text` | Transcribe audio to text using ElevenLabs Scribe v2. Use when converting audio/video to text, generating subtitles, transcribing meetings, o… | calesthio/OpenMontage |
+| skill | `text-to-speech` | Generate speech audio from text using HeyGen's Starfish TTS model. Use when: (1) Generating standalone speech audio files from text, (2) Con… | calesthio/OpenMontage |
+| skill | `video` | When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions… | coreyhaines31/marketingskills |
+| skill | `video-edit` | Edit videos locally using ffmpeg. Trim, concat, resize, speed, overlay, extract audio, compress, and convert. Use when: (1) Trimming or cutt… | calesthio/OpenMontage |
+| skill | `video-understand` | Understand video content locally using ffmpeg frame extraction and Whisper transcription. No API keys needed. Use when: (1) Understanding wh… | calesthio/OpenMontage |
+| skill | `visual-style` | Create, extract, and apply portable visual design systems via visual-style.md files. Use when: (1) Creating a visual-style.md design system … | calesthio/OpenMontage |
+| skill | `visual-style-presets` | Pick and apply a complete visual style direction — surface ladder, type scale, accent discipline, and one signature structural motif — for a… | boraoztunc/skills |
+
+## 🤝 Marketing de afiliados (49)
+
+| Tipo | Nombre | Qué hace | Fuente |
+|---|---|---|---|
+| skill | `ab-test-generator` | Generate A/B test variants for affiliate content. Triggers on: "create A/B test", "test my headline", "optimize my CTA", "generate variants"… | Affitor/affiliate-skills |
+| skill | `affiliate-blog-builder` | Write SEO-optimized affiliate blog articles, product reviews, comparison posts, listicles, and how-to guides. Triggers on: "write a blog pos… | Affitor/affiliate-skills |
+| skill | `affiliate-program-search` | Research and evaluate affiliate programs to find the best ones to promote. Use this skill when the user asks anything about finding affiliat… | Affitor/affiliate-skills |
+| skill | `bio-link-deployer` | Create a Linktree-style bio link hub page as a single self-contained HTML file. Triggers on: "create a bio link page", "make a linktree", "l… | Affitor/affiliate-skills |
+| skill | `bonus-stack-builder` | Design exclusive bonus packages that make YOUR affiliate link the obvious choice. Triggers on: "create bonuses for", "bonus stack", "what bo… | Affitor/affiliate-skills |
+| skill | `category-designer` | Define a new category where your product wins by default. Reframe the buying decision. Triggers on: "create a category", "category design", … | Affitor/affiliate-skills |
+| skill | `commission-calculator` | Calculate realistic affiliate earnings projections before committing to a program. Use this skill when the user asks about affiliate earning… | Affitor/affiliate-skills |
+| skill | `comparison-post-writer` | Write "X vs Y" comparison blog posts that help readers choose between two competing products. Triggers on: "write a comparison post", "X vs … | Affitor/affiliate-skills |
+| skill | `competitor-spy` | Reverse-engineer successful affiliate strategies from competitors. Use this skill when the user asks about spying on competitors, researchin… | Affitor/affiliate-skills |
+| skill | `compliance-checker` | Check affiliate content for FTC compliance and platform rules. Triggers on: "check my content for compliance", "FTC disclosure check", "is t… | Affitor/affiliate-skills |
+| skill | `content-angle-ranker` | Rank content angles by engagement data, competition level, and platform fit. Data-driven angle selection instead of guesswork. Use this skil… | Affitor/affiliate-skills |
+| skill | `content-decay-detector` | Monitor existing content for ranking drops and trigger refresh workflows. Triggers on: "check for content decay", "which content needs updat… | Affitor/affiliate-skills |
+| skill | `content-moat-calculator` | Estimate pages needed for topical authority. Go/no-go decision before investing months in content. Triggers on: "how much content do I need"… | Affitor/affiliate-skills |
+| skill | `content-pillar-atomizer` | Take 1 blog post or article and generate 15-30 platform-native micro-content pieces. Not reformatting — re-contextualizing for each platform… | Affitor/affiliate-skills |
+| skill | `content-research-brief` | Research trending topics, collect source articles, and generate a structured research brief for content creation. Stop writing from thin air… | Affitor/affiliate-skills |
+| skill | `conversion-tracker` | Set up affiliate conversion tracking with UTM parameters and link tagging. Triggers on: "set up tracking", "create UTM links", "track my aff… | Affitor/affiliate-skills |
+| skill | `create-skill` | Turn a repeatable AI prompt or workflow into a structured, shareable skill for the affiliate-skills GitHub repository. Use this skill when t… | Affitor/affiliate-skills |
+| skill | `email-automation-builder` | Build multi-sequence email automation flows with branching logic. Triggers on: "build email automation", "create email funnel", "email autom… | Affitor/affiliate-skills |
+| skill | `email-drip-sequence` | Write an email drip sequence for affiliate marketing. Triggers on: "write me an email sequence", "create a drip campaign", "email nurture se… | Affitor/affiliate-skills |
+| skill | `funnel-planner` | Plan a complete affiliate funnel from research to revenue. Triggers on: "plan my affiliate funnel", "create a funnel strategy", "affiliate b… | Affitor/affiliate-skills |
+| skill | `github-pages-deployer` | Deploy affiliate content to GitHub Pages for free hosting. Triggers on: "deploy to GitHub Pages", "host on GitHub Pages", "free hosting for … | Affitor/affiliate-skills |
+| skill | `grand-slam-offer` | Design irresistible affiliate offers using the Hormozi Grand Slam framework. Triggers on: "create an offer for", "design my offer", "grand s… | Affitor/affiliate-skills |
+| skill | `guarantee-generator` | Create YOUR personal guarantee on top of the product's guarantee for risk reversal. Triggers on: "create a guarantee", "guarantee for my aff… | Affitor/affiliate-skills |
+| skill | `how-to-tutorial-writer` | Write how-to guides and tutorials that naturally integrate affiliate product recommendations. Triggers on: "write a how-to guide", "tutorial… | Affitor/affiliate-skills |
+| skill | `infographic-generator` | Generate branded infographic specifications from any content or data. Outputs structured layout, copy, data visualization, and color scheme … | Affitor/affiliate-skills |
+| skill | `internal-linking-optimizer` | Analyze site's internal link structure and optimize for hub-and-spoke SEO architecture. Triggers on: "optimize internal links", "internal li… | Affitor/affiliate-skills |
+| skill | `keyword-cluster-architect` | Map 50-200+ keywords into topical clusters for SEO domination. Build content roadmaps for topical authority. Triggers on: "keyword research"… | Affitor/affiliate-skills |
+| skill | `landing-page-creator` | Build high-converting affiliate landing pages as single self-contained HTML files. Triggers on: "create a landing page for", "build a landin… | Affitor/affiliate-skills |
+| skill | `listicle-generator` | Write "Top N best..." listicle articles for affiliate marketing with mini-reviews, pricing, pros/cons, and CTAs per entry. Triggers on: "wri… | Affitor/affiliate-skills |
+| skill | `monopoly-niche-finder` | Find intersection niches where you're the ONLY voice. Thiel's "competition is for losers" lens. Triggers on: "find my monopoly niche", "blue… | Affitor/affiliate-skills |
+| skill | `multi-program-manager` | Manage and compare multiple affiliate programs as a portfolio. Triggers on: "manage my affiliate programs", "compare my programs", "portfoli… | Affitor/affiliate-skills |
+| skill | `niche-opportunity-finder` | Find untapped affiliate niches with real earning potential. Use this skill when the user asks about picking a niche, finding a niche to star… | Affitor/affiliate-skills |
+| skill | `paid-ad-copy-writer` | Write paid ad copy for affiliate offers across ad platforms. Triggers on: "write ad copy", "Facebook ad for affiliate", "Google Ads copy", "… | Affitor/affiliate-skills |
+| skill | `product-showcase-page` | Build a single-product deep-dive showcase page as a self-contained HTML file. Triggers on: "build a product showcase page", "deep dive landi… | Affitor/affiliate-skills |
+| skill | `proprietary-data-generator` | Create original surveys, benchmarks, and aggregated data nobody else has. Automate data collection for content moats. Triggers on: "create o… | Affitor/affiliate-skills |
+| skill | `purple-cow-audit` | Score product remarkability 1-10 to decide if it's worth promoting. Seth Godin's Purple Cow test. Triggers on: "is this product worth promot… | Affitor/affiliate-skills |
+| skill | `reddit-post-writer` | Write Reddit posts and comments that recommend affiliate products without getting banned or flagged as spam. Subreddit-native content that a… | Affitor/affiliate-skills |
+| skill | `self-improver` | Review affiliate campaign results and improve strategy. Triggers on: "review my results", "what went wrong", "how to improve conversions", "… | Affitor/affiliate-skills |
+| skill | `skill-finder` | Find the right Affitor skill for your goal. Triggers on: "which skill should I use", "find me a skill", "what skills are available", "help m… | Affitor/affiliate-skills |
+| skill | `social-media-scheduler` | Create a 30-day social media content calendar for affiliate marketing. Triggers on: "create a social media calendar", "30-day content plan",… | Affitor/affiliate-skills |
+| skill | `squeeze-page-builder` | Build email capture landing pages (squeeze pages) as single self-contained HTML files. Triggers on: "build a squeeze page", "email capture p… | Affitor/affiliate-skills |
+| skill | `submit-program` | Research an affiliate program and create a verified listing for openaffiliate.dev. Use this skill when the user asks anything about listing … | Affitor/affiliate-skills |
+| skill | `tiktok-script-writer` | Write short-form video scripts for TikTok, Instagram Reels, and YouTube Shorts that promote affiliate products with strong hooks, demos, and… | Affitor/affiliate-skills |
+| skill | `traffic-analyzer` | Analyze website traffic, global rank, engagement metrics, and traffic sources for any domain. Use this skill to evaluate affiliate program w… | Affitor/affiliate-skills |
+| skill | `trending-content-scout` | Scan social platforms for top-performing content by engagement before you create anything. Use this skill when the user wants to see what co… | Affitor/affiliate-skills |
+| skill | `twitter-thread-writer` | Write X/Twitter threads that get bookmarked, shared, and drive affiliate clicks. Use this skill when the user asks about writing Twitter thr… | Affitor/affiliate-skills |
+| skill | `value-ladder-architect` | Design the complete free-to-premium value ladder for affiliate promotions. Triggers on: "value ladder", "customer journey", "upsell path", "… | Affitor/affiliate-skills |
+| skill | `viral-post-writer` | Write viral social media posts that promote affiliate products naturally. Use this skill when the user asks anything about writing social me… | Affitor/affiliate-skills |
+| skill | `webinar-registration-page` | Build a webinar or live event registration page as a self-contained HTML file with countdown timer, speaker bio, agenda, and registration fo… | Affitor/affiliate-skills |
+
+## 📊 Investigación de tendencias (1)
+
+| Tipo | Nombre | Qué hace | Fuente |
+|---|---|---|---|
+| skill | `last30days` | Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker Ne… | mvanhorn/last30days-skill |
+
+## 🧊 Diseño 3D, WebGL y experiencias inmersivas (29)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
@@ -26,6 +113,16 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `substance-3d-texturing` | Comprehensive skill for Adobe Substance 3D Painter texturing and material creation workflow. Use this skill when creating PBR materials, exp… | freshtechbro/claudedesignskills |
 | skill | `thinking-orbs` | Add accessible animated AI loading and agent-status indicators with the React thinking-orbs library. Use when a chat, copilot, voice, search… | boraoztunc/skills |
 | skill | `three` | Three.js and WebGL adapter patterns for HyperFrames. Use when creating deterministic Three.js scenes, WebGL canvas layers, AnimationMixer ti… | boraoztunc/skills |
+| skill | `threejs-animation` | Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF anima… | calesthio/OpenMontage |
+| skill | `threejs-fundamentals` | Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configurin… | calesthio/OpenMontage |
+| skill | `threejs-geometry` | Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing. Use when creating 3D shapes, working with vertice… | calesthio/OpenMontage |
+| skill | `threejs-interaction` | Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection… | calesthio/OpenMontage |
+| skill | `threejs-lighting` | Three.js lighting - light types, shadows, environment lighting. Use when adding lights, configuring shadows, setting up IBL, or optimizing l… | calesthio/OpenMontage |
+| skill | `threejs-loaders` | Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing… | calesthio/OpenMontage |
+| skill | `threejs-materials` | Three.js materials - PBR, basic, phong, shader materials, material properties. Use when styling meshes, working with textures, creating cust… | calesthio/OpenMontage |
+| skill | `threejs-postprocessing` | Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creatin… | calesthio/OpenMontage |
+| skill | `threejs-shaders` | Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing frag… | calesthio/OpenMontage |
+| skill | `threejs-textures` | Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, H… | calesthio/OpenMontage |
 | skill | `threejs-webgl` | Comprehensive skill for Three.js 3D web development. Use this skill when building interactive 3D scenes, WebGL/WebGPU applications, product … | freshtechbro/claudedesignskills |
 | skill | `typegpu` | TypeGPU and raw WebGPU adapter patterns for HyperFrames. Use when creating GPU-rendered compositions with TypeGPU, raw WebGPU, WGSL fragment… | boraoztunc/skills |
 | skill | `web3d-integration-patterns` | Meta-skill for combining Three.js, GSAP ScrollTrigger, React Three Fiber, Motion, and React Spring for complex 3D web experiences. Use when … | freshtechbro/claudedesignskills |
@@ -149,6 +246,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `copywriting` | When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pa… | coreyhaines31/marketingskills |
 | skill | `doc-coauthoring` | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical s… | anthropics/skills |
 | skill | `draft-content` | Draft blog posts, social media, email newsletters, landing pages, press releases, and case studies with channel-specific formatting and SEO … | anthropics/knowledge-work-plugins (marketing) |
+| skill | `ecommerce-visual-copywriting` | 将商品资料、包装与资质、目标平台、目标人群和视觉参考转成可直接执行的电商视觉方案，包括转化策略、Campaign Style Lock、主图/详情页/Listing/A+ Storyboard、图内文案、设计说明、生图 Prompt、证据与合规审查。适用于淘宝、天猫、京东、拼多多… | feichanggege/ecommerce-visual-copywriting-skill |
 | skill | `email-marketing` | Build and run a full email marketing channel — list building, deliverability, segmentation, newsletter strategy, campaign types, A/B testing… | arnabbagxd/Brand-building-skills |
 | skill | `email-sequence` | Design and draft multi-email sequences with full copy, timing, branching logic, exit conditions, and performance benchmarks. Use when buildi… | anthropics/knowledge-work-plugins (marketing) |
 | skill | `email-sequence-writer` | Write complete nurture email sequences with subject lines, preview text, and body copy using proven copywriting formulas. Use when given ICP… | irinabuht12-oss/marketing-skills |
@@ -171,7 +269,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `ugc-strategy` | Build a User Generated Content (UGC) strategy — getting customers to create content, review generation, UGC briefs for creators, social camp… | arnabbagxd/Brand-building-skills |
 | skill | `ux-copy` | Write or review UX copy — microcopy, error messages, empty states, CTAs. Trigger with "write copy for", "what should this button say?", "rev… | anthropics/knowledge-work-plugins (design) |
 | skill | `ux-writing` | Write interface copy — microcopy, error messages, empty states, and CTAs. Use when the words are the deliverable. For content structure and … | Owl-Listener/designer-skills |
-| skill | `video` | When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions… | coreyhaines31/marketingskills |
 | skill | `webinar-marketing` | When the user wants to plan, promote, run, or improve a webinar or virtual event to generate and convert demand. Use when the user mentions … | alirezarezvani/claude-skills (marketing) |
 | skill | `whatsapp-marketing` | Build a WhatsApp marketing strategy — WhatsApp Business setup, broadcast campaigns, automated flows, customer service, drip sequences, and c… | arnabbagxd/Brand-building-skills |
 | skill | `x-twitter-growth` | X/Twitter growth engine for building audience, crafting viral content, and analyzing engagement. Use when the user wants to grow on X/Twitte… | alirezarezvani/claude-skills (marketing) |
@@ -358,7 +455,7 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `theme-factory` | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set t… | anthropics/skills |
 | skill | `wonder-pill` | Turns open-ended requests into things to think WITH instead of answers to accept. Audits the hidden assumptions inside a topic, inverts them… | ara-mkr/Wonder-Pill |
 
-## 🖌️ Diseño UI/UX y visual (159)
+## 🖌️ Diseño UI/UX y visual (158)
 
 | Tipo | Nombre | Qué hace | Fuente |
 |---|---|---|---|
@@ -512,7 +609,6 @@ Las fuentes y licencias están en `.claude/licenses/`, y el detalle completo en 
 | skill | `version-control-strategy` | Define version control for design files, components, and libraries — branching, naming, and release. Use when file history is chaotic. For d… | Owl-Listener/designer-skills |
 | skill | `visual-design-foundations` | Apply typography, color theory, spacing systems, and iconography principles to create cohesive visual designs. Use when establishing design … | wshobson/agents (ui-design) |
 | skill | `visual-hierarchy` | Establish hierarchy through size, weight, colour, spacing, and position so the eye lands in the intended order. Use when composing new work.… | Owl-Listener/designer-skills |
-| skill | `visual-style-presets` | Pick and apply a complete visual style direction — surface ladder, type scale, accent discipline, and one signature structural motif — for a… | boraoztunc/skills |
 | skill | `von-restorff-effect` | Apply the Von Restorff Effect — the element that differs from its neighbours is the one remembered. Use when a single action must dominate. … | Owl-Listener/designer-skills |
 | skill | `wcag-audit-patterns` | Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for … | wshobson/agents (accessibility-compliance) |
 | skill | `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS,… | anthropics/skills |
