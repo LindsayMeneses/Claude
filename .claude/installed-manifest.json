@@ -1,0 +1,2772 @@
+[
+ {
+  "type": "skill",
+  "name": "algorithmic-art",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-guidelines",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "canvas-design",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "doc-coauthoring",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "frontend-design",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "internal-comms",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "mcp-builder",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "slack-gif-creator",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "theme-factory",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "web-artifacts-builder",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "webapp-testing",
+  "source": "anthropics/skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-review",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "campaign-plan",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "competitive-brief",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "content-creation",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "draft-content",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "email-sequence",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "performance-report",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "seo-audit",
+  "source": "anthropics/knowledge-work-plugins (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "accessibility-review",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "design-critique",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "design-handoff",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "design-system",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "research-synthesis",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "user-research",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "ux-copy",
+  "source": "anthropics/knowledge-work-plugins (design)"
+ },
+ {
+  "type": "skill",
+  "name": "ab-testing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "ad-creative",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "ads",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "ai-seo",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "analytics",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "aso",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "attribution",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "churn-prevention",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "co-marketing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "cold-email",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "community-marketing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-profiling",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "competitors",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "content-strategy",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "copy-editing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "copywriting",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "cro",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "customer-research",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "directory-submissions",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "emails",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "events",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "free-tools",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "image",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "influencer-marketing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "launch",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "lead-magnets",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-council",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-ideas",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-loops",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-plan",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-psychology",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "offers",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "onboarding",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "paywalls",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "popups",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "pricing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "product-marketing",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "programmatic-seo",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "prospecting",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "public-relations",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "referrals",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "revops",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "sales-enablement",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "schema",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "signup",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "site-architecture",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "sms",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "social",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "video",
+  "source": "coreyhaines31/marketingskills"
+ },
+ {
+  "type": "skill",
+  "name": "market-ads",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-audit",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-brand",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-competitors",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-copy",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-emails",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-funnel",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-landing",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-launch",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-proposal",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-report",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-report-pdf",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-seo",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "market-social",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "agent",
+  "name": "market-competitive",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "agent",
+  "name": "market-content",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "agent",
+  "name": "market-conversion",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "agent",
+  "name": "market-strategy",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "agent",
+  "name": "market-technical",
+  "source": "zubair-trabzada/ai-marketing-claude"
+ },
+ {
+  "type": "skill",
+  "name": "ab-test-analyzer",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ab-test-setup-and-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "account-structure-review",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ad-copy-variant-generator",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ad-extension-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ad-spend-allocator",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ai-visibility-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "anomaly-detection",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "attribution-model-comparison",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "audience-overlap-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "bid-strategy-recommendations",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-answer-monitoring",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "budget-scenario-planner",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "campaign-naming-convention-builder",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "channel-mix-optimizer",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "citation-source-gap-finder",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "client-report-narratives",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-creative-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-teardown",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-aeo-optimizer",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "content-repurposer",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "conversion-path-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "cpa-diagnostics",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "creative-fatigue-detection",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "day-hour-performance-breakdown",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "device-performance-split",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "e2e-seo-assistant",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "email-sequence-writer",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "frequency-cap-recommendations",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "geo-performance-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "google-ads-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "icp-research-assistant",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "keyword-cannibalization-check",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "landing-page-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "landing-page-audit-39",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "linkedin-ads-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "meta-ads-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "pacing-monitor",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "performance-benchmarking",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "programmatic-seo-builder",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "programmatic-seo-playbook",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "quality-score-breakdown",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "reddit-ads-audit",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "retargeting-window-analysis",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "roas-forecasting",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "search-term-mining",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "utm-tracking-generator",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wasted-spend-finder",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "weekly-account-summary",
+  "source": "irinabuht12-oss/marketing-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brandkit",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "brutalist-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "gpt-tasteskill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "image-to-code-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "imagegen-frontend-mobile",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "imagegen-frontend-web",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "minimalist-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "output-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "redesign-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "soft-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "stitch-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "taste-skill",
+  "source": "Leonxlnx/taste-skill"
+ },
+ {
+  "type": "skill",
+  "name": "banner-design",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "skill",
+  "name": "brand",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "skill",
+  "name": "design",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "skill",
+  "name": "slides",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "skill",
+  "name": "ui-styling",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "skill",
+  "name": "ui-ux-pro-max",
+  "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ {
+  "type": "agent",
+  "name": "seo-content-auditor",
+  "source": "wshobson/agents (seo-content-creation)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-content-planner",
+  "source": "wshobson/agents (seo-content-creation)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-content-writer",
+  "source": "wshobson/agents (seo-content-creation)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-keyword-strategist",
+  "source": "wshobson/agents (seo-technical-optimization)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-meta-optimizer",
+  "source": "wshobson/agents (seo-technical-optimization)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-snippet-hunter",
+  "source": "wshobson/agents (seo-technical-optimization)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-structure-architect",
+  "source": "wshobson/agents (seo-technical-optimization)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-authority-builder",
+  "source": "wshobson/agents (seo-analysis-monitoring)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-cannibalization-detector",
+  "source": "wshobson/agents (seo-analysis-monitoring)"
+ },
+ {
+  "type": "agent",
+  "name": "seo-content-refresher",
+  "source": "wshobson/agents (seo-analysis-monitoring)"
+ },
+ {
+  "type": "agent",
+  "name": "content-marketer",
+  "source": "wshobson/agents (content-marketing)"
+ },
+ {
+  "type": "agent",
+  "name": "search-specialist",
+  "source": "wshobson/agents (content-marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "social-publishing",
+  "source": "wshobson/agents (social-publishing)"
+ },
+ {
+  "type": "agent",
+  "name": "social-publishing-publisher",
+  "source": "wshobson/agents (social-publishing)"
+ },
+ {
+  "type": "skill",
+  "name": "accessibility-compliance",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "design-system-patterns",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "interaction-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "mobile-android-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "mobile-ios-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "react-native-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "responsive-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "visual-design-foundations",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "web-component-design",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "agent",
+  "name": "accessibility-expert",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "agent",
+  "name": "design-system-architect",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "agent",
+  "name": "ui-designer",
+  "source": "wshobson/agents (ui-design)"
+ },
+ {
+  "type": "skill",
+  "name": "brand-landingpage",
+  "source": "wshobson/agents (brand-landingpage)"
+ },
+ {
+  "type": "agent",
+  "name": "gallery-researcher",
+  "source": "wshobson/agents (meigen-ai-design)"
+ },
+ {
+  "type": "agent",
+  "name": "image-generator",
+  "source": "wshobson/agents (meigen-ai-design)"
+ },
+ {
+  "type": "agent",
+  "name": "prompt-crafter",
+  "source": "wshobson/agents (meigen-ai-design)"
+ },
+ {
+  "type": "agent",
+  "name": "customer-support",
+  "source": "wshobson/agents (customer-sales-automation)"
+ },
+ {
+  "type": "agent",
+  "name": "sales-automator",
+  "source": "wshobson/agents (customer-sales-automation)"
+ },
+ {
+  "type": "skill",
+  "name": "data-storytelling",
+  "source": "wshobson/agents (business-analytics)"
+ },
+ {
+  "type": "skill",
+  "name": "kpi-dashboard-design",
+  "source": "wshobson/agents (business-analytics)"
+ },
+ {
+  "type": "agent",
+  "name": "business-analyst",
+  "source": "wshobson/agents (business-analytics)"
+ },
+ {
+  "type": "skill",
+  "name": "competitive-landscape",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "skill",
+  "name": "market-sizing-analysis",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "skill",
+  "name": "startup-financial-modeling",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "skill",
+  "name": "startup-metrics-framework",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "skill",
+  "name": "team-composition-analysis",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "agent",
+  "name": "startup-analyst",
+  "source": "wshobson/agents (startup-business-analyst)"
+ },
+ {
+  "type": "skill",
+  "name": "avoid-ai-writing",
+  "source": "wshobson/agents (avoid-ai-writing)"
+ },
+ {
+  "type": "skill",
+  "name": "screen-reader-testing",
+  "source": "wshobson/agents (accessibility-compliance)"
+ },
+ {
+  "type": "skill",
+  "name": "wcag-audit-patterns",
+  "source": "wshobson/agents (accessibility-compliance)"
+ },
+ {
+  "type": "agent",
+  "name": "ui-visual-validator",
+  "source": "wshobson/agents (accessibility-compliance)"
+ },
+ {
+  "type": "skill",
+  "name": "ab-test-setup",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "aeo",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "analytics-tracking",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "app-store-optimization",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "business-name-fit",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "campaign-analytics",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-alternatives",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "content-creator",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "content-humanizer",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "content-production",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "form-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "free-tool-strategy",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "launch-strategy",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "local-seo-manager",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-context",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-demand-acquisition",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-ops",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-skills",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "marketing-strategy-pmm",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "onboarding-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "page-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "paid-ads",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "paywall-upgrade-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "popup-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "pricing-strategy",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "prompt-engineer-toolkit",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "referral-program",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "schema-markup",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "signup-flow-cro",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "social-content",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "social-media-analyzer",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "social-media-manager",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "webinar-marketing",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "x-twitter-growth",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "skill",
+  "name": "youtube-full",
+  "source": "alirezarezvani/claude-skills (marketing)"
+ },
+ {
+  "type": "agent",
+  "name": "cs-aeo",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "cs-content-creator",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "cs-demand-gen-specialist",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "cs-webinar-marketer",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "content-strategist",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "growth-marketer",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "agent",
+  "name": "solo-founder",
+  "source": "alirezarezvani/claude-skills"
+ },
+ {
+  "type": "skill",
+  "name": "blue-ocean-strategy",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "cold-start-problem",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "contagious",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "conversion-optimization",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "create-website",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "cro-methodology",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "crossing-the-chasm",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-everyday-things",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-sprint",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "good-strategy-bad-strategy",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "grow-business",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "grow-website",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "hooked-ux",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "hundred-million-offers",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "improve-retention",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "improve-website",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "influence-psychology",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "jobs-to-be-done",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "lean-ux",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "made-to-stick",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "microinteractions",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "mom-test",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "monetizing-innovation",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "negotiation",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "obviously-awesome",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "one-page-marketing",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "predictable-revenue",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "refactoring-ui",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "scorecard-marketing",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "steve-jobs-design-review",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "storybrand-messaging",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "top-design",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "ux-heuristics",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "web-typography",
+  "source": "wondelai/skills"
+ },
+ {
+  "type": "skill",
+  "name": "animejs",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "app-store-screenshots",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "apple-design",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "beautiful-shadows",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-accessibility",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-colors",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-interface",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-layout",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-typography",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-ui",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "better-writing",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "css-animations",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "documentary-brutalist-agency",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "editorial-portfolio-chapters",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "emil-design-eng",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "glass-dark-ui",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "gsap",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "impeccable",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "interface-review",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "landing-page",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "lottie",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "mesh-gradient-dark-blue-clean",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "minimal-zine-poster",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "ogilvy",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "pricing-page",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "product-proof-saas",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "skeuomorphic-ui",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "staggered-word-reveal",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "stop-slop",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "visual-style-presets",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "web-design-guidelines",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "b2b-brand-marketing",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-architecture",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-audit",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-context",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-identity",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-launch",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-manifesto",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-measurement",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-messaging",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-naming",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-packaging",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-partnerships",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-positioning",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-story",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-strategy",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "brand-voice",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "competitor-branding",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "d2c-marketing",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "email-marketing",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "google-ads",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "meta-ads",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "personal-brand",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "rebranding",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "target-audience",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ugc-strategy",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "whatsapp-marketing",
+  "source": "arnabbagxd/Brand-building-skills"
+ },
+ {
+  "type": "skill",
+  "name": "hallmark",
+  "source": "Nutlope/hallmark"
+ },
+ {
+  "type": "skill",
+  "name": "baoyu-design",
+  "source": "JimLiu/baoyu-design"
+ },
+ {
+  "type": "skill",
+  "name": "nothing-design",
+  "source": "dominikmartn/nothing-design-skill"
+ },
+ {
+  "type": "skill",
+  "name": "design-debt-audit",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-impact-reporting",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-qa-checklist",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-review-process",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-sprint-plan",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "handoff-spec",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "team-workflow",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "version-control-strategy",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "affinity-diagram",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "behavioural-analytics",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "card-sort-analysis",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "diary-study-plan",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "empathy-map",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "interview-script",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "journey-map",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "qual-quant-triangulation",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "research-repository",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "summarize-interview",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "survey-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "usability-test-plan",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "user-persona",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "accessibility-audit",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "component-spec",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-system-governance",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-token",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "documentation-template",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "icon-system",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "localization-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "motion-system",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "naming-convention",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "pattern-library",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "theming-system",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "case-study",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-negotiation",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-rationale",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-system-adoption",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-token-audit",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "presentation-deck",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "ux-writing",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "animation-principles",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "conversational-ux",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "doherty-threshold",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "error-handling-ux",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "feedback-patterns",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "fitts-law",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "form-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "gesture-patterns",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "hicks-law",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "interfaces-that-feel",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "jakobs-law",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "loading-states",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "micro-interaction-spec",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "millers-law",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "navigation-patterns",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "onboarding-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "peak-end-rule",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "search-ux",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "serial-position-effect",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "state-machine",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "teslers-law",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "zeigarnik-effect",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "a-b-test-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "accessibility-test-plan",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "click-test-plan",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "concept-selection",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "heuristic-evaluation",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "parallel-concepts",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "prototype-strategy",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "test-scenario",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "user-flow-diagram",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wireframe-spec",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "aesthetic-usability",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "color-system",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "dark-mode-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "data-visualization",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "illustration-style",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-closure",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-common-region",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-continuity",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-figure-ground",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-proximity",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "law-of-similarity",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "layout-grid",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "platform-conventions",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "readable-measure",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "spacing-system",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "typography-scale",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "visual-hierarchy",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "von-restorff-effect",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "business-design",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "competitive-analysis",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-brief",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-principles",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "experience-map",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "information-architecture",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "metrics-definition",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "north-star-vision",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "opportunity-framework",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "service-blueprint",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "stakeholder-alignment",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-affordance",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-brand-consistency",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-color",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-composition",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-information-density",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-typography",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "critique-visual-hierarchy",
+  "source": "Owl-Listener/designer-skills"
+ },
+ {
+  "type": "skill",
+  "name": "code-to-design",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "extract-design-md",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "extract-static-html",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "generate-design",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "manage-design-system",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "upload-to-stitch",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "design-md",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "enhance-prompt",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "site-md",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "stitch-loop",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "taste-design",
+  "source": "google-labs-code/stitch-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wonder-pill",
+  "source": "ara-mkr/Wonder-Pill"
+ },
+ {
+  "type": "skill",
+  "name": "brainstorming",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "dispatching-parallel-agents",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "executing-plans",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "receiving-code-review",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "requesting-code-review",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "subagent-driven-development",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "systematic-debugging",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "test-driven-development",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "verification-before-completion",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "writing-plans",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "writing-skills",
+  "source": "obra/superpowers"
+ },
+ {
+  "type": "skill",
+  "name": "caveman",
+  "source": "JuliusBrussee/caveman"
+ },
+ {
+  "type": "skill",
+  "name": "karpathy-guidelines",
+  "source": "multica-ai/andrej-karpathy-skills"
+ },
+ {
+  "type": "skill",
+  "name": "blueprint",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wordpress-router",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-abilities-api",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-abilities-audit",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-abilities-verify",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-block-development",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-block-themes",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-env",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-interactivity-api",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-patterns",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-performance",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-phpstan",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-playground",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-plugin-development",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-plugin-directory-guidelines",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-project-triage",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-rest-api",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-wpcli-and-ops",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wpds",
+  "source": "WordPress/agent-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-performance-review",
+  "source": "elvismdev/claude-wordpress-skills"
+ },
+ {
+  "type": "skill",
+  "name": "clean-code-guard",
+  "source": "amElnagdy/guard-skills"
+ },
+ {
+  "type": "skill",
+  "name": "docs-guard",
+  "source": "amElnagdy/guard-skills"
+ },
+ {
+  "type": "skill",
+  "name": "test-guard",
+  "source": "amElnagdy/guard-skills"
+ },
+ {
+  "type": "skill",
+  "name": "woo-guard",
+  "source": "amElnagdy/guard-skills"
+ },
+ {
+  "type": "skill",
+  "name": "wp-guard",
+  "source": "amElnagdy/guard-skills"
+ },
+ {
+  "type": "skill",
+  "name": "php-best-practices",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-concurrency",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-error-handling",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-language",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-security",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-testing",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "php-tooling",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-api",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-architecture",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-background-processing",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-clean-architecture",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-database-expert",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-eloquent",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-security",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-sessions-middleware",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-testing",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "laravel-tooling",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-hana",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-migrations",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-mongodb",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-postgresql",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-query-performance",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-redis",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-schema-design",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "database-transactions",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "javascript-best-practices",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "javascript-language",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "javascript-tooling",
+  "source": "HoangNguyen0403/agent-skills-standard"
+ },
+ {
+  "type": "skill",
+  "name": "postgresql-table-design",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "sql-optimization-patterns",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "debugging-strategies",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "code-review-excellence",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "tailwind-design-system",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "modern-javascript-patterns",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "typescript-advanced-types",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "nodejs-backend-patterns",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "database-migration",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "php-pro",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "sql-pro",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "database-architect",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "database-optimizer",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "frontend-developer",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "javascript-pro",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "typescript-pro",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "performance-engineer",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "frontend-security-coder",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "backend-architect",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "legacy-modernizer",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "agent",
+  "name": "ui-ux-designer",
+  "source": "wshobson/agents"
+ },
+ {
+  "type": "skill",
+  "name": "tailwind",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "tailwind-v4",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "css-border-gradient",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "progressive-blur",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "reveal-hover-effect",
+  "source": "boraoztunc/skills"
+ },
+ {
+  "type": "skill",
+  "name": "waapi",
+  "source": "boraoztunc/skills"
+ }
+]

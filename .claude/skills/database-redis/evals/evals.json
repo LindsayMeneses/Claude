@@ -1,0 +1,76 @@
+{
+  "skill_name": "database-redis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "How should I design Redis keys for a multi-tenant application?",
+      "expected_output": "Recommends colon-separated namespacing (app:tenant:resource:id). Keep keys descriptive but compact. Set TTL on all non-permanent keys.",
+      "assertions": [
+        {
+          "id": "a2",
+          "description": "Mentions TTL",
+          "type": "contains",
+          "value": "TTL"
+        },
+        {
+          "id": "a2",
+          "description": "Checks the task contract includes Recommends colon-separated",
+          "type": "contains",
+          "value": "tenant:"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I safely delete 10,000 Redis keys matching a pattern?",
+      "expected_output": "Use SCAN instead of KEYS (KEYS is O(N) and blocks). Use UNLINK instead of DEL for background deletion of large keys.",
+      "assertions": [
+        {
+          "id": "a1",
+          "description": "Recommends SCAN over KEYS",
+          "type": "contains",
+          "value": "SCAN"
+        },
+        {
+          "id": "a2",
+          "description": "Warns against KEYS",
+          "type": "contains",
+          "value": "KEYS"
+        },
+        {
+          "id": "a3",
+          "description": "Mentions UNLINK for async deletion",
+          "type": "contains",
+          "value": "UNLINK"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What Redis eviction policy should I use for a general cache?",
+      "expected_output": "Recommends allkeys-lru for general caches. volatile-lru for mixed workloads with persistent data. Mentions enabling lazy freeing.",
+      "assertions": [
+        {
+          "id": "a1",
+          "description": "Recommends allkeys-lru",
+          "type": "contains",
+          "value": "allkeys-lru"
+        },
+        {
+          "id": "a2",
+          "description": "Checks the task contract includes the eviction policy",
+          "type": "contains",
+          "value": "allkeys-lru"
+        }
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    "How do I create a PostgreSQL migration?",
+    "How do I design a MongoDB schema?",
+    "How do I implement JWT authentication in NestJS?"
+  ],
+  "should_trigger": [
+    "How should I design Redis keys for a multi-tenant application?"
+  ]
+}
