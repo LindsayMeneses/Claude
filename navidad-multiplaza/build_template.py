@@ -138,8 +138,27 @@ def text(markup, color="text", align="left", maxw=None, cls=""):
 
 
 def buttons(items, align="left"):
-    a = "".join(f'<a class="nm-btn{" ghost" if ghost else ""}" href="{H.escape(url)}">{label}</a>' for label, url, ghost in items)
-    return html(f'<div class="nm-btns {align}">{a}</div>')
+    """Botones nativos de Elementor en una fila: mismo borde y alto en ambas variantes, así quedan alineados."""
+    btns = []
+    for label, url, ghost in items:
+        s = {"text": label, "link": {"url": url}, "size": "md", "_element_width": "auto", "_element_width_mobile": "inherit",
+             "align_mobile": "justify", "_css_classes": "nm-ebtn",
+             "border_border": "solid", "border_width": {"unit": "px", "top": 1, "right": 1, "bottom": 1, "left": 1, "isLinked": True},
+             "border_radius": {"unit": "px", "top": 0, "right": 0, "bottom": 0, "left": 0, "isLinked": True},
+             "text_padding": pad(19, 32), "__globals__": {"typography_typography": T + "accent"}}
+        if ghost:
+            s["background_color"] = "transparent"
+            s["__globals__"].update({"button_text_color": C + "blanco", "border_color": C + "oroclaro",
+                                     "button_background_hover_color": C + "accent", "hover_color": C + "noche",
+                                     "button_hover_border_color": C + "accent"})
+        else:
+            s["__globals__"].update({"background_color": C + "accent", "button_text_color": C + "noche", "border_color": C + "accent",
+                                     "button_background_hover_color": C + "oroclaro", "hover_color": C + "noche",
+                                     "button_hover_border_color": C + "oroclaro"})
+        btns.append(widget("button", s))
+    return container(btns, {"flex_direction": "row", "flex_direction_mobile": "column", "flex_wrap": "wrap", "gap": gap(14),
+                            "flex_align_items": "center", "flex_justify_content": "center" if align == "center" else "flex-start",
+                            "flex_align_items_mobile": "stretch"})
 
 
 def line(color="accent", width=72, center=False):
@@ -332,6 +351,7 @@ pie = container([
     ], g=24, wrap=True),
     line("accent", 100),
     text(f"<p>{K['pie']['credito']} · Fotografías de referencia CC0 (Unsplash).</p>", "salvia", "center", cls="nm-note"),
+    text('<p><a href="/">← Lindsay Meneses · Proyectos</a></p>', "oroclaro", "center", cls="nm-note"),
 ], {"content_width": "boxed", "boxed_width": px(1200), "padding": pad(64, 56, 40), "padding_mobile": pad(48, 22, 110),
     "gap": gap(28), "background_background": "classic", "__globals__": {"background_color": C + "noche"},
     "css_classes": "nm-footer"}, inner=False)
