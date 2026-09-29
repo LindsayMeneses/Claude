@@ -76,12 +76,16 @@ def html(markup, cls=""):
     return widget("html", s)
 
 
+sys.path.insert(0, str(HERE.parent / "sitio"))
+from sitio import shell_markup  # noqa: E402  barra y menú comunes de lindsaymeneses.com
+
+
 def fx_widget():
     css = re.sub(r"/\*.*?\*/", "", (HERE / "fx/fx.css").read_text(), flags=re.S)
     css = re.sub(r"\s*\n\s*", "", css)
     js = (HERE / "fx/tour.js").read_text()
     js = "\n".join(l.strip() for l in js.splitlines() if l.strip() and not l.strip().startswith(("//", "/*")))
-    return html(f'<div class="nm-bokeh" aria-hidden="true"></div><canvas class="nm-snow" aria-hidden="true"></canvas>'
+    return html(shell_markup() + f'<div class="nm-bokeh" aria-hidden="true"></div><canvas class="nm-snow" aria-hidden="true"></canvas>'
                 f'<style>{css}</style><script>{js}</script>', "nm-fx")
 
 

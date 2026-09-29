@@ -61,12 +61,12 @@ Vista previa local: `python3 preview.py && NODE_PATH=$(npm root -g) node preview
 
 ## Página publicada
 
-- https://lindsaymeneses.com/navidad-multiplaza-2026/ — página ID 7, plantilla Elementor Canvas.
-- Se creó vía `wp/v2/pages` con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
-- 2026-09-25: publicada la **v3** (fotografía, contenido del deck, animaciones sutiles); antes, la v2 (recorrido guiado). Verificado: el meta devuelto por la API es
-  idéntico a `page-elementor-data.json`, se limpió el caché de Elementor y el HTML renderizado
-  contiene «Luces de», `nm-slide` y el `mailto:` de contacto.
-- No es la portada todavía.
+- https://lindsaymeneses.com/proyectos/navidad-multiplaza-2026/ — página ID 7, hija de «Proyectos»
+  (ID 158), plantilla Elementor Canvas. Es una de las landings del sitio de Lindsay (ver `../sitio/`).
+- Se publica con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
+- 2026-09-29: v3 con la barra y el menú hamburguesa del sitio (`shell_markup()` de `sitio/sitio.py`).
+  Verificado: el meta devuelto por la API es idéntico a `page-elementor-data.json` y se limpió el caché.
+- Antes: 2026-09-25 v3 sin menú; v2 (recorrido guiado).
 - Análisis del PPT y cambios sugeridos: `ANALISIS-PPT.md`.
 
 ## Pendiente
@@ -77,7 +77,7 @@ Vista previa local: `python3 preview.py && NODE_PATH=$(npm root -g) node preview
       ni `deck-navidad/` ni `deck-navidad.zip`)
 - [ ] Leer textos y tema del PPT, reemplazar los [PPT] (texto provisional en la fuente),
       subir las imágenes a Medios y cambiar los paneles decorativos por widgets de imagen
-- [ ] Botón «Conversemos» apunta a `#contacto`, que aún no existe (agregar sección o enlace)
+- [x] Botón «Conversemos» abre un correo a contacto@lindsaymeneses.com
 - [ ] Ponerla como portada (opcional, confirmar con la usuaria)
 - [ ] Limpieza cuando ya se haya usado el PPT: borrar `deck-navidad.zip`, `deck-navidad/`,
       `cw-runner-7f3k9q.php`, `fase1-instalar-y-extraer.php`

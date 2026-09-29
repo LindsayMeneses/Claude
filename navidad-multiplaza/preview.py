@@ -61,7 +61,7 @@ def render(el):
             if s.get(k):
                 r.append(f"{prop}:{s[k]}")
         if "width" in s:
-            r.append(f"width:{s['width']['size']}%;flex-shrink:1;min-width:0")
+            r.append(f"width:{s['width']['size']}{s['width'].get('unit','%')};flex-shrink:1;min-width:0")
         if s.get("flex_grow"):
             r.append(f"flex-grow:{s['flex_grow']}")
         if "min_height" in s:
@@ -80,13 +80,13 @@ def render(el):
         if s.get("flex_direction_tablet"):
             tab.append(f"flex-direction:{s['flex_direction_tablet']}")
         if "width_tablet" in s:
-            tab.append(f"width:{s['width_tablet']['size']}%")
+            tab.append(f"width:{s['width_tablet']['size']}{s['width_tablet'].get('unit','%')}")
         if "padding_tablet" in s:
             tab.append(f"padding:{box(s['padding_tablet'])}")
         if tab:
             css.append(f"@media(max-width:1024px){{{sel}{{{';'.join(tab)}}}}}")
         if "width_mobile" in s:
-            mob.append(f"width:{s['width_mobile']['size']}%")
+            mob.append(f"width:{s['width_mobile']['size']}{s['width_mobile'].get('unit','%')}")
         if "padding_mobile" in s:
             mob.append(f"padding:{box(s['padding_mobile'])}")
         if mob:
@@ -115,24 +115,36 @@ def render(el):
         css.append(f"{sel}{{{g(s, 'typography_typography')};color:{g(s, 'text_color')};text-align:{align}}}{sel} p{{margin:0}}")
         return f'<div class="{cls}">{s["editor"]}</div>'
     if w == "button":
-        outline = s.get("border_border") == "solid"
+        outline = s.get("background_color") == "transparent"
         bg = "transparent" if outline else g(s, "background_color")
         border = f"border:1px solid {g(s, 'border_color')}" if outline else "border:0"
         css.append(f"{sel} .elementor-button{{{g(s, 'typography_typography')};display:inline-block;background:{bg};color:{g(s, 'button_text_color')};"
-                   f"{border};border-radius:999px;padding:{box(s['text_padding'])};text-decoration:none;transition:all .3s}}"
+                   f"{border};border-radius:0;padding:{box(s['text_padding'])};text-decoration:none;transition:all .3s}}"
                    f"{sel} .elementor-button:hover{{background:{g(s, 'button_background_hover_color')};color:{g(s, 'hover_color') or g(s, 'button_text_color')}}}")
         return f'<div class="{cls}"><a class="elementor-button" href="{html.escape(s["link"]["url"])}">{s["text"]}</a></div>'
     if w == "divider":
         m = "0 auto" if s.get("align") == "center" else "0"
         css.append(f"{sel} .elementor-divider-separator{{display:block;width:{s['width']['size']}px;border-top:{s['weight']['size']}px solid {g(s, 'color')};margin:{m}}}")
         return f'<div class="{cls}"><div class="elementor-divider"><span class="elementor-divider-separator"></span></div></div>'
+    if w == "counter":
+        css.append(f"{sel} .elementor-counter-number-wrapper{{display:flex;color:{g(s, 'number_color')}}}{sel} .elementor-counter-title{{color:{g(s, 'title_color')}}}")
+        return (f'<div class="{cls}"><div class="elementor-counter"><div class="elementor-counter-number-wrapper"><span>{s.get("prefix","")}</span>'
+                f'<span>{s["ending_number"]}</span></div><div class="elementor-counter-title">{s["title"]}</div></div></div>')
+    if w == "icon-list":
+        items = "".join(f'<li class="elementor-icon-list-item" style="position:relative;list-style:none"><span class="elementor-icon-list-icon" style="color:{g(s, "icon_color")}">●</span>'
+                        f'<span class="elementor-icon-list-text">{i["text"]}</span></li>' for i in s["icon_list"])
+        css.append(f"{sel}{{{g(s, 'icon_typography_typography')};color:{g(s, 'text_color')}}}{sel} ul{{margin:0;padding:0}}")
+        return f'<div class="{cls}"><ul class="elementor-icon-list-items">{items}</ul></div>'
     if w == "html":
         return f'<div class="{cls}">{s["html"]}</div>'
     return f"<!-- {w} -->"
 
 
 if __name__ == "__main__":
-    raw = (HERE / "page-elementor-data.json").read_text()
+    import sys
+    src = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "page-elementor-data.json"
+    dest = sys.argv[2] if len(sys.argv) > 2 else "index.html"
+    raw = src.read_text()
     # sin acceso al sitio desde aquí: las fotos se sustituyen por marcadores locales del mismo tamaño
     import hashlib
     from PIL import Image, ImageDraw, ImageFilter
@@ -158,5 +170,5 @@ if __name__ == "__main__":
 <style>body{{margin:0}}*{{box-sizing:border-box}}em{{font-style:italic}}{''.join(css)}</style></head>
 <body><div class="elementor">{body}</div></body></html>"""
     (HERE / "preview").mkdir(exist_ok=True)
-    (HERE / "preview/index.html").write_text(page)
-    print("ok preview/index.html", len(page), "bytes")
+    (HERE / "preview" / dest).write_text(page)
+    print("ok preview/" + dest, len(page), "bytes")

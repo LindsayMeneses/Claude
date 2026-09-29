@@ -1,0 +1,105 @@
+/* lindsaymeneses.com — carcasa común (barra + menú) y motor de animaciones ligadas al scroll (prefijo lx-) */
+html{scroll-behavior:smooth}
+body{background:#071812;-webkit-font-smoothing:antialiased}
+/* widget que lleva la carcasa: invisible */
+.lx-shell-w{position:absolute!important;width:0!important;height:0!important;overflow:hidden;margin:0!important;padding:0!important}
+.lx-sticky{position:sticky!important;top:110px;align-self:flex-start}
+/* barra superior */
+.lx-bar{position:fixed;top:0;left:0;right:0;z-index:9995;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;
+  background:rgba(7,24,18,.0);transition:background .5s ease,border-color .5s ease,backdrop-filter .5s ease;border-bottom:1px solid transparent}
+.lx-bar.solid{background:rgba(7,24,18,.72);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);border-bottom-color:rgba(201,164,92,.18)}
+.lx-logo{font:400 19px/1 'Fraunces',serif;color:#fff!important;text-decoration:none!important;letter-spacing:.01em}
+.lx-logo em{font-style:italic;color:#C9A45C}
+.lx-burger{all:unset;cursor:pointer;display:flex;align-items:center;gap:14px;font:600 10px/1 'Manrope',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#EBD9AE;padding:10px 0}
+.lx-burger i{display:block;width:26px;height:1px;background:currentColor;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.lx-burger span{display:flex;flex-direction:column;gap:7px}
+.lx-open .lx-burger span i:first-child{transform:translateY(4px) rotate(45deg)}
+.lx-open .lx-burger span i:last-child{transform:translateY(-4px) rotate(-45deg)}
+.lx-burger:focus-visible{outline:2px solid #EBD9AE;outline-offset:4px}
+/* menú a pantalla completa */
+.lx-menu{position:fixed;inset:0;z-index:9994;background:rgba(7,24,18,.97);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+  display:flex;flex-direction:column;justify-content:center;padding:100px 8vw 48px;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility 0s .6s}
+.lx-open .lx-menu{opacity:1;visibility:visible;transition:opacity .6s ease}
+.lx-menu-in{display:grid;grid-template-columns:1fr 1.3fr;gap:6vw;max-width:1200px;width:100%;margin:0 auto}
+.lx-menu-k{font:600 10px/1 'Manrope',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#C9A45C;margin:0 0 26px}
+.lx-menu ul{list-style:none;margin:0;padding:0}
+.lx-menu li{overflow:hidden}
+.lx-menu li a{display:inline-block;font:300 clamp(34px,4.6vw,60px)/1.18 'Fraunces',serif;color:#FBF6EC!important;text-decoration:none!important;letter-spacing:-.02em;
+  transform:translateY(105%);transition:transform .9s cubic-bezier(.2,.7,.1,1),color .3s;position:relative}
+.lx-menu li a small{display:block;font:600 10px/1.6 'Manrope',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#C9A45C;margin-top:4px}
+.lx-menu-proj li a{font-size:clamp(26px,3vw,40px);padding:10px 0}
+.lx-menu li a::after{content:"";position:absolute;left:0;bottom:.08em;height:1px;width:100%;background:#C9A45C;transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.7,.1,1)}
+.lx-menu li a:hover::after,.lx-menu li a:focus-visible::after,.lx-menu li a[aria-current]::after{transform:scaleX(1)}
+.lx-menu li a:hover{color:#EBD9AE!important}
+.lx-open .lx-menu li a{transform:none}
+.lx-menu-foot{display:flex;gap:32px;flex-wrap:wrap;max-width:1200px;width:100%;margin:56px auto 0;padding-top:24px;border-top:1px solid rgba(201,164,92,.22);
+  opacity:0;transform:translateY(12px);transition:opacity .8s ease .35s,transform .8s ease .35s}
+.lx-open .lx-menu-foot{opacity:1;transform:none}
+.lx-menu-foot a{font:500 14px 'Manrope',sans-serif;color:#EBD9AE!important;text-decoration:none!important}
+.lx-lock{overflow:hidden}
+/* secciones fijadas: el contenedor mide varias pantallas y su hijo queda pegado mientras avanza --p (0→1) */
+.lx-pin{position:relative;--p:0}
+.lx-stick{position:sticky!important;top:0;height:100vh;height:100svh;overflow:hidden}
+.lx-bg{position:absolute!important;inset:0;margin:0!important;width:100%!important;max-width:none!important;z-index:0;pointer-events:none}
+.lx-bg .elementor-widget-container{height:100%}
+.lx-bg img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;display:block}
+.lx-stick>*:not(.lx-bg){position:relative;z-index:1}
+/* portada: el nombre se aleja y la foto se abre al hacer scroll */
+.lx-hero .lx-bg img{transform:scale(calc(1.22 - .22 * var(--p)));filter:brightness(calc(.55 - .2 * var(--p)))}
+.lx-hero .lx-name{transform:translateY(calc(var(--p) * -14vh)) scale(calc(1 - .38 * var(--p)));opacity:calc(1 - var(--p) * 1.6);will-change:transform,opacity}
+.lx-hero .lx-after{opacity:calc((var(--p) - .45) * 3);transform:translateY(calc((1 - var(--p)) * 40px))}
+.lx-hero .lx-hint{opacity:calc(1 - var(--p) * 5)}
+.lx-hint .elementor-heading-title::after{content:"";display:block;width:1px;height:46px;background:linear-gradient(#C9A45C,transparent);margin:16px auto 0;animation:lx-hint 2.4s ease-in-out infinite}
+@keyframes lx-hint{0%,100%{transform:scaleY(.4);transform-origin:top;opacity:.4}50%{transform:scaleY(1);opacity:1}}
+.lx-hero .lx-after{position:absolute!important;left:8vw;right:8vw;top:50%;margin-top:-.6em!important}
+.lx-hint{position:absolute!important;bottom:36px;left:0;right:0}
+/* texto que se ilumina palabra por palabra */
+.lx-words .lx-w{opacity:.16;transition:opacity .25s linear}
+.lx-words .lx-w.on{opacity:1}
+/* carrusel horizontal guiado por el scroll */
+.lx-track{transform:translate3d(calc(var(--shift, 0px) * -1),0,0);will-change:transform;flex-wrap:nowrap!important}
+.lx-track>.e-con{flex:0 0 auto!important}
+/* tarjetas de proyecto */
+.lx-card{position:relative;overflow:hidden;background:#0F3B2E}
+.lx-card .lx-ph{position:relative;overflow:hidden;height:var(--h,58vh)}
+.lx-card .lx-ph img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;display:block;transition:transform 1.6s cubic-bezier(.2,.7,.1,1),filter 1.2s}
+.lx-card:hover .lx-ph img{transform:scale(1.05)}
+.lx-card .lx-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,24,18,0) 40%,rgba(7,24,18,.9))}
+.lx-hpin .lx-card .lx-ph{--h:44vh}
+.lx-soon .lx-ph img{filter:saturate(.6) brightness(.8)}
+/* tarjeta sin foto: el año como protagonista */
+.lx-num{display:grid;place-items:center;background:radial-gradient(ellipse at 30% 20%,#15523F,#0A241C 70%)}
+.lx-num span{font:300 clamp(90px,11vw,170px)/1 'Fraunces',serif;color:transparent;-webkit-text-stroke:1px rgba(201,164,92,.7);letter-spacing:-.04em}
+.lx-num::after{display:none}
+/* línea de tiempo que se dibuja */
+.lx-tl{position:relative;--tp:0}
+.lx-tl::before{content:"";position:absolute;left:3px;top:6px;bottom:6px;width:1px;background:rgba(15,59,46,.15)}
+.lx-tl::after{content:"";position:absolute;left:3px;top:6px;bottom:6px;width:1px;background:#C9A45C;transform:scaleY(var(--tp));transform-origin:top}
+.lx-tl .elementor-icon-list-item{padding:14px 0 14px 30px!important}
+.lx-tl .elementor-icon-list-icon{position:absolute;left:0}
+/* títulos y detalles */
+.lx-t .elementor-heading-title{font-weight:400!important;letter-spacing:-.025em!important;line-height:1.04!important}
+.lx-t em{font-style:italic;font-weight:300;color:#C9A45C}
+.lx-k .elementor-heading-title{letter-spacing:.3em!important}
+.lx-btn .elementor-button{min-height:56px;display:inline-flex;align-items:center;justify-content:center;transition:all .45s ease}
+.lx-counter .elementor-counter-number-wrapper{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(56px,7vw,110px);line-height:1;justify-content:flex-start;letter-spacing:-.03em}
+.lx-counter .elementor-counter-title{font-size:15px;line-height:1.45;margin-top:10px;text-align:left}
+.lx-fact{border-top:1px solid rgba(15,59,46,.18);padding-top:18px}
+/* entradas suaves (secciones normales) */
+html.lx-js .lx-rv{opacity:0;transform:translateY(22px);filter:blur(6px);transition:opacity 1.1s ease,transform 1.2s cubic-bezier(.2,.7,.1,1),filter 1.1s ease}
+html.lx-js .lx-rv.is-in{opacity:1;transform:none;filter:none}
+.elementor-editor-active .lx-rv{opacity:1!important;transform:none!important;filter:none!important}
+@media(max-width:1024px){.lx-sticky{position:relative!important;top:auto}.lx-menu-in{grid-template-columns:1fr;gap:40px}.lx-bar{padding:0 24px}}
+@media(max-width:767px){
+  .lx-bar{height:56px;padding:0 18px}.lx-logo{font-size:17px}.lx-bt{display:none}
+  .lx-menu{padding:90px 24px 32px;justify-content:flex-start;overflow-y:auto}
+  .lx-card .lx-ph{--h:44vh}
+  .lx-hpin{height:auto!important}.lx-hpin>.lx-stick{position:relative!important;height:auto}
+  .lx-track{transform:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px}
+  .lx-track>.e-con{scroll-snap-align:start;width:84vw!important}}
+html.lx-reduce .lx-pin{height:auto!important}
+html.lx-reduce .lx-stick{position:relative!important;height:auto;min-height:100vh}
+html.lx-reduce .lx-hero .lx-name,html.lx-reduce .lx-hero .lx-after{transform:none;opacity:1}
+html.lx-reduce .lx-words .lx-w{opacity:1}
+html.lx-reduce .lx-track{transform:none;overflow-x:auto}
+html.lx-reduce .lx-tl{--tp:1}
