@@ -351,11 +351,22 @@ def template_widget(tid):
     return widget("template", {"template_id": str(tid)})
 
 
+def recorrido():
+    """CSS y JS del recorrido en video del banner (fx/recorrido.css y fx/recorrido.js), compactados."""
+    css = re.sub(r"/\*.*?\*/", "", (HERE / "fx/recorrido.css").read_text(), flags=re.S)
+    css = re.sub(r"\s*\n\s*", "", css)
+    js = (HERE / "fx/recorrido.js").read_text()
+    js = re.sub(r"/\*.*?\*/", "", js, flags=re.S)
+    js = "\n".join(l.strip() for l in js.splitlines() if l.strip() and not l.strip().startswith("//"))
+    return f"<style>{css}</style><script>{js}</script>"
+
+
 def split(content):
     """Reparte el contenido en tres documentos de Elementor, cada uno de un tamaño que se publica sin riesgo:
     la plantilla con el código (CSS, JS y menú), la página con las secciones 1–12 y la plantilla con las 13–25."""
     fx = content[0]["elements"][0]["settings"]
     code = "".join(re.findall(r"<style>.*?</style>|<script>.*?</script>", fx["html"], re.S))
+    code = code.replace("reel(); media();", "media();") + recorrido()   # el banner pasa a ser el recorrido en video
     shell = re.match(r'<div class="lx-shell"[^>]*></div>', fx["html"]).group(0)
     fx["html"] = re.sub(r"<style>.*?</style>|<script>.*?</script>", "", fx["html"], flags=re.S).replace(shell, "")
     codigo = [container([widget("html", {"html": shell + code, "_css_classes": "lx-shell-w"})],
