@@ -135,6 +135,13 @@ def render(el):
                         f'<span class="elementor-icon-list-text">{i["text"]}</span></li>' for i in s["icon_list"])
         css.append(f"{sel}{{{g(s, 'icon_typography_typography')};color:{g(s, 'text_color')}}}{sel} ul{{margin:0;padding:0}}")
         return f'<div class="{cls}"><ul class="elementor-icon-list-items">{items}</ul></div>'
+    if w == "form":
+        return (f'<div class="{cls}"><form class="elementor-form" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">'
+                + "".join(f'<div class="elementor-field-group" style="grid-column:span {1 if f["width"] == "50" else 2}">'
+                          f'<label class="elementor-field-label" style="color:#EBD9AE;display:block;margin-bottom:6px">{f["field_label"]}</label>'
+                          f'<input class="elementor-field" style="width:100%;padding:14px" placeholder="{f["placeholder"]}"></div>'
+                          for f in s["form_fields"])
+                + f'<button class="elementor-button" style="grid-column:span 2;background:#C9A45C;border:0;padding:18px">{s["button_text"]}</button></form></div>')
     if w == "html":
         return f'<div class="{cls}">{s["html"]}</div>'
     return f"<!-- {w} -->"
@@ -149,10 +156,10 @@ if __name__ == "__main__":
     import hashlib
     from PIL import Image, ImageDraw, ImageFilter
     (HERE / "preview/img").mkdir(parents=True, exist_ok=True)
-    for name in set(re.findall(r"2026/09/(nm-[\w.-]+?\.jpg)", raw)):
+    for name in set(re.findall(r"2026/09/((?:nm|multiplaza|karjim)[\w.-]+?\.(?:jpg|png))", raw)):
         out = HERE / "preview/img" / name
         if not out.exists():
-            m = re.search(r"-(\d+)x(\d+)\.jpg$", name)
+            m = re.search(r"-(\d+)x(\d+)\.(?:jpg|png)$", name)
             w, h = (int(m.group(1)), int(m.group(2))) if m else (1920, 1280)
             hsh = hashlib.md5(name.split("-")[1].encode()).digest()
             im = Image.new("RGB", (w // 4, h // 4), (20 + hsh[0] % 40, 50 + hsh[1] % 50, 40 + hsh[2] % 30))
@@ -161,7 +168,7 @@ if __name__ == "__main__":
                 x, y, r = hsh[i % 16] * 7 % (w // 4), hsh[(i + 5) % 16] * 11 % (h // 4), 6 + i % 20
                 d.ellipse([x - r, y - r, x + r, y + r], fill=(230, 190 - i % 3 * 40, 120 + i % 2 * 60))
             im.filter(ImageFilter.GaussianBlur(3)).resize((w, h)).save(out, quality=70)
-    raw = raw.replace("https://lindsaymeneses.com/wp-content/uploads/2026/09/", "img/")
+    raw = raw.replace("https://lindsaymeneses.com/wp-content/uploads/2026/09/", "img/").replace("/wp-content/uploads/2026/09/", "img/")
     data = json.loads(raw)
     body = "".join(render(el) for el in data)
     page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">

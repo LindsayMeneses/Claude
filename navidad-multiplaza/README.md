@@ -59,15 +59,27 @@ Regenerar: `python3 build_template.py --page` → publicar `page-elementor-data.
 `_elementor_data` de la página 7 y limpiar caché (`DELETE elementor/v1/cache`).
 Vista previa local: `python3 preview.py && NODE_PATH=$(npm root -g) node preview-shots.js`.
 
-## Página publicada
+## Página publicada (v4, reconstruida)
 
-- https://lindsaymeneses.com/proyectos/navidad-multiplaza-2026/ — página ID 7, hija de «Proyectos»
-  (ID 158), plantilla Elementor Canvas. Es una de las landings del sitio de Lindsay (ver `../sitio/`).
-- Se publica con el meta `_elementor_data` (contenido de `page-elementor-data.json`).
-- 2026-09-29: v3 con la barra y el menú hamburguesa del sitio (`shell_markup()` de `sitio/sitio.py`).
-  Verificado: el meta devuelto por la API es idéntico a `page-elementor-data.json` y se limpió el caché.
-- Antes: 2026-09-25 v3 sin menú; v2 (recorrido guiado).
-- Análisis del PPT y cambios sugeridos: `ANALISIS-PPT.md`.
+- https://lindsaymeneses.com/proyectos/navidad-multiplaza-2026/ — página ID 7, hija de «Proyectos» (158), Canvas.
+- **v4 (29-09-2026):** reconstrucción de la versión completa del 28-09 (22:18), que se había sobrescrito.
+  Se armó desde `respaldo/pagina7-2026-09-28-2218.html` con `rebuild_v4.py`: los mismos textos, renders
+  `nm26-*`, 17 videos de fachadas, lightbox y comparadores. Mejoras con Elementor Pro: formulario de
+  contacto, efecto de movimiento en las fotos grandes, botones nativos y el menú del sitio.
+- Está repartida en tres documentos de Elementor (cada uno se publica y verifica por separado):
+  | Documento | ID | Contenido |
+  |---|---|---|
+  | Página «Navidad Multiplaza 2026» | 7 | Portada y secciones 01–11; incluye las dos plantillas |
+  | Plantilla «Código (CSS, JS y menú)» | 162 | Estilos, recorrido, lightbox, videos y menú del sitio |
+  | Plantilla «Segunda parte» | 163 | Secciones 12–23, cierre con formulario y pie |
+  Las plantillas se editan en Elementor → Plantillas → Plantillas guardadas.
+- La página tiene CSS personalizado (Ajustes de página → CSS personalizado) para el título de portada.
+- Publicar: `python3 rebuild_v4.py` → subir `tpl-codigo.json` (162), `tpl-parte2.json` (163) y
+  `page-elementor-data.json` (7) → verificar cada uno → `DELETE elementor/v1/cache` (si no, WordPress
+  sigue mostrando la versión anterior).
+- **Antes de publicar, comprobar la fecha de modificación de la página 7:** si cambió desde la última
+  publicación propia, otra sesión trabajó en ella y hay que revisar antes de sobrescribir.
+- `build_template.py` genera la v3 (fotos de referencia); ya no es la versión publicada.
 
 ## Pendiente
 
