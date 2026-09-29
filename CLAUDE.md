@@ -28,3 +28,8 @@ Claude Code pide aprobación la primera vez que abres el proyecto. Las claves se
 | `blender` | Controlar Blender para modelado 3D. Solo funciona en una computadora con Blender y su add-on | ninguna |
 
 Las imágenes generadas se guardan en `imagenes/`, que no se sube al repo.
+
+## Dara System
+- Se escribe **Dara System** (D-A-R-A). No es "Data System".
+- Es el sistema multi-tenant de Lindsay. El conector MCP `web` (WordPress, multipágina) usa credenciales para conectarse a Dara System.
+- Si `web` pide autorización, revisa primero que el MCP pueda autenticarse contra Dara System.
