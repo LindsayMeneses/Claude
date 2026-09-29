@@ -165,6 +165,35 @@ def buttons(items, align="left"):
                             "flex_align_items_mobile": "stretch"})
 
 
+def form():
+    """Formulario de Elementor Pro: envía a contacto@ y guarda cada envío en Elementor → Envíos."""
+    def f(i, kind, label, ph, req=True, w="50"):
+        return {"_id": f"nm{i}", "custom_id": kind if kind in ("name", "email", "message") else f"campo{i}",
+                "field_type": "textarea" if kind == "message" else ("email" if kind == "email" else "text"),
+                "field_label": label, "placeholder": ph, "required": "true" if req else "", "width": w,
+                "width_mobile": "100", "rows": 4}
+    return widget("form", {
+        "form_name": "Navidad Multiplaza 2026 · Conversemos",
+        "form_fields": [f(1, "name", "Nombre", "Tu nombre"), f(2, "email", "Correo", "tu@empresa.com"),
+                        f(3, "empresa", "Empresa o área", "Opcional", req=False, w="100"),
+                        f(4, "message", "Mensaje", "¿Qué te gustaría conversar sobre la propuesta?", w="100")],
+        "show_labels": "yes", "input_size": "md", "button_size": "md", "button_width": "100",
+        "button_text": "Enviar mensaje", "submit_actions": ["email", "collect_submissions"],
+        "email_to": "contacto@lindsaymeneses.com", "email_subject": "Navidad Multiplaza 2026 · Nuevo mensaje",
+        "email_content": "[all-fields]", "email_from_name": "Navidad Multiplaza 2026", "email_reply_to": "email",
+        "success_message": "¡Gracias! Recibimos tu mensaje y te responderemos pronto.",
+        "error_message": "No se pudo enviar. Escríbenos a contacto@lindsaymeneses.com.",
+        "required_field_message": "Este campo es obligatorio.", "invalid_message": "Revisa este dato.",
+        "_css_classes": "nm-form", "_element_width": "initial", "_element_custom_width": px(640),
+        "_element_custom_width_mobile": px(100, "%"),
+        "__globals__": {"label_typography_typography": T + "accent", "field_typography_typography": T + "text",
+                        "button_typography_typography": T + "accent", "label_color": C + "oroclaro",
+                        "field_text_color": C + "blanco", "button_background_color": C + "accent",
+                        "button_text_color": C + "noche", "button_background_hover_color": C + "oroclaro",
+                        "button_hover_color": C + "noche"},
+    })
+
+
 def line(color="accent", width=72, center=False):
     return widget("divider", {"width": px(width), "weight": px(1), "align": "center" if center else "left",
                               "_css_classes": "nm-line" + (" nm-c" if center else ""), "__globals__": {"color": C + color}})
@@ -341,7 +370,8 @@ cierre = slide([
     heading(p["titulo"], "h2", "blanco", "center", fs=72),
     line("oroclaro", 90, center=True),
     text(f"<p>{p['texto']}</p>", "oroclaro", "center", maxw=560),
-    buttons([(p["cta"], MAIL, False)], "center"),
+    form(),
+    text(f'<p>¿Prefieres el correo? <a href="{MAIL}">contacto@lindsaymeneses.com</a></p>', "oroclaro", "center", cls="nm-note"),
 ], "noche", cls="nm-has-bg nm-dark nm-center", extra={"flex_align_items": "center"})
 
 # Pie de página

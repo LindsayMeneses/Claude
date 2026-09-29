@@ -152,3 +152,14 @@ html.nm-js .nm-line.nm-rv.is-in{transform:scaleX(1)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
   .nm-kb,.nm-bokeh span{animation:none}.nm-snow{display:none}
   html.nm-js .nm-ph img{transition:none}}
+/* formulario de contacto (Elementor Pro) */
+.nm-form{align-self:center;margin-top:6px}
+.nm-form .elementor-field-group{margin-bottom:14px}
+.nm-form .elementor-field-textual{background:rgba(255,255,255,.06)!important;border:1px solid rgba(235,217,174,.35)!important;border-radius:0!important;
+  color:#fff!important;padding:14px 16px!important;transition:border-color .3s,background .3s}
+.nm-form .elementor-field-textual::placeholder{color:rgba(235,217,174,.55)}
+.nm-form .elementor-field-textual:focus{border-color:#C9A45C!important;background:rgba(255,255,255,.1)!important;outline:none;box-shadow:0 0 0 3px rgba(201,164,92,.25)}
+.nm-form .elementor-field-label{letter-spacing:.2em;font-size:11px!important;margin-bottom:6px}
+.nm-form .elementor-button{border-radius:0!important;padding:19px 32px!important;letter-spacing:.2em}
+.nm-form .elementor-message{color:#EBD9AE;font-family:'Manrope',sans-serif;text-align:center}
+.nm-note a{color:#EBD9AE;border-bottom:1px solid rgba(201,164,92,.5);text-decoration:none}
