@@ -31,5 +31,6 @@ Las imágenes generadas se guardan en `imagenes/`, que no se sube al repo.
 
 ## Dara System
 - Se escribe **Dara System** (D-A-R-A). No es "Data System".
-- Es el sistema multi-tenant de Lindsay. El conector MCP `web` (WordPress, multipágina) usa credenciales para conectarse a Dara System.
+- Es el sistema multi-tenant de Lindsay. Autentica y valida la licencia de los MCP: un MCP solo funciona si Dara System lo autoriza.
+- El conector MCP `web` (WordPress) se actualizó en todos los tenants (29-09-2026) para trabajar con todas las instalaciones de WordPress del servidor, no solo con una. Tras esa actualización dejó de funcionar y hay que reiniciarlo.
 - Si `web` pide autorización, revisa primero que el MCP pueda autenticarse contra Dara System.
