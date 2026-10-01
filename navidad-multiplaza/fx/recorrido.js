@@ -7,7 +7,6 @@
   var U = '/wp-content/uploads/2026/09/';
   // [tipo, archivo, escena, lugar, póster del video]
   var S = [
-    ['v', 'nm-navidad-hero.mp4', 'Túnel de luz', 'Escazú', 'nm-navidad-hero-poster.jpg'],
     ['v', 'nm26-fachada-esc-principal.mp4', 'Fachada principal', 'Escazú', 'nm26-fachada-esc-principal-1024x682.jpg'],
     ['i', 'nm26-tunel-arcos-render-1-1536x1346.jpg', 'Túnel de arcos', 'Escazú'],
     ['i', 'nm26-plaza-starbucks-render.jpg', 'Plaza Starbucks', 'Escazú'],
