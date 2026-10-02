@@ -28,6 +28,45 @@ Sitio: lindsaymeneses.com · Elementor 4.3.2 instalado y activo.
 | `text`      | Párrafos                | Manrope 400, 17px, 1.65         |
 | `accent`    | Etiquetas y botones     | Manrope 600, 13px, mayúsculas, 0.2em |
 
+## Estructura v5 · la presentación por partes (02-10-2026)
+
+Fuente: `fuente_v5.py` parte del HTML de la v4 (`respaldo/pagina7-2026-09-28-2218.html`), reescribe los textos
+con un tono más actual (los datos del deck se conservan tal cual) y reorganiza las 30 secciones en partes:
+
+| # | Sección | Fondo |
+|---|---|---|
+| — | Portada «Where the Magic Begins» · botones «Recorrer Escazú» y «Ir a Curridabat» | video |
+| 01–04 | La propuesta (índice de las tres capas y de cada centro) · Campaña · Lenguaje de diseño · Sistema de iluminación | |
+| **Parte I** | **Multiplaza Escazú** · portadilla con las tres capas | video fachada |
+| 05 | Escazú · Entradas: entrada esquinera, puente BCR y palmeras del acceso | oscuro |
+| 06 | Escazú · Fachadas: 9 animaciones + 2 renders | oscuro |
+| **Parte I** | **Decoración interna** · capítulo (vacíos, pasillos, plazas) | render |
+| 07–16 | Vacíos · Túnel de arcos · Plaza Starbucks · Pasillo y Casa de Santa · Plaza Tukis · Plaza Brunos (2) · Pasillo Quinta Etapa · Plaza Siman · Pasillo BCR – Vértigo y Plaza Honor | alternado |
+| **Parte II** | **Multiplaza Curridabat** · portadilla con las tres capas | video fachada |
+| 17 | Curridabat · Entradas: entrada H&M y entrada techada | oscuro |
+| 18 | Curridabat · Fachadas: principal, lateral, esquina Zara y frentes Zara · Bershka · Pull&Bear · Stradivarius | oscuro |
+| **Parte II** | **Decoración interna** · capítulo con las tres plazas espejo (Cinemark, Kolbi, Old Navy) | render |
+| 19–22 | Vacíos y food court · Plaza Santo Katrin · Pasillo Equiz – Vértigo · Plaza Reebok | alternado |
+| 23–24 | En cifras · Siguiente paso (formulario) · pie | |
+
+Las entradas se sacaron de las galerías de fachadas (y las palmeras, de los vacíos de Escazú); los videos de
+fachada y los renders son los mismos `nm26-*` de la v4. Las portadillas se clonan de la sección de Curridabat
+de la v4 y los capítulos, de «En cifras».
+
+Regenerar y publicar (igual que la v4, con la fuente v5):
+
+```
+python3 fuente_v5.py                 # -> fuente-v5.html (no se sube al repo)
+python3 rebuild_v4.py fuente-v5.html # -> page-elementor-data.json (7), tpl-codigo.json (162), tpl-parte2.json (163)
+```
+
+`rebuild_v4.py` reparte las 30 secciones entre la página y la plantilla «Segunda parte» buscando que pesen
+parecido (~100 KB cada una). Sin argumento sigue reconstruyendo la v4 desde el respaldo.
+
+Vista previa local sin acceso al sitio (fotos sustituidas por marcadores):
+`python3 -c "import sys,json; sys.argv=['x','fuente-v5.html']; import rebuild_v4 as r; json.dump(r.build(), open('preview/all.json','w'), ensure_ascii=False)"`
+→ `python3 preview.py preview/all.json index.html && NODE_PATH=$(npm root -g) node preview-shots.js`.
+
 ## Estructura de la página (v3 · línea editorial con fotografía)
 
 Contenido real del deck (ver `ANALISIS-PPT.md`); textos en `copy.json`, estilos y recorrido en `fx/`.

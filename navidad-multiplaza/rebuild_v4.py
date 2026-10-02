@@ -21,7 +21,7 @@ HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE.parent / "sitio"))
 from sitio import shell_markup  # noqa: E402
 
-SRC = HERE / "respaldo/pagina7-2026-09-28-2218.html"
+SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "respaldo/pagina7-2026-09-28-2218.html"   # v5: fuente-v5.html
 C = "globals/colors?id="
 T = "globals/typography?id="
 MAIL = "mailto:contacto@lindsaymeneses.com?subject=Navidad%20Multiplaza%202026"
@@ -344,7 +344,8 @@ def build():
 PAGE_CSS = (".nm-hero-t .elementor-heading-title{font-style:italic!important;font-weight:600!important;"
             "letter-spacing:-.02em!important;line-height:1!important}\n.nm-hero-t .elementor-heading-title em{font-weight:300!important}")
 
-TPL_CODIGO, TPL_PARTE2, CORTE = 162, 163, 12   # plantillas de Elementor Pro (Plantillas → Guardadas)
+TPL_CODIGO, TPL_PARTE2 = 162, 163   # plantillas de Elementor Pro (Plantillas → Guardadas)
+CORTE = 12                           # secciones que van en la página; el resto, en la plantilla «Segunda parte»
 
 
 def template_widget(tid):
@@ -361,7 +362,7 @@ def recorrido():
     return f"<style>{css}</style><script>{js}</script>"
 
 
-def split(content):
+def split(content, corte=None):
     """Reparte el contenido en tres documentos de Elementor, cada uno de un tamaño que se publica sin riesgo:
     la plantilla con el código (CSS, JS y menú), la página con las secciones 1–12 y la plantilla con las 13–25."""
     fx = content[0]["elements"][0]["settings"]
@@ -372,13 +373,20 @@ def split(content):
     codigo = [container([widget("html", {"html": shell + code, "_css_classes": "lx-shell-w"})],
                         {"css_classes": "lx-shell-w"}, inner=False)]
     wrap = {"css_classes": "lx-shell-w"}
-    pagina = ([container([template_widget(TPL_CODIGO)], wrap, inner=False)] + content[:CORTE]
+    corte = CORTE if corte is None else corte
+    pagina = ([container([template_widget(TPL_CODIGO)], wrap, inner=False)] + content[:corte]
               + [container([template_widget(TPL_PARTE2)], {"gap": gap(0)}, inner=False)])
-    return pagina, codigo, content[CORTE:]
+    return pagina, codigo, content[corte:]
 
 
 if __name__ == "__main__":
-    for name, doc in zip(("page-elementor-data.json", "tpl-codigo.json", "tpl-parte2.json"), split(build())):
+    content = build()
+    # con la fuente v5 (30 secciones) el corte se elige para que la página y la «Segunda parte» pesen parecido
+    corte = None
+    if len(content) > 25:
+        size = lambda doc: len(json.dumps(doc, ensure_ascii=False, separators=(",", ":")))
+        corte = min(range(8, len(content) - 4), key=lambda k: max(size(content[1:k]), size(content[k:])))   # sin el código de la portada
+    for name, doc in zip(("page-elementor-data.json", "tpl-codigo.json", "tpl-parte2.json"), split(content, corte)):
         # espacios normales en vez de no separables: se publican por transcripción y así no se pierden
         data = json.dumps(doc, ensure_ascii=False, separators=(",", ":")).replace("\u00a0", " ")
         (HERE / name).write_text(data, encoding="utf-8")
