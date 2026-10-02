@@ -53,6 +53,9 @@ Las entradas se sacaron de las galerías de fachadas (y las palmeras, de los vac
 fachada y los renders son los mismos `nm26-*` de la v4. Las portadillas se clonan de la sección de Curridabat
 de la v4 y los capítulos, de «En cifras».
 
+**Publicada el 02-10-2026** (página 7 y plantilla 163 por la API REST; la plantilla 162 no cambió). Los JSON exactos
+que se publicaron están en `publicar/` (`v5-pagina7.json`, `v5-tpl163.json`, `v5-tpl162.json`).
+
 Regenerar y publicar (igual que la v4, con la fuente v5):
 
 ```
