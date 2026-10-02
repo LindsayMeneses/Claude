@@ -237,6 +237,8 @@ credit(FACH_ESC, MECA)
 INT_ESC = clone(CIFRAS)
 INT_ESC.find("img")["src"] = U + "nm26-plaza-brunos-render-1-1536x835.jpg"
 INT_ESC.find("img")["alt"] = "Plaza Brunos: árbol de 7 metros con soldados y trineo"
+for a in ("srcset", "sizes"):          # el srcset clonado apuntaba a la foto anterior
+    del INT_ESC.find("img")[a]
 eyebrow(INT_ESC, "Parte I · Decoración interna")
 title(INT_ESC, "Adentro, <em>la magia se despliega</em>")
 set_html([w for w in widgets(INT_ESC, "text-editor") if w.find("ul")][0],
@@ -356,6 +358,8 @@ credit(FACH_CUR, MECA)
 INT_CUR = clone(CIFRAS)
 INT_CUR.find("img")["src"] = U + "nm26-santo-katrin-render.jpg"
 INT_CUR.find("img")["alt"] = "Plaza Santo Katrin: área de juego con esferas colgantes"
+for a in ("srcset", "sizes"):
+    del INT_CUR.find("img")[a]
 eyebrow(INT_CUR, "Parte II · Decoración interna")
 title(INT_CUR, "Adentro, <em>Curridabat refleja Escazú</em>")
 set_html([w for w in widgets(INT_CUR, "text-editor") if w.find("ul")][0],
