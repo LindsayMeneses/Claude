@@ -28,6 +28,26 @@ Sitio: lindsaymeneses.com · Elementor 4.3.2 instalado y activo.
 | `text`      | Párrafos                | Manrope 400, 17px, 1.65         |
 | `accent`    | Etiquetas y botones     | Manrope 600, 13px, mayúsculas, 0.2em |
 
+## v6 · widgets nativos de Elementor Pro (publicada el 03-10-2026)
+
+`v6.py` reconstruye la v5 con **widgets nativos** en vez de HTML: heading, text-editor, divider, image, video
+(mp4 alojado con póster, mudo, en bucle), gallery de Pro (con lightbox, título y pie desde Medios), counter, icon-list,
+icon-box, image-box, button, form de Pro y slides de Pro. Solo los comparadores antes/después siguen en HTML.
+Cada elemento entra con animación de Elementor (fadeIn / fadeInUp escalonados) y las fotos grandes llevan efecto
+de movimiento al desplazarse; los fondos de las portadillas son video nativo del contenedor.
+
+| Documento | ID | Contenido |
+|---|---|---|
+| Plantilla «Código (CSS, JS y menú)» | 162 | Barra del sitio, CSS v6, recorrido por secciones, reproducción de videos al entrar en pantalla y comparadores (`fx/v6-codigo.css`, `fx/v6-codigo.js`) |
+| Plantilla «Portada (slider)» | 168 | Slider de 8 diapositivas (widget Slides de Pro). Se cambia por Slider Revolution con `python3 v6.py --revslider`; ver `revslider/GUIA.md` |
+| Página «Navidad Multiplaza 2026» | 7 | 01–04 · Parte I: portadilla Escazú, entradas, fachadas y capítulo de decoración interna |
+| Plantilla «Parte I, zonas (07–16)» | 169 | Vacíos, túnel de arcos, Starbucks, Santa, Tukis, Brunos (2), Quinta Etapa, Siman, BCR – Vértigo y Honor |
+| Plantilla «Segunda parte» | 163 | Parte II Curridabat (portadilla, entradas, fachadas, capítulo, 19–22), cifras, contacto con formulario y pie |
+
+Los JSON exactos publicados están en `publicar/v6-*.json`. Regenerar: `python3 v6.py` (lee `fuente-v5.html` para los
+comparadores, la paleta y los materiales) → publicar 162, 168, 7, 169 y 163 → `DELETE elementor/v1/cache`.
+Los títulos y pies de las 47 imágenes de galería se cargaron en Medios (campos título, leyenda y alt).
+
 ## Estructura v5 · la presentación por partes (02-10-2026)
 
 Fuente: `fuente_v5.py` parte del HTML de la v4 (`respaldo/pagina7-2026-09-28-2218.html`), reescribe los textos
