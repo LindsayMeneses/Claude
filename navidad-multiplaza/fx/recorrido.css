@@ -1,0 +1,39 @@
+/* Controles del recorrido en video (banner de Navidad Multiplaza) */
+.nm-reel-cap.nm-player{position:absolute!important;z-index:6!important;pointer-events:auto;gap:12px;min-width:320px}
+.nm-player .t{min-height:1.15em}
+.nm-segs{display:flex;gap:4px;width:320px}
+.nm-segs button{all:unset;cursor:pointer;flex:1;height:16px;display:flex;align-items:center}
+.nm-segs button i{display:block;width:100%;height:2px;background:rgba(235,217,174,.28);position:relative;overflow:hidden;transition:height .25s ease,background .25s ease}
+.nm-segs button:hover i,.nm-segs button:focus-visible i,.nm-segs button.on i{height:4px}
+.nm-segs button:hover i{background:rgba(235,217,174,.5)}
+.nm-segs button:focus-visible{outline:1px solid #EBD9AE;outline-offset:2px}
+.nm-segs b{position:absolute;inset:0;background:#C9A45C;transform-origin:left;transform:scaleX(0)}
+.nm-ctl{display:flex;align-items:center;gap:8px;margin-top:2px}
+.nm-ctl button{all:unset;box-sizing:border-box;cursor:pointer;width:38px;height:38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid rgba(235,217,174,.32);background:rgba(7,24,18,.38);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#EBD9AE;transition:background .3s ease,border-color .3s ease,color .3s ease,transform .3s ease}
+.nm-ctl button:hover{background:rgba(201,164,92,.22);border-color:#C9A45C;color:#fff}
+.nm-ctl button:active{transform:scale(.94)}
+.nm-ctl button:focus-visible{outline:2px solid #EBD9AE;outline-offset:3px}
+.nm-ctl svg{width:15px;height:15px;fill:currentColor;flex:none}
+.nm-ctl .pp{width:48px;height:48px;background:#C9A45C;border-color:#C9A45C;color:#0A241C}
+.nm-ctl .pp:hover{background:#EBD9AE;border-color:#EBD9AE;color:#0A241C}
+.nm-ctl .pp svg{width:18px;height:18px}
+.nm-ctl .fs{width:auto;padding:0 16px 0 13px;border-radius:19px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.nm-reel.paused .sc.run img,.nm-reel.paused .sc.run video,.nm-reel.paused .sheen{animation-play-state:paused}
+/* Pantalla completa: solo el recorrido y sus controles */
+.nm-hero>.e-con-inner>.e-con,.nm-hero .nm-ov{transition:opacity .9s ease}
+html.nm-imm .nm-hero>.e-con-inner>.e-con{opacity:0;pointer-events:none}
+html.nm-imm .nm-hero .nm-ov{opacity:.2}
+html.nm-imm .nm-tour,html.nm-imm .lx-bar{opacity:0;pointer-events:none}
+html.nm-imm .nm-reel-cap.nm-player{top:auto;bottom:40px;right:50%;left:auto;transform:translateX(50%);align-items:center;text-align:center}
+html.nm-imm .nm-segs{width:min(640px,84vw)}
+.nm-hero:fullscreen{width:100vw;height:100vh;min-height:100vh}
+@media(max-width:767px){
+.nm-reel-cap.nm-player{left:auto;right:14px;top:70px;align-items:flex-end;text-align:right;min-width:0;gap:8px}
+.nm-player .k,.nm-player .t,.nm-player .nm-segs,.nm-ctl .pv,.nm-ctl .nx{display:none}
+.nm-ctl{gap:6px}.nm-ctl button{width:36px;height:36px}.nm-ctl .pp{width:42px;height:42px}
+.nm-ctl .fs{width:36px;padding:0;border-radius:50%}.nm-ctl .fs span{display:none}
+html.nm-imm .nm-reel-cap.nm-player{top:auto;bottom:calc(24px + env(safe-area-inset-bottom));right:50%;left:auto}
+html.nm-imm .nm-player .t,html.nm-imm .nm-player .nm-segs,html.nm-imm .nm-ctl .pv,html.nm-imm .nm-ctl .nx{display:flex}
+html.nm-imm .nm-player .t{display:block;font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){.nm-ctl button,.nm-segs button i{transition:none}}
